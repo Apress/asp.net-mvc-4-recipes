@@ -1,0 +1,36 @@
+﻿** Warnings
+     The object reference [dbo].[PlayList].[PlayListId] differs only by case from the object definition
+       [dbo].[PlayList].[PlaylistId].
+
+** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[Media] (Table)
+       [dbo].[PlayList] (Table)
+       [dbo].[PlaylistItem] (Table)
+       [dbo].[Song] (Table)
+       Default Constraint on [dbo].[Media].[IsCloudBlob] (Default Constraint)
+       Default Constraint on [dbo].[Media].[MediaType] (Default Constraint)
+       Default Constraint on [dbo].[Media].[FileSizeInBytes] (Default Constraint)
+       Default Constraint on [dbo].[Media].[BitRateInKbps] (Default Constraint)
+       Default Constraint on [dbo].[Media].[AllowDownload] (Default Constraint)
+       Default Constraint on [dbo].[Media].[DownloadCount] (Default Constraint)
+       Default Constraint on [dbo].[PlayList].[IsSitePlaylist] (Default Constraint)
+       Default Constraint on [dbo].[PlayList].[IsDefaultPlaylist] (Default Constraint)
+       Default Constraint on [dbo].[PlaylistItem].[DisplayOrder] (Default Constraint)
+       [dbo].[FK_Media_ToTable] (Foreign Key)
+       [dbo].[FK_PlayList_Artist] (Foreign Key)
+       [dbo].[FK_PlayList_Band] (Foreign Key)
+       [dbo].[FK_PlaylistItem_PayList] (Foreign Key)
+       [dbo].[FK_Song_Media] (Foreign Key)
+
+** Supporting actions

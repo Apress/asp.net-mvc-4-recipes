@@ -1,0 +1,70 @@
+﻿@model Ch10.Mvc.Web.Models.CollaborationSpaceSearchResultModel
+
+@{
+    ViewBag.Title = "Grid View Replacement Sample";
+}
+
+<h2>@ViewBag.Title</h2>
+<p>
+    This example shows how you could replace the GridView control when used as a read only list that supports filtering and 
+paging and sorting.
+</p>
+<h3>@Model.ResultsDescription</h3>
+
+<nav id="SideBar" class="float-left leftColumn">
+    <h4>Genres</h4>
+    <ul class="Facet ItemList">
+        @foreach (var item in Model.GenreLookUpList)
+        {
+            <li>
+                @Html.ActionLink(item.GenreName, "GridViewReplacement", new {CategoryId=item.GenreLookUpId, Page=1, SortExpression=Model.SortExpression })
+            </li>
+        }
+    </ul>
+</nav>
+<div id="main" class="float-right rightColumn">
+    <h4>@Model.NumberOfResults records have been found. Page @Model.CurrentPage of @Model.TotalPages</h4>
+    <table class="grid FullWidth">
+        <tr>
+            <th>@Html.ActionLink("Collaboration Space", "GridViewReplacement", new {CategoryId=Model.CategoryId, Page=1, SortExpression="Title" })</th>
+            <th>@Html.ActionLink("Artist", "GridViewReplacement", new {CategoryId=Model.CategoryId, Page=1, SortExpression="UserName" })</th>
+            <th>@Html.ActionLink("Created", "GridViewReplacement", new {CategoryId=Model.CategoryId, Page=1, SortExpression="CreateDate" })</th>
+            <th>@Html.ActionLink("Modified", "GridViewReplacement", new {CategoryId=Model.CategoryId, Page=1, SortExpression="ModifiedDate" })</th>
+            <th>@Html.ActionLink("Stats", "GridViewReplacement", new {CategoryId=Model.CategoryId, Page=1, SortExpression="NumberViews" })</th>
+        </tr>
+        @foreach (var item in Model.CollaborationSpaceSearchResults)
+        {
+            <tr>
+                <td>@item.Title</td>
+                <td>@item.UserName</td>
+                <td>@item.CreateDate.ToShortDateString()</td>
+                <td>@item.ModifiedDate.ToShortDateString()</td>
+                <td>
+                   <ul class="ItemList">
+                            <li>
+                                Hits: @item.NumberViews
+                            </li>
+                            <li>
+                                Posts: @item.NumberComments
+                            </li>
+                            <li>
+                                Status: @item.Status
+                            </li>
+                        </ul>
+
+                </td>
+            </tr>
+        }
+    </table>
+    <div class="Pager">
+    @Html.CreateNumericPager(Model.NumberOfResults, Model.ItemsPerPage, Model.CurrentPage)
+    </div>
+</div>
+@section scripts{
+    <script>
+        $(function () {
+            $("tr:even").addClass("even");
+            $("tr:odd").addClass("odd");
+        });
+    </script>
+}

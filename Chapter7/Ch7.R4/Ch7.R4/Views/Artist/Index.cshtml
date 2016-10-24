@@ -1,0 +1,81 @@
+﻿@model IEnumerable<Ch7.R4.DAL.ARTIST>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.USERNAME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.COUNTRY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PROVENCE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CITY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CREATEDATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MODIFIEDDATE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PROFILEPRIVACYLEVEL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CONTACTPRIVACYLEVEL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PROFILEVIEWS)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.USERNAME)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.COUNTRY)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PROVENCE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CITY)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CREATEDATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MODIFIEDDATE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PROFILEPRIVACYLEVEL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CONTACTPRIVACYLEVEL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PROFILEVIEWS)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ARTISTID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ARTISTID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ARTISTID })
+        </td>
+    </tr>
+}
+
+</table>

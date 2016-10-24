@@ -1,0 +1,23 @@
+﻿@model Ch9.R4.Web.Models.DayModel
+
+@{
+    ViewBag.Title = "Images and Sound of the day";
+}
+
+@section Styles{
+    <link href="~/Content/Styles/@(Model.SceneName).css" rel="stylesheet" />
+}
+
+<h2>@ViewBag.Title</h2>
+
+    @Html.DisplayFor(model => model.DateDisplay)
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.isDayTime)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.isDayTime)
+    </div>
+    <audio src="~/Content/Sounds/@(Model.SoundEffect).mp3" loop="loop" autoplay="autoplay" />
+
+

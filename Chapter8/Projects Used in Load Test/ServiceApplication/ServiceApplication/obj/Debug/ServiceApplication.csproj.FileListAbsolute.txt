@@ -1,0 +1,5 @@
+G:\WorkingFolder\MVCBook\Chapter7\ServiceApplication\ServiceApplication\bin\ServiceApplication.dll
+G:\WorkingFolder\MVCBook\Chapter7\ServiceApplication\ServiceApplication\bin\ServiceApplication.pdb
+G:\WorkingFolder\MVCBook\Chapter7\ServiceApplication\ServiceApplication\obj\Debug\ServiceApplication.csprojResolveAssemblyReference.cache
+G:\WorkingFolder\MVCBook\Chapter7\ServiceApplication\ServiceApplication\obj\Debug\ServiceApplication.dll
+G:\WorkingFolder\MVCBook\Chapter7\ServiceApplication\ServiceApplication\obj\Debug\ServiceApplication.pdb

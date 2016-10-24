@@ -1,0 +1,9 @@
+﻿@model List<Ch7.SharedAPI.Artist>
+@{
+    ViewBag.Title = "DataList Replacement";
+}
+
+<h2>DataList Control Replacement using a custom HTML Helper</h2>
+@Html.RenderTemplateAsColumns(Model,"_ArtistPartial", 3)
+
+

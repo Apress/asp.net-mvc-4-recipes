@@ -1,0 +1,28 @@
+﻿** Warnings
+     The object reference [dbo].[PlayList].[PlayListId] differs only by case from the object definition
+       [dbo].[PlayList].[PlaylistId].
+     The object reference [dbo].[PlaylistItem].[songId] differs only by case from the object definition
+       [dbo].[PlaylistItem].[SongId].
+     The object reference [dbo].[PlayListItem] differs only by case from the object definition [dbo].[PlaylistItem].
+     The object reference [dbo].[PlayListItem].[PlayListId] differs only by case from the object definition
+       [dbo].[PlaylistItem].[PlayListId].
+     The object reference [dbo].[ArtistCollaborationSpaces].[artistId] differs only by case from the object definition
+       [dbo].[ArtistCollaborationSpaces].[ArtistId].
+     The object reference [dbo].[ArtistBand].[artistid] differs only by case from the object definition
+       [dbo].[ArtistBand].[ArtistId].
+
+** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Alter
+       [dbo].[Artist] (Table)
+
+** Supporting actions

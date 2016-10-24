@@ -1,0 +1,75 @@
+﻿@model Ch11.R3.Web.Models.Person
+@{
+    ViewBag.Title = "My Appointments";
+}
+@section header{
+        @Styles.Render("~/Content/themes/base/css")
+    <link href="~/Content/Home/Appointments.css" rel="stylesheet" />
+}
+<h2>@ViewBag.Title</h2>
+    <div id="LoadingDiv">Loading ...</div>
+    <div id="MessageDiv" data-bind="message: Message"></div>
+<div id="ContainerDiv">
+<section id="PeepsList">
+
+    <table data-bind="template: {name: 'PeepsTemplate', foreach: People}" class="grid">
+        <thead>
+            <tr>
+                <th></th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+    </table>
+
+    <script id="PeepsTemplate" type="text/html">
+    <tr>
+        <td><a href="#" class="edit" data-bind="click: $parent.selectItem">Edit</a> </td>
+        <td data-bind="text: FirstName"></td>
+        <td data-bind="text: LastName"></td>
+        <td data-bind="dateString: AppointmentDate, datePattern: 'MM/DD/YYYY'"></td>
+    </tr>
+</script>
+</section>
+<section id="PeepsForm">
+    <form id="NewPersonForm">
+    <fieldset>
+        <legend title="Peeps Form"></legend>
+        <ul>
+            <li>
+                <label>@Html.LabelFor(a => a.FirstName)</label>
+                @Html.TextBoxFor(a => a.FirstName, new { data_bind="value: NewPerson().FirstName, valueUpdate:'afterkeydown'"})
+                @Html.ValidationMessageFor(a=>a.FirstName,null)
+            </li>
+            <li>
+                <label>@Html.LabelFor(a => a.LastName)</label>
+                 @Html.TextBoxFor(a => a.LastName, new { data_bind="value: NewPerson().LastName, valueUpdate:'afterkeydown'"})
+                @Html.ValidationMessageFor(a=>a.LastName,null)
+            </li>
+            <li>
+                <label>@Html.LabelFor(a => a.AppointmentDate)</label>
+                @Html.TextBoxFor(a => a.AppointmentDate, new { data_bind="dateString: NewPerson().AppointmentDate, valueUpdate:'afterkeydown', datePattern: 'MM/DD/YYYY'"})
+                @Html.ValidationMessageFor(a=>a.AppointmentDate,null)
+            </li>
+            <li>
+                <input type="button" data-bind='click: addPerson' value="Add" />
+                <input type="button" data-bind='click: saveAll' value="Save To Server" />
+            </li>
+        </ul>
+        
+    </fieldset>
+        </form>
+</section>
+
+    </div>
+
+
+
+
+@section scripts{
+    @Scripts.Render("~/bundles/jqueryui")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/knockout")
+    <script src="~/Scripts/Home/Appointments.js"></script>
+}

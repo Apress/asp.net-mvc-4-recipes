@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/WebAPIForLoadTest/WcfServices/PlaylistService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WebAPIForLoadTest.Models" />
+  <xs:element name="GetPlayList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="playlistId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPlayListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WebAPIForLoadTest.Models" minOccurs="0" name="GetPlayListResult" nillable="true" type="q1:PlaylistModel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllPlayLists">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllPlayListsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WebAPIForLoadTest.Models" minOccurs="0" name="GetAllPlayListsResult" nillable="true" type="q2:ArrayOfPlaylistModel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

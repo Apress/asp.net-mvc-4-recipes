@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch7.R7-2", "Ch7.R7-2\Ch7.R7-2.csproj", "{5ADD26BD-E31C-49A7-BD96-DF01997E9F03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch7.SharedAPI", "..\Ch7.SharedAPI\Ch7.SharedAPI\Ch7.SharedAPI.csproj", "{94964FB1-FB7B-4266-8232-AABC51EE3040}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5ADD26BD-E31C-49A7-BD96-DF01997E9F03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ADD26BD-E31C-49A7-BD96-DF01997E9F03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ADD26BD-E31C-49A7-BD96-DF01997E9F03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ADD26BD-E31C-49A7-BD96-DF01997E9F03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94964FB1-FB7B-4266-8232-AABC51EE3040}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94964FB1-FB7B-4266-8232-AABC51EE3040}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94964FB1-FB7B-4266-8232-AABC51EE3040}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94964FB1-FB7B-4266-8232-AABC51EE3040}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

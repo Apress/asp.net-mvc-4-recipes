@@ -1,0 +1,78 @@
+﻿@model Ch7.R4.DAL.ARTIST
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>ARTIST</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.USERNAME)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.USERNAME)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.COUNTRY)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.COUNTRY)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PROVENCE)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PROVENCE)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CITY)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CITY)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CREATEDATE)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CREATEDATE)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.MODIFIEDDATE)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.MODIFIEDDATE)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PROFILEPRIVACYLEVEL)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PROFILEPRIVACYLEVEL)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CONTACTPRIVACYLEVEL)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CONTACTPRIVACYLEVEL)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PROFILEVIEWS)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PROFILEVIEWS)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ARTISTID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

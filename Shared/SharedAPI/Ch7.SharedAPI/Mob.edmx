@@ -1,0 +1,2940 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="MobModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="MobModelStoreContainer">
+          <EntitySet Name="Alert" EntityType="MobModel.Store.Alert" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="AlertSubscription" EntityType="MobModel.Store.AlertSubscription" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="AlertTag" EntityType="MobModel.Store.AlertTag" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Artist" EntityType="MobModel.Store.Artist" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ArtistBand" EntityType="MobModel.Store.ArtistBand" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ArtistBlock" EntityType="MobModel.Store.ArtistBlock" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ArtistCollaborationSpaces" EntityType="MobModel.Store.ArtistCollaborationSpaces" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ArtistFavorites" EntityType="MobModel.Store.ArtistFavorites" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ArtistProfile" EntityType="MobModel.Store.ArtistProfile" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ArtistSkill" EntityType="MobModel.Store.ArtistSkill" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Band" EntityType="MobModel.Store.Band" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="BandAudition" EntityType="MobModel.Store.BandAudition" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="BandAuditionComment" EntityType="MobModel.Store.BandAuditionComment" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="BandGenre" EntityType="MobModel.Store.BandGenre" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="BannedEmailAddress" EntityType="MobModel.Store.BannedEmailAddress" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CollaborationSpace" EntityType="MobModel.Store.CollaborationSpace" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CollaborationSpaceAlerts" EntityType="MobModel.Store.CollaborationSpaceAlerts" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CollaborationSpaceComment" EntityType="MobModel.Store.CollaborationSpaceComment" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CollaborationSpaceFile" EntityType="MobModel.Store.CollaborationSpaceFile" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CollaborationSpaceGenre" EntityType="MobModel.Store.CollaborationSpaceGenre" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CollaborationSpaceInvite" EntityType="MobModel.Store.CollaborationSpaceInvite" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CollaborationSpaceMedia" EntityType="MobModel.Store.CollaborationSpaceMedia" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="EmailOptOut" EntityType="MobModel.Store.EmailOptOut" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="EmailVerification" EntityType="MobModel.Store.EmailVerification" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="GenreLookUp" EntityType="MobModel.Store.GenreLookUp" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Media" EntityType="MobModel.Store.Media" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Message" EntityType="MobModel.Store.Message" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="MessageRecipient" EntityType="MobModel.Store.MessageRecipient" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="MessageSpam" EntityType="MobModel.Store.MessageSpam" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="OpenPosition" EntityType="MobModel.Store.OpenPosition" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="PlayList" EntityType="MobModel.Store.PlayList" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="PlaylistItem" EntityType="MobModel.Store.PlaylistItem" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Song" EntityType="MobModel.Store.Song" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SongComment" EntityType="MobModel.Store.SongComment" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Task" EntityType="MobModel.Store.Task" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="webpages_Membership" EntityType="MobModel.Store.webpages_Membership" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_AlertSubscription_Artist" Association="MobModel.Store.FK_AlertSubscription_Artist">
+            <End Role="Artist" EntitySet="Artist" />
+            <End Role="AlertSubscription" EntitySet="AlertSubscription" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AlertTag_Alert" Association="MobModel.Store.FK_AlertTag_Alert">
+            <End Role="Alert" EntitySet="Alert" />
+            <End Role="AlertTag" EntitySet="AlertTag" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ArtistBand_ToArtist" Association="MobModel.Store.FK_ArtistBand_ToArtist">
+            <End Role="Artist" EntitySet="Artist" />
+            <End Role="ArtistBand" EntitySet="ArtistBand" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ArtistBand_ToBand" Association="MobModel.Store.FK_ArtistBand_ToBand">
+            <End Role="Band" EntitySet="Band" />
+            <End Role="ArtistBand" EntitySet="ArtistBand" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ArtistBlock_Artist" Association="MobModel.Store.FK_ArtistBlock_Artist">
+            <End Role="Artist" EntitySet="Artist" />
+            <End Role="ArtistBlock" EntitySet="ArtistBlock" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ArtistCollaborationSpaces_ToTable" Association="MobModel.Store.FK_ArtistCollaborationSpaces_ToTable">
+            <End Role="Artist" EntitySet="Artist" />
+            <End Role="ArtistCollaborationSpaces" EntitySet="ArtistCollaborationSpaces" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ArtistCollaborationSpaces_ToTable_1" Association="MobModel.Store.FK_ArtistCollaborationSpaces_ToTable_1">
+            <End Role="CollaborationSpace" EntitySet="CollaborationSpace" />
+            <End Role="ArtistCollaborationSpaces" EntitySet="ArtistCollaborationSpaces" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ArtistFavorites_Artist" Association="MobModel.Store.FK_ArtistFavorites_Artist">
+            <End Role="Artist" EntitySet="Artist" />
+            <End Role="ArtistFavorites" EntitySet="ArtistFavorites" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ArtistProfile_Artist" Association="MobModel.Store.FK_ArtistProfile_Artist">
+            <End Role="Artist" EntitySet="Artist" />
+            <End Role="ArtistProfile" EntitySet="ArtistProfile" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ArtistSkill_Artist" Association="MobModel.Store.FK_ArtistSkill_Artist">
+            <End Role="Artist" EntitySet="Artist" />
+            <End Role="ArtistSkill" EntitySet="ArtistSkill" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BandAudition_Artist" Association="MobModel.Store.FK_BandAudition_Artist">
+            <End Role="Artist" EntitySet="Artist" />
+            <End Role="BandAudition" EntitySet="BandAudition" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BandAudition_Song" Association="MobModel.Store.FK_BandAudition_Song">
+            <End Role="Song" EntitySet="Song" />
+            <End Role="BandAudition" EntitySet="BandAudition" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BandAuditionComment_Artist" Association="MobModel.Store.FK_BandAuditionComment_Artist">
+            <End Role="Artist" EntitySet="Artist" />
+            <End Role="BandAuditionComment" EntitySet="BandAuditionComment" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BandAuditionComment_BandAudition" Association="MobModel.Store.FK_BandAuditionComment_BandAudition">
+            <End Role="BandAudition" EntitySet="BandAudition" />
+            <End Role="BandAuditionComment" EntitySet="BandAuditionComment" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BandGenre_Band" Association="MobModel.Store.FK_BandGenre_Band">
+            <End Role="Band" EntitySet="Band" />
+            <End Role="BandGenre" EntitySet="BandGenre" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BandGenre_GenreLookUp" Association="MobModel.Store.FK_BandGenre_GenreLookUp">
+            <End Role="GenreLookUp" EntitySet="GenreLookUp" />
+            <End Role="BandGenre" EntitySet="BandGenre" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CollaborationSpace_ToTable" Association="MobModel.Store.FK_CollaborationSpace_ToTable">
+            <End Role="Band" EntitySet="Band" />
+            <End Role="CollaborationSpace" EntitySet="CollaborationSpace" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CollaborationSpaceAlerts_Artist" Association="MobModel.Store.FK_CollaborationSpaceAlerts_Artist">
+            <End Role="Artist" EntitySet="Artist" />
+            <End Role="CollaborationSpaceAlerts" EntitySet="CollaborationSpaceAlerts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CollaborationSpaceAlerts_CollaborationSpace" Association="MobModel.Store.FK_CollaborationSpaceAlerts_CollaborationSpace">
+            <End Role="CollaborationSpace" EntitySet="CollaborationSpace" />
+            <End Role="CollaborationSpaceAlerts" EntitySet="CollaborationSpaceAlerts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CollaborationSpaceComment_Artist" Association="MobModel.Store.FK_CollaborationSpaceComment_Artist">
+            <End Role="Artist" EntitySet="Artist" />
+            <End Role="CollaborationSpaceComment" EntitySet="CollaborationSpaceComment" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CollaborationSpaceComment_CollaborationSpace" Association="MobModel.Store.FK_CollaborationSpaceComment_CollaborationSpace">
+            <End Role="CollaborationSpace" EntitySet="CollaborationSpace" />
+            <End Role="CollaborationSpaceComment" EntitySet="CollaborationSpaceComment" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CollaborationSpaceComment_ToTable" Association="MobModel.Store.FK_CollaborationSpaceComment_ToTable">
+            <End Role="CollaborationSpaceFile" EntitySet="CollaborationSpaceFile" />
+            <End Role="CollaborationSpaceComment" EntitySet="CollaborationSpaceComment" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CollaborationSpaceFile_CollaborationSpace" Association="MobModel.Store.FK_CollaborationSpaceFile_CollaborationSpace">
+            <End Role="CollaborationSpace" EntitySet="CollaborationSpace" />
+            <End Role="CollaborationSpaceFile" EntitySet="CollaborationSpaceFile" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CollaborationSpaceFile_Media" Association="MobModel.Store.FK_CollaborationSpaceFile_Media">
+            <End Role="Media" EntitySet="Media" />
+            <End Role="CollaborationSpaceFile" EntitySet="CollaborationSpaceFile" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CollaborationSpaceGenre_CollaborationSpace" Association="MobModel.Store.FK_CollaborationSpaceGenre_CollaborationSpace">
+            <End Role="CollaborationSpace" EntitySet="CollaborationSpace" />
+            <End Role="CollaborationSpaceGenre" EntitySet="CollaborationSpaceGenre" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CollaborationSpaceGenre_GenreLookUp" Association="MobModel.Store.FK_CollaborationSpaceGenre_GenreLookUp">
+            <End Role="GenreLookUp" EntitySet="GenreLookUp" />
+            <End Role="CollaborationSpaceGenre" EntitySet="CollaborationSpaceGenre" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CollaborationSpaceInvite_Artist" Association="MobModel.Store.FK_CollaborationSpaceInvite_Artist">
+            <End Role="Artist" EntitySet="Artist" />
+            <End Role="CollaborationSpaceInvite" EntitySet="CollaborationSpaceInvite" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CollaborationSpaceInvite_CollaborationSpace" Association="MobModel.Store.FK_CollaborationSpaceInvite_CollaborationSpace">
+            <End Role="CollaborationSpace" EntitySet="CollaborationSpace" />
+            <End Role="CollaborationSpaceInvite" EntitySet="CollaborationSpaceInvite" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CollaborationSpaceMedia_CollaborationSpace" Association="MobModel.Store.FK_CollaborationSpaceMedia_CollaborationSpace">
+            <End Role="CollaborationSpace" EntitySet="CollaborationSpace" />
+            <End Role="CollaborationSpaceMedia" EntitySet="CollaborationSpaceMedia" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CollaborationSpaceMedia_ToTable_1" Association="MobModel.Store.FK_CollaborationSpaceMedia_ToTable_1">
+            <End Role="Media" EntitySet="Media" />
+            <End Role="CollaborationSpaceMedia" EntitySet="CollaborationSpaceMedia" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Media_ToTable" Association="MobModel.Store.FK_Media_ToTable">
+            <End Role="Artist" EntitySet="Artist" />
+            <End Role="Media" EntitySet="Media" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Message_Artist" Association="MobModel.Store.FK_Message_Artist">
+            <End Role="Artist" EntitySet="Artist" />
+            <End Role="Message" EntitySet="Message" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MessageRecipient_Artist" Association="MobModel.Store.FK_MessageRecipient_Artist">
+            <End Role="Artist" EntitySet="Artist" />
+            <End Role="MessageRecipient" EntitySet="MessageRecipient" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MessageRecipient_Message" Association="MobModel.Store.FK_MessageRecipient_Message">
+            <End Role="Message" EntitySet="Message" />
+            <End Role="MessageRecipient" EntitySet="MessageRecipient" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Playlist_Artist" Association="MobModel.Store.FK_Playlist_Artist">
+            <End Role="Artist" EntitySet="Artist" />
+            <End Role="PlayList" EntitySet="PlayList" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PlayList_Band" Association="MobModel.Store.FK_PlayList_Band">
+            <End Role="Band" EntitySet="Band" />
+            <End Role="PlayList" EntitySet="PlayList" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PlaylistItem_PayList" Association="MobModel.Store.FK_PlaylistItem_PayList">
+            <End Role="PlayList" EntitySet="PlayList" />
+            <End Role="PlaylistItem" EntitySet="PlaylistItem" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PlaylistItem_Song" Association="MobModel.Store.FK_PlaylistItem_Song">
+            <End Role="Song" EntitySet="Song" />
+            <End Role="PlaylistItem" EntitySet="PlaylistItem" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Song_Media" Association="MobModel.Store.FK_Song_Media">
+            <End Role="Media" EntitySet="Media" />
+            <End Role="Song" EntitySet="Song" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SongComment_Song" Association="MobModel.Store.FK_SongComment_Song">
+            <End Role="Song" EntitySet="Song" />
+            <End Role="SongComment" EntitySet="SongComment" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Task_Artist" Association="MobModel.Store.FK_Task_Artist">
+            <End Role="Artist" EntitySet="Artist" />
+            <End Role="Task" EntitySet="Task" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Alert">
+          <Key>
+            <PropertyRef Name="AlertId" />
+          </Key>
+          <Property Name="AlertId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Headline" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Summary" Type="varchar" Nullable="false" MaxLength="500" />
+          <Property Name="ArtistId" Type="int" Nullable="false" />
+          <Property Name="ActorDisplayName" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="ActorUrl" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="ActorAvatarUrl" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="AlertUrl" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="AlertAddedDate" Type="datetime" Nullable="false" />
+          <Property Name="ClickCount" Type="int" Nullable="false" />
+          <Property Name="AlertDate" Type="datetime" Nullable="false" />
+          <Property Name="Category" Type="int" Nullable="false" />
+          <Property Name="ItemIdentifier" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="ItemDetailIdentifier" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AlertSubscription">
+          <Key>
+            <PropertyRef Name="AlertSubscriptionId" />
+          </Key>
+          <Property Name="AlertSubscriptionId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ArtistId" Type="int" Nullable="false" />
+          <Property Name="Tags" Type="varchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="AlertTag">
+          <Key>
+            <PropertyRef Name="AlertTagId" />
+          </Key>
+          <Property Name="AlertTagId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="AlertId" Type="int" Nullable="false" />
+          <Property Name="Tag" Type="varchar" Nullable="false" MaxLength="36" />
+        </EntityType>
+        <EntityType Name="Artist">
+          <Key>
+            <PropertyRef Name="ArtistId" />
+          </Key>
+          <Property Name="ArtistId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="OldUserId" Type="uniqueidentifier" />
+          <Property Name="UserName" Type="varchar" Nullable="false" MaxLength="256" />
+          <Property Name="Country" Type="varchar" MaxLength="50" />
+          <Property Name="Provence" Type="varchar" MaxLength="65" />
+          <Property Name="City" Type="varchar" MaxLength="50" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+          <Property Name="WebSite" Type="varchar" MaxLength="255" />
+          <Property Name="ProfilePrivacyLevel" Type="tinyint" Nullable="false" />
+          <Property Name="ContactPrivacyLevel" Type="tinyint" Nullable="false" />
+          <Property Name="ProfileViews" Type="bigint" Nullable="false" />
+          <Property Name="ProfileLastViewDate" Type="smalldatetime" />
+          <Property Name="Rating" Type="tinyint" />
+          <Property Name="AvatarURL" Type="varchar" MaxLength="255" />
+          <Property Name="EmailAddress" Type="varchar" MaxLength="256" />
+          <Property Name="FileUploadsInBytes" Type="int" Nullable="false" />
+          <Property Name="FileUploadQuotaInBytes" Type="int" Nullable="false" />
+          <Property Name="LastActivityDate" Type="datetime" Nullable="false" />
+          <Property Name="ShowChatStatus" Type="bit" Nullable="false" />
+          <Property Name="AllowChatSounds" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ArtistBand">
+          <Key>
+            <PropertyRef Name="ArtistBandId" />
+          </Key>
+          <Property Name="ArtistBandId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ArtistId" Type="int" Nullable="false" />
+          <Property Name="BandId" Type="int" />
+          <Property Name="Role" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="JoinedDate" Type="datetime" Nullable="false" />
+          <Property Name="IsActiveMember" Type="bit" Nullable="false" />
+          <Property Name="DeactivateDate" Type="datetime" />
+          <Property Name="AllowEditBand" Type="bit" Nullable="false" />
+          <Property Name="IsMemberAdmin" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ArtistBlock">
+          <Key>
+            <PropertyRef Name="ArtistBlockId" />
+          </Key>
+          <Property Name="ArtistBlockId" Type="int" Nullable="false" />
+          <Property Name="ArtistId" Type="int" Nullable="false" />
+          <Property Name="BlockedArtistId" Type="int" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="ReportAsSpammer" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ArtistCollaborationSpaces">
+          <Key>
+            <PropertyRef Name="ArtistCollaborationSpaceId" />
+          </Key>
+          <Property Name="ArtistCollaborationSpaceId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ArtistId" Type="int" Nullable="false" />
+          <Property Name="CollaborationSpaceId" Type="int" Nullable="false" />
+          <Property Name="IsCreator" Type="bit" Nullable="false" />
+          <Property Name="FirstContributionDate" Type="datetime" Nullable="false" />
+          <Property Name="LastContributionDate" Type="datetime" Nullable="false" />
+          <Property Name="Note" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="ArtistFavorites">
+          <Key>
+            <PropertyRef Name="ArtistFavoriteId" />
+          </Key>
+          <Property Name="ArtistFavoriteId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ArtistId" Type="int" Nullable="false" />
+          <Property Name="Title" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="ItemId" Type="int" />
+          <Property Name="Category" Type="int" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ArtistProfile">
+          <Key>
+            <PropertyRef Name="ArtistId" />
+          </Key>
+          <Property Name="ArtistId" Type="int" Nullable="false" />
+          <Property Name="Bio" Type="varchar(max)" />
+          <Property Name="MusicalInfluences" Type="varchar" MaxLength="1024" />
+          <Property Name="ProfileTemplateName" Type="varchar" MaxLength="50" />
+          <Property Name="FirstName" Type="varchar" MaxLength="50" />
+          <Property Name="LastName" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="ArtistSkill">
+          <Key>
+            <PropertyRef Name="ArtistTalentID" />
+          </Key>
+          <Property Name="ArtistTalentID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ArtistId" Type="int" Nullable="false" />
+          <Property Name="TalentName" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="SkillLevel" Type="int" Nullable="false" />
+          <Property Name="Details" Type="varchar" MaxLength="500" />
+          <Property Name="Styles" Type="varchar" Nullable="false" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="Band">
+          <Key>
+            <PropertyRef Name="BandId" />
+          </Key>
+          <Property Name="BandId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="BandName" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="BandBio" Type="varchar" MaxLength="1000" />
+          <Property Name="BandLogoUrl" Type="varchar" MaxLength="100" />
+          <Property Name="BandBackgroundImageUrl" Type="varchar" MaxLength="100" />
+          <Property Name="BandDisplayPhotoUrl" Type="varchar" MaxLength="100" />
+          <Property Name="CreateDate" Type="datetime" />
+          <Property Name="ModifiedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="BandAudition">
+          <Key>
+            <PropertyRef Name="BandAuditionId" />
+          </Key>
+          <Property Name="BandAuditionId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ProjectOpenPositionId" Type="int" Nullable="false" />
+          <Property Name="ArtistId" Type="int" Nullable="false" />
+          <Property Name="SongId" Type="int" Nullable="false" />
+          <Property Name="VotesRequired" Type="int" Nullable="false" />
+          <Property Name="VotesRecieved" Type="int" Nullable="false" />
+          <Property Name="Status" Type="varchar" Nullable="false" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="BandAuditionComment">
+          <Key>
+            <PropertyRef Name="BandAuditionCommentId" />
+          </Key>
+          <Property Name="BandAuditionCommentId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="BandAuditionId" Type="int" Nullable="false" />
+          <Property Name="ArtistId" Type="int" Nullable="false" />
+          <Property Name="Comment" Type="varchar" Nullable="false" MaxLength="1000" />
+          <Property Name="Rating" Type="int" Nullable="false" />
+          <Property Name="Vote" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="BandGenre">
+          <Key>
+            <PropertyRef Name="BandGenreId" />
+          </Key>
+          <Property Name="BandGenreId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="BandId" Type="int" Nullable="false" />
+          <Property Name="GenreLookUpId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="BannedEmailAddress">
+          <Key>
+            <PropertyRef Name="EmailAddress" />
+          </Key>
+          <Property Name="EmailAddress" Type="varchar" Nullable="false" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="CollaborationSpace">
+          <Key>
+            <PropertyRef Name="CollaborationSpaceId" />
+          </Key>
+          <Property Name="CollaborationSpaceId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="Description" Type="varchar" Nullable="false" MaxLength="5000" />
+          <Property Name="RestrictContributorsToBand" Type="bit" Nullable="false" />
+          <Property Name="BandId" Type="int" />
+          <Property Name="AllowPublicView" Type="bit" Nullable="false" />
+          <Property Name="CopyrightModel" Type="tinyint" Nullable="false" />
+          <Property Name="AllowContributorsToPublish" Type="bit" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+          <Property Name="LastPostDate" Type="datetime" />
+          <Property Name="PublishedDate" Type="datetime" />
+          <Property Name="NumberViews" Type="int" Nullable="false" />
+          <Property Name="NumberComments" Type="int" Nullable="false" />
+          <Property Name="Status" Type="tinyint" Nullable="false" />
+          <Property Name="ConceptId" Type="int" />
+          <Property Name="ConceptMediaType" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="CollaborationSpaceAlerts">
+          <Key>
+            <PropertyRef Name="CollaborationSpaceAlertId" />
+          </Key>
+          <Property Name="CollaborationSpaceAlertId" Type="int" Nullable="false" />
+          <Property Name="CollaborationSpaceId" Type="int" Nullable="false" />
+          <Property Name="ArtistId" Type="int" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CollaborationSpaceComment">
+          <Key>
+            <PropertyRef Name="CollaborationSpaceCommentId" />
+          </Key>
+          <Property Name="CollaborationSpaceCommentId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CollaborationSpaceID" Type="int" Nullable="false" />
+          <Property Name="ArtistId" Type="int" Nullable="false" />
+          <Property Name="CollabortationSpaceFileId" Type="int" />
+          <Property Name="CommentTitle" Type="varchar" MaxLength="50" />
+          <Property Name="CommentBody" Type="varchar" MaxLength="5000" />
+          <Property Name="ThreadId" Type="int" Nullable="false" />
+          <Property Name="ParentId" Type="int" Nullable="false" />
+          <Property Name="NestLevel" Type="int" Nullable="false" />
+          <Property Name="Path" Type="varchar" Nullable="false" MaxLength="800" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CollaborationSpaceFile">
+          <Key>
+            <PropertyRef Name="CollaborationSpaceFileId" />
+          </Key>
+          <Property Name="CollaborationSpaceFileId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CollaborationSpaceId" Type="int" Nullable="false" />
+          <Property Name="MediaId" Type="int" Nullable="false" />
+          <Property Name="Description" Type="varchar" MaxLength="1024" />
+          <Property Name="LikeCount" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CollaborationSpaceGenre">
+          <Key>
+            <PropertyRef Name="CollaborationSpaceGenreId" />
+          </Key>
+          <Property Name="CollaborationSpaceGenreId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CollaborationSpaceId" Type="int" Nullable="false" />
+          <Property Name="GenreLookUpId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CollaborationSpaceInvite">
+          <Key>
+            <PropertyRef Name="CollaborationSpaceInviteId" />
+          </Key>
+          <Property Name="CollaborationSpaceInviteId" Type="int" Nullable="false" />
+          <Property Name="CollaborationSpaceId" Type="int" Nullable="false" />
+          <Property Name="EmailAddress" Type="varchar" Nullable="false" MaxLength="150" />
+          <Property Name="ArtistId" Type="int" Nullable="false" />
+          <Property Name="BandId" Type="int" />
+          <Property Name="LinkIdentifier" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CollaborationSpaceMedia">
+          <Key>
+            <PropertyRef Name="CollaborationSpaceMediaId" />
+          </Key>
+          <Property Name="CollaborationSpaceMediaId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CollaborationSpaceId" Type="int" Nullable="false" />
+          <Property Name="MediaId" Type="int" Nullable="false" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+          <Property Name="Archive" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="EmailOptOut">
+          <Key>
+            <PropertyRef Name="EmailAddress" />
+          </Key>
+          <Property Name="EmailAddress" Type="varchar" Nullable="false" MaxLength="150" />
+          <Property Name="DateOfOptOut" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="EmailVerification">
+          <Key>
+            <PropertyRef Name="EmailVerificationId" />
+          </Key>
+          <Property Name="EmailVerificationId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ArtistId" Type="int" Nullable="false" />
+          <Property Name="emailaddress" Type="varchar" Nullable="false" MaxLength="150" />
+          <Property Name="VerificationCode" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="NotificationSendDate" Type="datetime" Nullable="false" />
+          <Property Name="VerificationDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="GenreLookUp">
+          <Key>
+            <PropertyRef Name="GenreLookUpId" />
+          </Key>
+          <Property Name="GenreLookUpId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="GenreName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Culture" Type="nvarchar" MaxLength="4" />
+        </EntityType>
+        <EntityType Name="Media">
+          <Key>
+            <PropertyRef Name="MediaId" />
+          </Key>
+          <Property Name="MediaId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ArtistId" Type="int" />
+          <Property Name="FriendlyFileName" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="FileExtention" Type="varchar" Nullable="false" MaxLength="5" />
+          <Property Name="LocalFilePath" Type="varchar" MaxLength="255" />
+          <Property Name="WebURL" Type="varchar" MaxLength="255" />
+          <Property Name="IsCloudBlob" Type="bit" Nullable="false" />
+          <Property Name="AzureStorageContainer" Type="varchar" MaxLength="50" />
+          <Property Name="AzureBlobReferenceName" Type="varchar" MaxLength="50" />
+          <Property Name="MediaType" Type="tinyint" Nullable="false" />
+          <Property Name="FileSizeInBytes" Type="int" Nullable="false" />
+          <Property Name="BitRateInKbps" Type="int" Nullable="false" />
+          <Property Name="AllowDownload" Type="int" Nullable="false" />
+          <Property Name="DownloadCount" Type="int" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="IsFileDeleted" Type="bit" Nullable="false" />
+          <Property Name="RIPEMD160Hash" Type="varchar" MaxLength="40" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Message">
+          <Key>
+            <PropertyRef Name="MessageId" />
+          </Key>
+          <Property Name="MessageId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ArtistID" Type="int" Nullable="false" />
+          <Property Name="Subject" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Importance" Type="smallint" Nullable="false" />
+          <Property Name="DateSent" Type="smalldatetime" Nullable="false" />
+          <Property Name="MessageBody" Type="varchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MessageRecipient">
+          <Key>
+            <PropertyRef Name="MessageRecipientId" />
+          </Key>
+          <Property Name="MessageRecipientId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="MessageId" Type="int" Nullable="false" />
+          <Property Name="ArtistId" Type="int" Nullable="false" />
+          <Property Name="MessageRead" Type="bit" Nullable="false" />
+          <Property Name="MessageStatus" Type="smallint" Nullable="false" />
+          <Property Name="Folder" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="MessageSpam">
+          <Key>
+            <PropertyRef Name="MessageSpamID" />
+          </Key>
+          <Property Name="MessageSpamID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="MessageID" Type="int" Nullable="false" />
+          <Property Name="MessageBodyHash" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="OpenPosition">
+          <Key>
+            <PropertyRef Name="OpenPositionId" />
+          </Key>
+          <Property Name="OpenPositionId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CollaborationSpaceId" Type="int" />
+          <Property Name="Talent" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="SkillLevel" Type="int" Nullable="false" />
+          <Property Name="Details" Type="varchar" MaxLength="1000" />
+          <Property Name="DatePosted" Type="datetime" Nullable="false" />
+          <Property Name="DateModified" Type="datetime" Nullable="false" />
+          <Property Name="Status" Type="int" Nullable="false" />
+          <Property Name="BandId" Type="int" />
+          <Property Name="LocalOnly" Type="bit" Nullable="false" />
+          <Property Name="LocalCity" Type="varchar" MaxLength="50" />
+          <Property Name="LocalCountry" Type="varchar" MaxLength="50" />
+          <Property Name="LocalProvence" Type="varchar" MaxLength="50" />
+          <Property Name="AuditionsSubmitted" Type="int" Nullable="false" />
+          <Property Name="ApprovalMode" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PlayList">
+          <Key>
+            <PropertyRef Name="PlaylistId" />
+          </Key>
+          <Property Name="PlaylistId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="varchar" MaxLength="50" />
+          <Property Name="ArtistId" Type="int" />
+          <Property Name="BandId" Type="int" />
+          <Property Name="IsSitePlaylist" Type="bit" Nullable="false" />
+          <Property Name="IsDefaultPlaylist" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PlaylistItem">
+          <Key>
+            <PropertyRef Name="PlaylistItemId" />
+          </Key>
+          <Property Name="PlaylistItemId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="PlayListId" Type="int" Nullable="false" />
+          <Property Name="SongId" Type="int" Nullable="false" />
+          <Property Name="DisplayOrder" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Song">
+          <Key>
+            <PropertyRef Name="SongId" />
+          </Key>
+          <Property Name="SongId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="MediaId" Type="int" Nullable="false" />
+          <Property Name="SongTitle" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="ReleaseYear" Type="int" />
+          <Property Name="ArtworkURL" Type="varchar" MaxLength="255" />
+          <Property Name="Lyrics" Type="varchar" MaxLength="1024" />
+          <Property Name="SongDescription" Type="varchar" MaxLength="1024" />
+          <Property Name="ActionParameter" Type="varchar" MaxLength="50" />
+          <Property Name="Action" Type="varchar" MaxLength="50" />
+          <Property Name="Controller" Type="varchar" MaxLength="50" />
+          <Property Name="GenreId" Type="int" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="ShowInLibrary" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SongComment">
+          <Key>
+            <PropertyRef Name="SongCommentId" />
+          </Key>
+          <Property Name="SongCommentId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="SongId" Type="int" />
+          <Property Name="Comment" Type="varchar" MaxLength="1000" />
+          <Property Name="Rating" Type="int" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" />
+          <Property Name="IsApproved" Type="bit" Nullable="false" />
+          <Property Name="IsAnonymous" Type="bit" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="50" />
+          <Property Name="EmailAddress" Type="varchar" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="Task">
+          <Key>
+            <PropertyRef Name="TaskID" />
+          </Key>
+          <Property Name="TaskID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ArtistId" Type="int" Nullable="false" />
+          <Property Name="Title" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="Details" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="DueDate" Type="datetime" />
+          <Property Name="State" Type="int" />
+          <Property Name="LinkType" Type="int" />
+          <Property Name="LinkTypeID" Type="int" />
+          <Property Name="CreateDate" Type="smalldatetime" Nullable="false" />
+          <Property Name="ModifiedDate" Type="smalldatetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="webpages_Membership">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="int" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" />
+          <Property Name="ConfirmationToken" Type="nvarchar" MaxLength="128" />
+          <Property Name="IsConfirmed" Type="bit" />
+          <Property Name="LastPasswordFailureDate" Type="datetime" />
+          <Property Name="PasswordFailuresSinceLastSuccess" Type="int" Nullable="false" />
+          <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="PasswordChangedDate" Type="datetime" />
+          <Property Name="PasswordSalt" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="PasswordVerificationToken" Type="nvarchar" MaxLength="128" />
+          <Property Name="PasswordVerificationTokenExpirationDate" Type="datetime" />
+        </EntityType>
+        <Association Name="FK_AlertSubscription_Artist">
+          <End Role="Artist" Type="MobModel.Store.Artist" Multiplicity="1" />
+          <End Role="AlertSubscription" Type="MobModel.Store.AlertSubscription" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Artist">
+              <PropertyRef Name="ArtistId" />
+            </Principal>
+            <Dependent Role="AlertSubscription">
+              <PropertyRef Name="ArtistId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AlertTag_Alert">
+          <End Role="Alert" Type="MobModel.Store.Alert" Multiplicity="1" />
+          <End Role="AlertTag" Type="MobModel.Store.AlertTag" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Alert">
+              <PropertyRef Name="AlertId" />
+            </Principal>
+            <Dependent Role="AlertTag">
+              <PropertyRef Name="AlertId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ArtistBand_ToArtist">
+          <End Role="Artist" Type="MobModel.Store.Artist" Multiplicity="1" />
+          <End Role="ArtistBand" Type="MobModel.Store.ArtistBand" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Artist">
+              <PropertyRef Name="ArtistId" />
+            </Principal>
+            <Dependent Role="ArtistBand">
+              <PropertyRef Name="ArtistId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ArtistBand_ToBand">
+          <End Role="Band" Type="MobModel.Store.Band" Multiplicity="0..1" />
+          <End Role="ArtistBand" Type="MobModel.Store.ArtistBand" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Band">
+              <PropertyRef Name="BandId" />
+            </Principal>
+            <Dependent Role="ArtistBand">
+              <PropertyRef Name="BandId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ArtistBlock_Artist">
+          <End Role="Artist" Type="MobModel.Store.Artist" Multiplicity="1" />
+          <End Role="ArtistBlock" Type="MobModel.Store.ArtistBlock" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Artist">
+              <PropertyRef Name="ArtistId" />
+            </Principal>
+            <Dependent Role="ArtistBlock">
+              <PropertyRef Name="ArtistId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ArtistCollaborationSpaces_ToTable">
+          <End Role="Artist" Type="MobModel.Store.Artist" Multiplicity="1" />
+          <End Role="ArtistCollaborationSpaces" Type="MobModel.Store.ArtistCollaborationSpaces" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Artist">
+              <PropertyRef Name="ArtistId" />
+            </Principal>
+            <Dependent Role="ArtistCollaborationSpaces">
+              <PropertyRef Name="ArtistId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ArtistCollaborationSpaces_ToTable_1">
+          <End Role="CollaborationSpace" Type="MobModel.Store.CollaborationSpace" Multiplicity="1" />
+          <End Role="ArtistCollaborationSpaces" Type="MobModel.Store.ArtistCollaborationSpaces" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CollaborationSpace">
+              <PropertyRef Name="CollaborationSpaceId" />
+            </Principal>
+            <Dependent Role="ArtistCollaborationSpaces">
+              <PropertyRef Name="CollaborationSpaceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ArtistFavorites_Artist">
+          <End Role="Artist" Type="MobModel.Store.Artist" Multiplicity="1" />
+          <End Role="ArtistFavorites" Type="MobModel.Store.ArtistFavorites" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Artist">
+              <PropertyRef Name="ArtistId" />
+            </Principal>
+            <Dependent Role="ArtistFavorites">
+              <PropertyRef Name="ArtistId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ArtistProfile_Artist">
+          <End Role="Artist" Type="MobModel.Store.Artist" Multiplicity="1" />
+          <End Role="ArtistProfile" Type="MobModel.Store.ArtistProfile" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Artist">
+              <PropertyRef Name="ArtistId" />
+            </Principal>
+            <Dependent Role="ArtistProfile">
+              <PropertyRef Name="ArtistId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ArtistSkill_Artist">
+          <End Role="Artist" Type="MobModel.Store.Artist" Multiplicity="1" />
+          <End Role="ArtistSkill" Type="MobModel.Store.ArtistSkill" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Artist">
+              <PropertyRef Name="ArtistId" />
+            </Principal>
+            <Dependent Role="ArtistSkill">
+              <PropertyRef Name="ArtistId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BandAudition_Artist">
+          <End Role="Artist" Type="MobModel.Store.Artist" Multiplicity="1" />
+          <End Role="BandAudition" Type="MobModel.Store.BandAudition" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Artist">
+              <PropertyRef Name="ArtistId" />
+            </Principal>
+            <Dependent Role="BandAudition">
+              <PropertyRef Name="ArtistId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BandAudition_Song">
+          <End Role="Song" Type="MobModel.Store.Song" Multiplicity="1" />
+          <End Role="BandAudition" Type="MobModel.Store.BandAudition" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Song">
+              <PropertyRef Name="SongId" />
+            </Principal>
+            <Dependent Role="BandAudition">
+              <PropertyRef Name="SongId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BandAuditionComment_Artist">
+          <End Role="Artist" Type="MobModel.Store.Artist" Multiplicity="1" />
+          <End Role="BandAuditionComment" Type="MobModel.Store.BandAuditionComment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Artist">
+              <PropertyRef Name="ArtistId" />
+            </Principal>
+            <Dependent Role="BandAuditionComment">
+              <PropertyRef Name="ArtistId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BandAuditionComment_BandAudition">
+          <End Role="BandAudition" Type="MobModel.Store.BandAudition" Multiplicity="1" />
+          <End Role="BandAuditionComment" Type="MobModel.Store.BandAuditionComment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BandAudition">
+              <PropertyRef Name="BandAuditionId" />
+            </Principal>
+            <Dependent Role="BandAuditionComment">
+              <PropertyRef Name="BandAuditionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BandGenre_Band">
+          <End Role="Band" Type="MobModel.Store.Band" Multiplicity="1" />
+          <End Role="BandGenre" Type="MobModel.Store.BandGenre" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Band">
+              <PropertyRef Name="BandId" />
+            </Principal>
+            <Dependent Role="BandGenre">
+              <PropertyRef Name="BandId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BandGenre_GenreLookUp">
+          <End Role="GenreLookUp" Type="MobModel.Store.GenreLookUp" Multiplicity="1" />
+          <End Role="BandGenre" Type="MobModel.Store.BandGenre" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GenreLookUp">
+              <PropertyRef Name="GenreLookUpId" />
+            </Principal>
+            <Dependent Role="BandGenre">
+              <PropertyRef Name="GenreLookUpId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CollaborationSpace_ToTable">
+          <End Role="Band" Type="MobModel.Store.Band" Multiplicity="0..1" />
+          <End Role="CollaborationSpace" Type="MobModel.Store.CollaborationSpace" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Band">
+              <PropertyRef Name="BandId" />
+            </Principal>
+            <Dependent Role="CollaborationSpace">
+              <PropertyRef Name="BandId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CollaborationSpaceAlerts_Artist">
+          <End Role="Artist" Type="MobModel.Store.Artist" Multiplicity="1" />
+          <End Role="CollaborationSpaceAlerts" Type="MobModel.Store.CollaborationSpaceAlerts" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Artist">
+              <PropertyRef Name="ArtistId" />
+            </Principal>
+            <Dependent Role="CollaborationSpaceAlerts">
+              <PropertyRef Name="ArtistId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CollaborationSpaceAlerts_CollaborationSpace">
+          <End Role="CollaborationSpace" Type="MobModel.Store.CollaborationSpace" Multiplicity="1" />
+          <End Role="CollaborationSpaceAlerts" Type="MobModel.Store.CollaborationSpaceAlerts" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CollaborationSpace">
+              <PropertyRef Name="CollaborationSpaceId" />
+            </Principal>
+            <Dependent Role="CollaborationSpaceAlerts">
+              <PropertyRef Name="CollaborationSpaceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CollaborationSpaceComment_Artist">
+          <End Role="Artist" Type="MobModel.Store.Artist" Multiplicity="1" />
+          <End Role="CollaborationSpaceComment" Type="MobModel.Store.CollaborationSpaceComment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Artist">
+              <PropertyRef Name="ArtistId" />
+            </Principal>
+            <Dependent Role="CollaborationSpaceComment">
+              <PropertyRef Name="ArtistId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CollaborationSpaceComment_CollaborationSpace">
+          <End Role="CollaborationSpace" Type="MobModel.Store.CollaborationSpace" Multiplicity="1" />
+          <End Role="CollaborationSpaceComment" Type="MobModel.Store.CollaborationSpaceComment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CollaborationSpace">
+              <PropertyRef Name="CollaborationSpaceId" />
+            </Principal>
+            <Dependent Role="CollaborationSpaceComment">
+              <PropertyRef Name="CollaborationSpaceID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CollaborationSpaceComment_ToTable">
+          <End Role="CollaborationSpaceFile" Type="MobModel.Store.CollaborationSpaceFile" Multiplicity="0..1" />
+          <End Role="CollaborationSpaceComment" Type="MobModel.Store.CollaborationSpaceComment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CollaborationSpaceFile">
+              <PropertyRef Name="CollaborationSpaceFileId" />
+            </Principal>
+            <Dependent Role="CollaborationSpaceComment">
+              <PropertyRef Name="CollabortationSpaceFileId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CollaborationSpaceFile_CollaborationSpace">
+          <End Role="CollaborationSpace" Type="MobModel.Store.CollaborationSpace" Multiplicity="1" />
+          <End Role="CollaborationSpaceFile" Type="MobModel.Store.CollaborationSpaceFile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CollaborationSpace">
+              <PropertyRef Name="CollaborationSpaceId" />
+            </Principal>
+            <Dependent Role="CollaborationSpaceFile">
+              <PropertyRef Name="CollaborationSpaceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CollaborationSpaceFile_Media">
+          <End Role="Media" Type="MobModel.Store.Media" Multiplicity="1" />
+          <End Role="CollaborationSpaceFile" Type="MobModel.Store.CollaborationSpaceFile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Media">
+              <PropertyRef Name="MediaId" />
+            </Principal>
+            <Dependent Role="CollaborationSpaceFile">
+              <PropertyRef Name="MediaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CollaborationSpaceGenre_CollaborationSpace">
+          <End Role="CollaborationSpace" Type="MobModel.Store.CollaborationSpace" Multiplicity="1" />
+          <End Role="CollaborationSpaceGenre" Type="MobModel.Store.CollaborationSpaceGenre" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CollaborationSpace">
+              <PropertyRef Name="CollaborationSpaceId" />
+            </Principal>
+            <Dependent Role="CollaborationSpaceGenre">
+              <PropertyRef Name="CollaborationSpaceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CollaborationSpaceGenre_GenreLookUp">
+          <End Role="GenreLookUp" Type="MobModel.Store.GenreLookUp" Multiplicity="1" />
+          <End Role="CollaborationSpaceGenre" Type="MobModel.Store.CollaborationSpaceGenre" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GenreLookUp">
+              <PropertyRef Name="GenreLookUpId" />
+            </Principal>
+            <Dependent Role="CollaborationSpaceGenre">
+              <PropertyRef Name="GenreLookUpId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CollaborationSpaceInvite_Artist">
+          <End Role="Artist" Type="MobModel.Store.Artist" Multiplicity="1" />
+          <End Role="CollaborationSpaceInvite" Type="MobModel.Store.CollaborationSpaceInvite" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Artist">
+              <PropertyRef Name="ArtistId" />
+            </Principal>
+            <Dependent Role="CollaborationSpaceInvite">
+              <PropertyRef Name="ArtistId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CollaborationSpaceInvite_CollaborationSpace">
+          <End Role="CollaborationSpace" Type="MobModel.Store.CollaborationSpace" Multiplicity="1" />
+          <End Role="CollaborationSpaceInvite" Type="MobModel.Store.CollaborationSpaceInvite" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CollaborationSpace">
+              <PropertyRef Name="CollaborationSpaceId" />
+            </Principal>
+            <Dependent Role="CollaborationSpaceInvite">
+              <PropertyRef Name="CollaborationSpaceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CollaborationSpaceMedia_CollaborationSpace">
+          <End Role="CollaborationSpace" Type="MobModel.Store.CollaborationSpace" Multiplicity="1" />
+          <End Role="CollaborationSpaceMedia" Type="MobModel.Store.CollaborationSpaceMedia" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CollaborationSpace">
+              <PropertyRef Name="CollaborationSpaceId" />
+            </Principal>
+            <Dependent Role="CollaborationSpaceMedia">
+              <PropertyRef Name="CollaborationSpaceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CollaborationSpaceMedia_ToTable_1">
+          <End Role="Media" Type="MobModel.Store.Media" Multiplicity="1" />
+          <End Role="CollaborationSpaceMedia" Type="MobModel.Store.CollaborationSpaceMedia" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Media">
+              <PropertyRef Name="MediaId" />
+            </Principal>
+            <Dependent Role="CollaborationSpaceMedia">
+              <PropertyRef Name="MediaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Media_ToTable">
+          <End Role="Artist" Type="MobModel.Store.Artist" Multiplicity="0..1" />
+          <End Role="Media" Type="MobModel.Store.Media" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Artist">
+              <PropertyRef Name="ArtistId" />
+            </Principal>
+            <Dependent Role="Media">
+              <PropertyRef Name="ArtistId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Message_Artist">
+          <End Role="Artist" Type="MobModel.Store.Artist" Multiplicity="1" />
+          <End Role="Message" Type="MobModel.Store.Message" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Artist">
+              <PropertyRef Name="ArtistId" />
+            </Principal>
+            <Dependent Role="Message">
+              <PropertyRef Name="ArtistID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MessageRecipient_Artist">
+          <End Role="Artist" Type="MobModel.Store.Artist" Multiplicity="1" />
+          <End Role="MessageRecipient" Type="MobModel.Store.MessageRecipient" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Artist">
+              <PropertyRef Name="ArtistId" />
+            </Principal>
+            <Dependent Role="MessageRecipient">
+              <PropertyRef Name="ArtistId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MessageRecipient_Message">
+          <End Role="Message" Type="MobModel.Store.Message" Multiplicity="1" />
+          <End Role="MessageRecipient" Type="MobModel.Store.MessageRecipient" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Message">
+              <PropertyRef Name="MessageId" />
+            </Principal>
+            <Dependent Role="MessageRecipient">
+              <PropertyRef Name="MessageId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Playlist_Artist">
+          <End Role="Artist" Type="MobModel.Store.Artist" Multiplicity="0..1" />
+          <End Role="PlayList" Type="MobModel.Store.PlayList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Artist">
+              <PropertyRef Name="ArtistId" />
+            </Principal>
+            <Dependent Role="PlayList">
+              <PropertyRef Name="ArtistId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PlayList_Band">
+          <End Role="Band" Type="MobModel.Store.Band" Multiplicity="0..1" />
+          <End Role="PlayList" Type="MobModel.Store.PlayList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Band">
+              <PropertyRef Name="BandId" />
+            </Principal>
+            <Dependent Role="PlayList">
+              <PropertyRef Name="BandId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PlaylistItem_PayList">
+          <End Role="PlayList" Type="MobModel.Store.PlayList" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="PlaylistItem" Type="MobModel.Store.PlaylistItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PlayList">
+              <PropertyRef Name="PlaylistId" />
+            </Principal>
+            <Dependent Role="PlaylistItem">
+              <PropertyRef Name="PlayListId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PlaylistItem_Song">
+          <End Role="Song" Type="MobModel.Store.Song" Multiplicity="1" />
+          <End Role="PlaylistItem" Type="MobModel.Store.PlaylistItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Song">
+              <PropertyRef Name="SongId" />
+            </Principal>
+            <Dependent Role="PlaylistItem">
+              <PropertyRef Name="SongId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Song_Media">
+          <End Role="Media" Type="MobModel.Store.Media" Multiplicity="1" />
+          <End Role="Song" Type="MobModel.Store.Song" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Media">
+              <PropertyRef Name="MediaId" />
+            </Principal>
+            <Dependent Role="Song">
+              <PropertyRef Name="MediaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SongComment_Song">
+          <End Role="Song" Type="MobModel.Store.Song" Multiplicity="0..1" />
+          <End Role="SongComment" Type="MobModel.Store.SongComment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Song">
+              <PropertyRef Name="SongId" />
+            </Principal>
+            <Dependent Role="SongComment">
+              <PropertyRef Name="SongId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Task_Artist">
+          <End Role="Artist" Type="MobModel.Store.Artist" Multiplicity="1" />
+          <End Role="Task" Type="MobModel.Store.Task" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Artist">
+              <PropertyRef Name="ArtistId" />
+            </Principal>
+            <Dependent Role="Task">
+              <PropertyRef Name="ArtistId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="GetUserAlerts" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ArtistId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="u_DeleteArtist" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ArtistId" Type="int" Mode="In" />
+        </Function>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MobModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="MobEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="Alerts" EntityType="MobModel.Alert" />
+          <EntitySet Name="AlertSubscriptions" EntityType="MobModel.AlertSubscription" />
+          <EntitySet Name="AlertTags" EntityType="MobModel.AlertTag" />
+          <EntitySet Name="Artists" EntityType="MobModel.Artist" />
+          <EntitySet Name="ArtistBands" EntityType="MobModel.ArtistBand" />
+          <EntitySet Name="ArtistBlocks" EntityType="MobModel.ArtistBlock" />
+          <EntitySet Name="ArtistCollaborationSpaces" EntityType="MobModel.ArtistCollaborationSpace" />
+          <EntitySet Name="ArtistFavorites" EntityType="MobModel.ArtistFavorite" />
+          <EntitySet Name="ArtistProfiles" EntityType="MobModel.ArtistProfile" />
+          <EntitySet Name="ArtistSkills" EntityType="MobModel.ArtistSkill" />
+          <EntitySet Name="Bands" EntityType="MobModel.Band" />
+          <EntitySet Name="BandAuditions" EntityType="MobModel.BandAudition" />
+          <EntitySet Name="BandAuditionComments" EntityType="MobModel.BandAuditionComment" />
+          <EntitySet Name="BandGenres" EntityType="MobModel.BandGenre" />
+          <EntitySet Name="BannedEmailAddresses" EntityType="MobModel.BannedEmailAddress" />
+          <EntitySet Name="CollaborationSpaces" EntityType="MobModel.CollaborationSpace" />
+          <EntitySet Name="CollaborationSpaceAlerts" EntityType="MobModel.CollaborationSpaceAlert" />
+          <EntitySet Name="CollaborationSpaceComments" EntityType="MobModel.CollaborationSpaceComment" />
+          <EntitySet Name="CollaborationSpaceFiles" EntityType="MobModel.CollaborationSpaceFile" />
+          <EntitySet Name="CollaborationSpaceGenres" EntityType="MobModel.CollaborationSpaceGenre" />
+          <EntitySet Name="CollaborationSpaceInvites" EntityType="MobModel.CollaborationSpaceInvite" />
+          <EntitySet Name="CollaborationSpaceMedias" EntityType="MobModel.CollaborationSpaceMedia" />
+          <EntitySet Name="EmailOptOuts" EntityType="MobModel.EmailOptOut" />
+          <EntitySet Name="EmailVerifications" EntityType="MobModel.EmailVerification" />
+          <EntitySet Name="GenreLookUps" EntityType="MobModel.GenreLookUp" />
+          <EntitySet Name="Media" EntityType="MobModel.Medium" />
+          <EntitySet Name="Messages" EntityType="MobModel.Message" />
+          <EntitySet Name="MessageRecipients" EntityType="MobModel.MessageRecipient" />
+          <EntitySet Name="MessageSpams" EntityType="MobModel.MessageSpam" />
+          <EntitySet Name="OpenPositions" EntityType="MobModel.OpenPosition" />
+          <EntitySet Name="PlayLists" EntityType="MobModel.PlayList" />
+          <EntitySet Name="PlaylistItems" EntityType="MobModel.PlaylistItem" />
+          <EntitySet Name="Songs" EntityType="MobModel.Song" />
+          <EntitySet Name="SongComments" EntityType="MobModel.SongComment" />
+          <EntitySet Name="Tasks" EntityType="MobModel.Task" />
+          <AssociationSet Name="FK_AlertTag_Alert" Association="MobModel.FK_AlertTag_Alert">
+            <End Role="Alert" EntitySet="Alerts" />
+            <End Role="AlertTag" EntitySet="AlertTags" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AlertSubscription_Artist" Association="MobModel.FK_AlertSubscription_Artist">
+            <End Role="Artist" EntitySet="Artists" />
+            <End Role="AlertSubscription" EntitySet="AlertSubscriptions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ArtistBand_ToArtist" Association="MobModel.FK_ArtistBand_ToArtist">
+            <End Role="Artist" EntitySet="Artists" />
+            <End Role="ArtistBand" EntitySet="ArtistBands" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ArtistBlock_Artist" Association="MobModel.FK_ArtistBlock_Artist">
+            <End Role="Artist" EntitySet="Artists" />
+            <End Role="ArtistBlock" EntitySet="ArtistBlocks" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ArtistCollaborationSpaces_ToTable" Association="MobModel.FK_ArtistCollaborationSpaces_ToTable">
+            <End Role="Artist" EntitySet="Artists" />
+            <End Role="ArtistCollaborationSpaces" EntitySet="ArtistCollaborationSpaces" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ArtistFavorites_Artist" Association="MobModel.FK_ArtistFavorites_Artist">
+            <End Role="Artist" EntitySet="Artists" />
+            <End Role="ArtistFavorites" EntitySet="ArtistFavorites" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ArtistSkill_Artist" Association="MobModel.FK_ArtistSkill_Artist">
+            <End Role="Artist" EntitySet="Artists" />
+            <End Role="ArtistSkill" EntitySet="ArtistSkills" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BandAudition_Artist" Association="MobModel.FK_BandAudition_Artist">
+            <End Role="Artist" EntitySet="Artists" />
+            <End Role="BandAudition" EntitySet="BandAuditions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BandAuditionComment_Artist" Association="MobModel.FK_BandAuditionComment_Artist">
+            <End Role="Artist" EntitySet="Artists" />
+            <End Role="BandAuditionComment" EntitySet="BandAuditionComments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CollaborationSpaceAlerts_Artist" Association="MobModel.FK_CollaborationSpaceAlerts_Artist">
+            <End Role="Artist" EntitySet="Artists" />
+            <End Role="CollaborationSpaceAlerts" EntitySet="CollaborationSpaceAlerts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CollaborationSpaceComment_Artist" Association="MobModel.FK_CollaborationSpaceComment_Artist">
+            <End Role="Artist" EntitySet="Artists" />
+            <End Role="CollaborationSpaceComment" EntitySet="CollaborationSpaceComments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CollaborationSpaceInvite_Artist" Association="MobModel.FK_CollaborationSpaceInvite_Artist">
+            <End Role="Artist" EntitySet="Artists" />
+            <End Role="CollaborationSpaceInvite" EntitySet="CollaborationSpaceInvites" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Media_ToTable" Association="MobModel.FK_Media_ToTable">
+            <End Role="Artist" EntitySet="Artists" />
+            <End Role="Media" EntitySet="Media" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Playlist_Artist" Association="MobModel.FK_Playlist_Artist">
+            <End Role="Artist" EntitySet="Artists" />
+            <End Role="PlayList" EntitySet="PlayLists" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Task_Artist" Association="MobModel.FK_Task_Artist">
+            <End Role="Artist" EntitySet="Artists" />
+            <End Role="Task" EntitySet="Tasks" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ArtistBand_ToBand" Association="MobModel.FK_ArtistBand_ToBand">
+            <End Role="Band" EntitySet="Bands" />
+            <End Role="ArtistBand" EntitySet="ArtistBands" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ArtistCollaborationSpaces_ToTable_1" Association="MobModel.FK_ArtistCollaborationSpaces_ToTable_1">
+            <End Role="CollaborationSpace" EntitySet="CollaborationSpaces" />
+            <End Role="ArtistCollaborationSpaces" EntitySet="ArtistCollaborationSpaces" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BandGenre_Band" Association="MobModel.FK_BandGenre_Band">
+            <End Role="Band" EntitySet="Bands" />
+            <End Role="BandGenre" EntitySet="BandGenres" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CollaborationSpace_ToTable" Association="MobModel.FK_CollaborationSpace_ToTable">
+            <End Role="Band" EntitySet="Bands" />
+            <End Role="CollaborationSpace" EntitySet="CollaborationSpaces" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PlayList_Band" Association="MobModel.FK_PlayList_Band">
+            <End Role="Band" EntitySet="Bands" />
+            <End Role="PlayList" EntitySet="PlayLists" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BandAudition_Song" Association="MobModel.FK_BandAudition_Song">
+            <End Role="Song" EntitySet="Songs" />
+            <End Role="BandAudition" EntitySet="BandAuditions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BandAuditionComment_BandAudition" Association="MobModel.FK_BandAuditionComment_BandAudition">
+            <End Role="BandAudition" EntitySet="BandAuditions" />
+            <End Role="BandAuditionComment" EntitySet="BandAuditionComments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BandGenre_GenreLookUp" Association="MobModel.FK_BandGenre_GenreLookUp">
+            <End Role="GenreLookUp" EntitySet="GenreLookUps" />
+            <End Role="BandGenre" EntitySet="BandGenres" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CollaborationSpaceAlerts_CollaborationSpace" Association="MobModel.FK_CollaborationSpaceAlerts_CollaborationSpace">
+            <End Role="CollaborationSpace" EntitySet="CollaborationSpaces" />
+            <End Role="CollaborationSpaceAlerts" EntitySet="CollaborationSpaceAlerts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CollaborationSpaceComment_CollaborationSpace" Association="MobModel.FK_CollaborationSpaceComment_CollaborationSpace">
+            <End Role="CollaborationSpace" EntitySet="CollaborationSpaces" />
+            <End Role="CollaborationSpaceComment" EntitySet="CollaborationSpaceComments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CollaborationSpaceFile_CollaborationSpace" Association="MobModel.FK_CollaborationSpaceFile_CollaborationSpace">
+            <End Role="CollaborationSpace" EntitySet="CollaborationSpaces" />
+            <End Role="CollaborationSpaceFile" EntitySet="CollaborationSpaceFiles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CollaborationSpaceGenre_CollaborationSpace" Association="MobModel.FK_CollaborationSpaceGenre_CollaborationSpace">
+            <End Role="CollaborationSpace" EntitySet="CollaborationSpaces" />
+            <End Role="CollaborationSpaceGenre" EntitySet="CollaborationSpaceGenres" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CollaborationSpaceInvite_CollaborationSpace" Association="MobModel.FK_CollaborationSpaceInvite_CollaborationSpace">
+            <End Role="CollaborationSpace" EntitySet="CollaborationSpaces" />
+            <End Role="CollaborationSpaceInvite" EntitySet="CollaborationSpaceInvites" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CollaborationSpaceMedia_CollaborationSpace" Association="MobModel.FK_CollaborationSpaceMedia_CollaborationSpace">
+            <End Role="CollaborationSpace" EntitySet="CollaborationSpaces" />
+            <End Role="CollaborationSpaceMedia" EntitySet="CollaborationSpaceMedias" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CollaborationSpaceComment_ToTable" Association="MobModel.FK_CollaborationSpaceComment_ToTable">
+            <End Role="CollaborationSpaceFile" EntitySet="CollaborationSpaceFiles" />
+            <End Role="CollaborationSpaceComment" EntitySet="CollaborationSpaceComments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CollaborationSpaceFile_Media" Association="MobModel.FK_CollaborationSpaceFile_Media">
+            <End Role="Media" EntitySet="Media" />
+            <End Role="CollaborationSpaceFile" EntitySet="CollaborationSpaceFiles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CollaborationSpaceGenre_GenreLookUp" Association="MobModel.FK_CollaborationSpaceGenre_GenreLookUp">
+            <End Role="GenreLookUp" EntitySet="GenreLookUps" />
+            <End Role="CollaborationSpaceGenre" EntitySet="CollaborationSpaceGenres" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CollaborationSpaceMedia_ToTable_1" Association="MobModel.FK_CollaborationSpaceMedia_ToTable_1">
+            <End Role="Media" EntitySet="Media" />
+            <End Role="CollaborationSpaceMedia" EntitySet="CollaborationSpaceMedias" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Song_Media" Association="MobModel.FK_Song_Media">
+            <End Role="Media" EntitySet="Media" />
+            <End Role="Song" EntitySet="Songs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MessageRecipient_Message" Association="MobModel.FK_MessageRecipient_Message">
+            <End Role="Message" EntitySet="Messages" />
+            <End Role="MessageRecipient" EntitySet="MessageRecipients" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PlaylistItem_PayList" Association="MobModel.FK_PlaylistItem_PayList">
+            <End Role="PlayList" EntitySet="PlayLists" />
+            <End Role="PlaylistItem" EntitySet="PlaylistItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PlaylistItem_Song" Association="MobModel.FK_PlaylistItem_Song">
+            <End Role="Song" EntitySet="Songs" />
+            <End Role="PlaylistItem" EntitySet="PlaylistItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Message_Artist" Association="MobModel.FK_Message_Artist">
+            <End Role="Artist" EntitySet="Artists" />
+            <End Role="Message" EntitySet="Messages" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MessageRecipient_Artist" Association="MobModel.FK_MessageRecipient_Artist">
+            <End Role="Artist" EntitySet="Artists" />
+            <End Role="MessageRecipient" EntitySet="MessageRecipients" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ArtistProfile_Artist" Association="MobModel.FK_ArtistProfile_Artist">
+            <End Role="Artist" EntitySet="Artists" />
+            <End Role="ArtistProfile" EntitySet="ArtistProfiles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SongComment_Song" Association="MobModel.FK_SongComment_Song">
+            <End Role="Song" EntitySet="Songs" />
+            <End Role="SongComment" EntitySet="SongComments" />
+          </AssociationSet>
+          <FunctionImport Name="DeleteArtist">
+          <Parameter Name="ArtistId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <EntitySet Name="Membership" EntityType="MobModel.Membership" />
+          <FunctionImport Name="GetUserAlerts" EntitySet="Alerts" ReturnType="Collection(MobModel.Alert)">
+            <Parameter Name="ArtistId" Mode="In" Type="Int32" />
+          </FunctionImport>
+        </EntityContainer>
+        <EntityType Name="Alert">
+          <Key>
+            <PropertyRef Name="AlertId" />
+          </Key>
+          <Property Name="AlertId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Headline" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Summary" Type="String" Nullable="false" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="ArtistId" Type="Int32" Nullable="false" />
+          <Property Name="ActorDisplayName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ActorUrl" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="ActorAvatarUrl" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="AlertUrl" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="AlertAddedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ClickCount" Type="Int32" Nullable="false" />
+          <Property Name="AlertDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Category" Type="Int32" Nullable="false" />
+          <Property Name="ItemIdentifier" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ItemDetailIdentifier" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="AlertTags" Relationship="MobModel.FK_AlertTag_Alert" FromRole="Alert" ToRole="AlertTag" />
+        </EntityType>
+        <EntityType Name="AlertSubscription">
+          <Key>
+            <PropertyRef Name="AlertSubscriptionId" />
+          </Key>
+          <Property Name="AlertSubscriptionId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="ArtistId" Type="Int32" Nullable="false" />
+          <Property Name="Tags" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Artist" Relationship="MobModel.FK_AlertSubscription_Artist" FromRole="AlertSubscription" ToRole="Artist" />
+        </EntityType>
+        <EntityType Name="AlertTag">
+          <Key>
+            <PropertyRef Name="AlertTagId" />
+          </Key>
+          <Property Name="AlertTagId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="AlertId" Type="Int32" Nullable="false" />
+          <Property Name="Tag" Type="String" Nullable="false" MaxLength="36" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Alert" Relationship="MobModel.FK_AlertTag_Alert" FromRole="AlertTag" ToRole="Alert" />
+        </EntityType>
+        <EntityType Name="Artist">
+          <Key>
+            <PropertyRef Name="ArtistId" />
+          </Key>
+          <Property Name="ArtistId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="OldUserId" Type="Guid" />
+          <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" Unicode="false" FixedLength="false" />
+          <Property Name="Country" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Provence" Type="String" MaxLength="65" Unicode="false" FixedLength="false" />
+          <Property Name="City" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="WebSite" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="ProfilePrivacyLevel" Type="Byte" Nullable="false" />
+          <Property Name="ContactPrivacyLevel" Type="Byte" Nullable="false" />
+          <Property Name="ProfileViews" Type="Int64" Nullable="false" />
+          <Property Name="ProfileLastViewDate" Type="DateTime" Precision="0" />
+          <Property Name="Rating" Type="Byte" />
+          <Property Name="AvatarURL" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="EmailAddress" Type="String" MaxLength="256" Unicode="false" FixedLength="false" />
+          <Property Name="FileUploadsInBytes" Type="Int32" Nullable="false" />
+          <Property Name="FileUploadQuotaInBytes" Type="Int32" Nullable="false" />
+          <Property Name="LastActivityDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ShowChatStatus" Type="Boolean" Nullable="false" />
+          <Property Name="AllowChatSounds" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="AlertSubscriptions" Relationship="MobModel.FK_AlertSubscription_Artist" FromRole="Artist" ToRole="AlertSubscription" />
+          <NavigationProperty Name="ArtistBands" Relationship="MobModel.FK_ArtistBand_ToArtist" FromRole="Artist" ToRole="ArtistBand" />
+          <NavigationProperty Name="ArtistBlocks" Relationship="MobModel.FK_ArtistBlock_Artist" FromRole="Artist" ToRole="ArtistBlock" />
+          <NavigationProperty Name="ArtistCollaborationSpaces" Relationship="MobModel.FK_ArtistCollaborationSpaces_ToTable" FromRole="Artist" ToRole="ArtistCollaborationSpaces" />
+          <NavigationProperty Name="ArtistFavorites" Relationship="MobModel.FK_ArtistFavorites_Artist" FromRole="Artist" ToRole="ArtistFavorites" />
+          <NavigationProperty Name="ArtistSkills" Relationship="MobModel.FK_ArtistSkill_Artist" FromRole="Artist" ToRole="ArtistSkill" />
+          <NavigationProperty Name="BandAuditions" Relationship="MobModel.FK_BandAudition_Artist" FromRole="Artist" ToRole="BandAudition" />
+          <NavigationProperty Name="BandAuditionComments" Relationship="MobModel.FK_BandAuditionComment_Artist" FromRole="Artist" ToRole="BandAuditionComment" />
+          <NavigationProperty Name="CollaborationSpaceAlerts" Relationship="MobModel.FK_CollaborationSpaceAlerts_Artist" FromRole="Artist" ToRole="CollaborationSpaceAlerts" />
+          <NavigationProperty Name="CollaborationSpaceComments" Relationship="MobModel.FK_CollaborationSpaceComment_Artist" FromRole="Artist" ToRole="CollaborationSpaceComment" />
+          <NavigationProperty Name="CollaborationSpaceInvites" Relationship="MobModel.FK_CollaborationSpaceInvite_Artist" FromRole="Artist" ToRole="CollaborationSpaceInvite" />
+          <NavigationProperty Name="Media" Relationship="MobModel.FK_Media_ToTable" FromRole="Artist" ToRole="Media" />
+          <NavigationProperty Name="PlayLists" Relationship="MobModel.FK_Playlist_Artist" FromRole="Artist" ToRole="PlayList" />
+          <NavigationProperty Name="Tasks" Relationship="MobModel.FK_Task_Artist" FromRole="Artist" ToRole="Task" />
+          <NavigationProperty Name="Messages" Relationship="MobModel.FK_Message_Artist" FromRole="Artist" ToRole="Message" />
+          <NavigationProperty Name="MessageRecipients" Relationship="MobModel.FK_MessageRecipient_Artist" FromRole="Artist" ToRole="MessageRecipient" />
+          <NavigationProperty Name="ArtistProfile" Relationship="MobModel.FK_ArtistProfile_Artist" FromRole="Artist" ToRole="ArtistProfile" />
+        </EntityType>
+        <EntityType Name="ArtistBand">
+          <Key>
+            <PropertyRef Name="ArtistBandId" />
+          </Key>
+          <Property Name="ArtistBandId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="ArtistId" Type="Int32" Nullable="false" />
+          <Property Name="BandId" Type="Int32" />
+          <Property Name="Role" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="JoinedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="IsActiveMember" Type="Boolean" Nullable="false" />
+          <Property Name="DeactivateDate" Type="DateTime" Precision="3" />
+          <Property Name="AllowEditBand" Type="Boolean" Nullable="false" />
+          <Property Name="IsMemberAdmin" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Artist" Relationship="MobModel.FK_ArtistBand_ToArtist" FromRole="ArtistBand" ToRole="Artist" />
+          <NavigationProperty Name="Band" Relationship="MobModel.FK_ArtistBand_ToBand" FromRole="ArtistBand" ToRole="Band" />
+        </EntityType>
+        <EntityType Name="ArtistBlock">
+          <Key>
+            <PropertyRef Name="ArtistBlockId" />
+          </Key>
+          <Property Name="ArtistBlockId" Type="Int32" Nullable="false" />
+          <Property Name="ArtistId" Type="Int32" Nullable="false" />
+          <Property Name="BlockedArtistId" Type="Int32" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ReportAsSpammer" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Artist" Relationship="MobModel.FK_ArtistBlock_Artist" FromRole="ArtistBlock" ToRole="Artist" />
+        </EntityType>
+        <EntityType Name="ArtistCollaborationSpace">
+          <Key>
+            <PropertyRef Name="ArtistCollaborationSpaceId" />
+          </Key>
+          <Property Name="ArtistCollaborationSpaceId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="ArtistId" Type="Int32" Nullable="false" />
+          <Property Name="CollaborationSpaceId" Type="Int32" Nullable="false" />
+          <Property Name="IsCreator" Type="Boolean" Nullable="false" />
+          <Property Name="FirstContributionDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LastContributionDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Note" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Artist" Relationship="MobModel.FK_ArtistCollaborationSpaces_ToTable" FromRole="ArtistCollaborationSpaces" ToRole="Artist" />
+          <NavigationProperty Name="CollaborationSpace" Relationship="MobModel.FK_ArtistCollaborationSpaces_ToTable_1" FromRole="ArtistCollaborationSpaces" ToRole="CollaborationSpace" />
+        </EntityType>
+        <EntityType Name="ArtistFavorite">
+          <Key>
+            <PropertyRef Name="ArtistFavoriteId" />
+          </Key>
+          <Property Name="ArtistFavoriteId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="ArtistId" Type="Int32" Nullable="false" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ItemId" Type="Int32" />
+          <Property Name="Category" Type="Int32" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Artist" Relationship="MobModel.FK_ArtistFavorites_Artist" FromRole="ArtistFavorites" ToRole="Artist" />
+        </EntityType>
+        <EntityType Name="ArtistProfile">
+          <Key>
+            <PropertyRef Name="ArtistId" />
+          </Key>
+          <Property Name="ArtistId" Type="Int32" Nullable="false" />
+          <Property Name="Bio" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="MusicalInfluences" Type="String" MaxLength="1024" Unicode="false" FixedLength="false" />
+          <Property Name="ProfileTemplateName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="FirstName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="LastName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Artist" Relationship="MobModel.FK_ArtistProfile_Artist" FromRole="ArtistProfile" ToRole="Artist" />
+        </EntityType>
+        <EntityType Name="ArtistSkill">
+          <Key>
+            <PropertyRef Name="ArtistTalentID" />
+          </Key>
+          <Property Name="ArtistTalentID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="ArtistId" Type="Int32" Nullable="false" />
+          <Property Name="TalentName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SkillLevel" Type="Int32" Nullable="false" />
+          <Property Name="Details" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="Styles" Type="String" Nullable="false" MaxLength="500" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Artist" Relationship="MobModel.FK_ArtistSkill_Artist" FromRole="ArtistSkill" ToRole="Artist" />
+        </EntityType>
+        <EntityType Name="Band">
+          <Key>
+            <PropertyRef Name="BandId" />
+          </Key>
+          <Property Name="BandId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="BandName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="BandBio" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+          <Property Name="BandLogoUrl" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="BandBackgroundImageUrl" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="BandDisplayPhotoUrl" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="CreateDate" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="ArtistBands" Relationship="MobModel.FK_ArtistBand_ToBand" FromRole="Band" ToRole="ArtistBand" />
+          <NavigationProperty Name="BandGenres" Relationship="MobModel.FK_BandGenre_Band" FromRole="Band" ToRole="BandGenre" />
+          <NavigationProperty Name="CollaborationSpaces" Relationship="MobModel.FK_CollaborationSpace_ToTable" FromRole="Band" ToRole="CollaborationSpace" />
+          <NavigationProperty Name="PlayLists" Relationship="MobModel.FK_PlayList_Band" FromRole="Band" ToRole="PlayList" />
+        </EntityType>
+        <EntityType Name="BandAudition">
+          <Key>
+            <PropertyRef Name="BandAuditionId" />
+          </Key>
+          <Property Name="BandAuditionId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="ProjectOpenPositionId" Type="Int32" Nullable="false" />
+          <Property Name="ArtistId" Type="Int32" Nullable="false" />
+          <Property Name="SongId" Type="Int32" Nullable="false" />
+          <Property Name="VotesRequired" Type="Int32" Nullable="false" />
+          <Property Name="VotesRecieved" Type="Int32" Nullable="false" />
+          <Property Name="Status" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Artist" Relationship="MobModel.FK_BandAudition_Artist" FromRole="BandAudition" ToRole="Artist" />
+          <NavigationProperty Name="Song" Relationship="MobModel.FK_BandAudition_Song" FromRole="BandAudition" ToRole="Song" />
+          <NavigationProperty Name="BandAuditionComments" Relationship="MobModel.FK_BandAuditionComment_BandAudition" FromRole="BandAudition" ToRole="BandAuditionComment" />
+        </EntityType>
+        <EntityType Name="BandAuditionComment">
+          <Key>
+            <PropertyRef Name="BandAuditionCommentId" />
+          </Key>
+          <Property Name="BandAuditionCommentId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="BandAuditionId" Type="Int32" Nullable="false" />
+          <Property Name="ArtistId" Type="Int32" Nullable="false" />
+          <Property Name="Comment" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+          <Property Name="Rating" Type="Int32" Nullable="false" />
+          <Property Name="Vote" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Artist" Relationship="MobModel.FK_BandAuditionComment_Artist" FromRole="BandAuditionComment" ToRole="Artist" />
+          <NavigationProperty Name="BandAudition" Relationship="MobModel.FK_BandAuditionComment_BandAudition" FromRole="BandAuditionComment" ToRole="BandAudition" />
+        </EntityType>
+        <EntityType Name="BandGenre">
+          <Key>
+            <PropertyRef Name="BandGenreId" />
+          </Key>
+          <Property Name="BandGenreId" Type="Int32" Nullable="false" />
+          <Property Name="BandId" Type="Int32" Nullable="false" />
+          <Property Name="GenreLookUpId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Band" Relationship="MobModel.FK_BandGenre_Band" FromRole="BandGenre" ToRole="Band" />
+          <NavigationProperty Name="GenreLookUp" Relationship="MobModel.FK_BandGenre_GenreLookUp" FromRole="BandGenre" ToRole="GenreLookUp" />
+        </EntityType>
+        <EntityType Name="BannedEmailAddress">
+          <Key>
+            <PropertyRef Name="EmailAddress" />
+          </Key>
+          <Property Name="EmailAddress" Type="String" Nullable="false" MaxLength="150" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="CollaborationSpace">
+          <Key>
+            <PropertyRef Name="CollaborationSpaceId" />
+          </Key>
+          <Property Name="CollaborationSpaceId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Description" Type="String" Nullable="false" MaxLength="5000" Unicode="false" FixedLength="false" />
+          <Property Name="RestrictContributorsToBand" Type="Boolean" Nullable="false" />
+          <Property Name="BandId" Type="Int32" />
+          <Property Name="AllowPublicView" Type="Boolean" Nullable="false" />
+          <Property Name="CopyrightModel" Type="Byte" Nullable="false" />
+          <Property Name="AllowContributorsToPublish" Type="Boolean" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LastPostDate" Type="DateTime" Precision="3" />
+          <Property Name="PublishedDate" Type="DateTime" Precision="3" />
+          <Property Name="NumberViews" Type="Int32" Nullable="false" />
+          <Property Name="NumberComments" Type="Int32" Nullable="false" />
+          <Property Name="Status" Type="MobModel.CollaborationSpaceStatus" Nullable="false" />
+          <Property Name="ConceptId" Type="Int32" />
+          <Property Name="ConceptMediaType" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="ArtistCollaborationSpaces" Relationship="MobModel.FK_ArtistCollaborationSpaces_ToTable_1" FromRole="CollaborationSpace" ToRole="ArtistCollaborationSpaces" />
+          <NavigationProperty Name="Band" Relationship="MobModel.FK_CollaborationSpace_ToTable" FromRole="CollaborationSpace" ToRole="Band" />
+          <NavigationProperty Name="CollaborationSpaceAlerts" Relationship="MobModel.FK_CollaborationSpaceAlerts_CollaborationSpace" FromRole="CollaborationSpace" ToRole="CollaborationSpaceAlerts" />
+          <NavigationProperty Name="CollaborationSpaceComments" Relationship="MobModel.FK_CollaborationSpaceComment_CollaborationSpace" FromRole="CollaborationSpace" ToRole="CollaborationSpaceComment" />
+          <NavigationProperty Name="CollaborationSpaceFiles" Relationship="MobModel.FK_CollaborationSpaceFile_CollaborationSpace" FromRole="CollaborationSpace" ToRole="CollaborationSpaceFile" />
+          <NavigationProperty Name="CollaborationSpaceGenres" Relationship="MobModel.FK_CollaborationSpaceGenre_CollaborationSpace" FromRole="CollaborationSpace" ToRole="CollaborationSpaceGenre" />
+          <NavigationProperty Name="CollaborationSpaceInvites" Relationship="MobModel.FK_CollaborationSpaceInvite_CollaborationSpace" FromRole="CollaborationSpace" ToRole="CollaborationSpaceInvite" />
+          <NavigationProperty Name="CollaborationSpaceMedias" Relationship="MobModel.FK_CollaborationSpaceMedia_CollaborationSpace" FromRole="CollaborationSpace" ToRole="CollaborationSpaceMedia" />
+        </EntityType>
+        <EntityType Name="CollaborationSpaceAlert">
+          <Key>
+            <PropertyRef Name="CollaborationSpaceAlertId" />
+          </Key>
+          <Property Name="CollaborationSpaceAlertId" Type="Int32" Nullable="false" />
+          <Property Name="CollaborationSpaceId" Type="Int32" Nullable="false" />
+          <Property Name="ArtistId" Type="Int32" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Artist" Relationship="MobModel.FK_CollaborationSpaceAlerts_Artist" FromRole="CollaborationSpaceAlerts" ToRole="Artist" />
+          <NavigationProperty Name="CollaborationSpace" Relationship="MobModel.FK_CollaborationSpaceAlerts_CollaborationSpace" FromRole="CollaborationSpaceAlerts" ToRole="CollaborationSpace" />
+        </EntityType>
+        <EntityType Name="CollaborationSpaceComment">
+          <Key>
+            <PropertyRef Name="CollaborationSpaceCommentId" />
+          </Key>
+          <Property Name="CollaborationSpaceCommentId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="CollaborationSpaceID" Type="Int32" Nullable="false" />
+          <Property Name="ArtistId" Type="Int32" Nullable="false" />
+          <Property Name="CollabortationSpaceFileId" Type="Int32" />
+          <Property Name="CommentTitle" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CommentBody" Type="String" MaxLength="5000" Unicode="false" FixedLength="false" />
+          <Property Name="ThreadId" Type="Int32" Nullable="false" />
+          <Property Name="ParentId" Type="Int32" Nullable="false" />
+          <Property Name="NestLevel" Type="Int32" Nullable="false" />
+          <Property Name="Path" Type="String" Nullable="false" MaxLength="800" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Artist" Relationship="MobModel.FK_CollaborationSpaceComment_Artist" FromRole="CollaborationSpaceComment" ToRole="Artist" />
+          <NavigationProperty Name="CollaborationSpace" Relationship="MobModel.FK_CollaborationSpaceComment_CollaborationSpace" FromRole="CollaborationSpaceComment" ToRole="CollaborationSpace" />
+          <NavigationProperty Name="CollaborationSpaceFile" Relationship="MobModel.FK_CollaborationSpaceComment_ToTable" FromRole="CollaborationSpaceComment" ToRole="CollaborationSpaceFile" />
+          <Property Type="DateTime" Name="CreateDate" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="CollaborationSpaceFile">
+          <Key>
+            <PropertyRef Name="CollaborationSpaceFileId" />
+          </Key>
+          <Property Name="CollaborationSpaceFileId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="CollaborationSpaceId" Type="Int32" Nullable="false" />
+          <Property Name="MediaId" Type="Int32" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="1024" Unicode="false" FixedLength="false" />
+          <Property Name="LikeCount" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="CollaborationSpace" Relationship="MobModel.FK_CollaborationSpaceFile_CollaborationSpace" FromRole="CollaborationSpaceFile" ToRole="CollaborationSpace" />
+          <NavigationProperty Name="CollaborationSpaceComments" Relationship="MobModel.FK_CollaborationSpaceComment_ToTable" FromRole="CollaborationSpaceFile" ToRole="CollaborationSpaceComment" />
+          <NavigationProperty Name="Medium" Relationship="MobModel.FK_CollaborationSpaceFile_Media" FromRole="CollaborationSpaceFile" ToRole="Media" />
+        </EntityType>
+        <EntityType Name="CollaborationSpaceGenre">
+          <Key>
+            <PropertyRef Name="CollaborationSpaceGenreId" />
+          </Key>
+          <Property Name="CollaborationSpaceGenreId" Type="Int32" Nullable="false" />
+          <Property Name="CollaborationSpaceId" Type="Int32" Nullable="false" />
+          <Property Name="GenreLookUpId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="CollaborationSpace" Relationship="MobModel.FK_CollaborationSpaceGenre_CollaborationSpace" FromRole="CollaborationSpaceGenre" ToRole="CollaborationSpace" />
+          <NavigationProperty Name="GenreLookUp" Relationship="MobModel.FK_CollaborationSpaceGenre_GenreLookUp" FromRole="CollaborationSpaceGenre" ToRole="GenreLookUp" />
+        </EntityType>
+        <EntityType Name="CollaborationSpaceInvite">
+          <Key>
+            <PropertyRef Name="CollaborationSpaceInviteId" />
+          </Key>
+          <Property Name="CollaborationSpaceInviteId" Type="Int32" Nullable="false" />
+          <Property Name="CollaborationSpaceId" Type="Int32" Nullable="false" />
+          <Property Name="EmailAddress" Type="String" Nullable="false" MaxLength="150" Unicode="false" FixedLength="false" />
+          <Property Name="ArtistId" Type="Int32" Nullable="false" />
+          <Property Name="BandId" Type="Int32" />
+          <Property Name="LinkIdentifier" Type="Guid" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Artist" Relationship="MobModel.FK_CollaborationSpaceInvite_Artist" FromRole="CollaborationSpaceInvite" ToRole="Artist" />
+          <NavigationProperty Name="CollaborationSpace" Relationship="MobModel.FK_CollaborationSpaceInvite_CollaborationSpace" FromRole="CollaborationSpaceInvite" ToRole="CollaborationSpace" />
+        </EntityType>
+        <EntityType Name="CollaborationSpaceMedia">
+          <Key>
+            <PropertyRef Name="CollaborationSpaceMediaId" />
+          </Key>
+          <Property Name="CollaborationSpaceMediaId" Type="Int32" Nullable="false" />
+          <Property Name="CollaborationSpaceId" Type="Int32" Nullable="false" />
+          <Property Name="MediaId" Type="Int32" Nullable="false" />
+          <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Archive" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="CollaborationSpace" Relationship="MobModel.FK_CollaborationSpaceMedia_CollaborationSpace" FromRole="CollaborationSpaceMedia" ToRole="CollaborationSpace" />
+          <NavigationProperty Name="Medium" Relationship="MobModel.FK_CollaborationSpaceMedia_ToTable_1" FromRole="CollaborationSpaceMedia" ToRole="Media" />
+        </EntityType>
+        <EntityType Name="EmailOptOut">
+          <Key>
+            <PropertyRef Name="EmailAddress" />
+          </Key>
+          <Property Name="EmailAddress" Type="String" Nullable="false" MaxLength="150" Unicode="false" FixedLength="false" />
+          <Property Name="DateOfOptOut" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="EmailVerification">
+          <Key>
+            <PropertyRef Name="EmailVerificationId" />
+          </Key>
+          <Property Name="EmailVerificationId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="ArtistId" Type="Int32" Nullable="false" />
+          <Property Name="emailaddress" Type="String" Nullable="false" MaxLength="150" Unicode="false" FixedLength="false" />
+          <Property Name="VerificationCode" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="NotificationSendDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="VerificationDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="GenreLookUp">
+          <Key>
+            <PropertyRef Name="GenreLookUpId" />
+          </Key>
+          <Property Name="GenreLookUpId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="GenreName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Culture" Type="String" MaxLength="4" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="BandGenres" Relationship="MobModel.FK_BandGenre_GenreLookUp" FromRole="GenreLookUp" ToRole="BandGenre" />
+          <NavigationProperty Name="CollaborationSpaceGenres" Relationship="MobModel.FK_CollaborationSpaceGenre_GenreLookUp" FromRole="GenreLookUp" ToRole="CollaborationSpaceGenre" />
+        </EntityType>
+        <EntityType Name="Medium">
+          <Key>
+            <PropertyRef Name="MediaId" />
+          </Key>
+          <Property Name="MediaId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="ArtistId" Type="Int32" />
+          <Property Name="FriendlyFileName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="FileExtention" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="LocalFilePath" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="WebURL" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="IsCloudBlob" Type="Boolean" Nullable="false" />
+          <Property Name="AzureStorageContainer" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="AzureBlobReferenceName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="MediaType" Type="Byte" Nullable="false" />
+          <Property Name="FileSizeInBytes" Type="Int32" Nullable="false" />
+          <Property Name="BitRateInKbps" Type="Int32" Nullable="false" />
+          <Property Name="AllowDownload" Type="Int32" Nullable="false" />
+          <Property Name="DownloadCount" Type="Int32" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="IsFileDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="RIPEMD160Hash" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Artist" Relationship="MobModel.FK_Media_ToTable" FromRole="Media" ToRole="Artist" />
+          <NavigationProperty Name="CollaborationSpaceFiles" Relationship="MobModel.FK_CollaborationSpaceFile_Media" FromRole="Media" ToRole="CollaborationSpaceFile" />
+          <NavigationProperty Name="CollaborationSpaceMedias" Relationship="MobModel.FK_CollaborationSpaceMedia_ToTable_1" FromRole="Media" ToRole="CollaborationSpaceMedia" />
+          <NavigationProperty Name="Songs" Relationship="MobModel.FK_Song_Media" FromRole="Media" ToRole="Song" />
+        </EntityType>
+        <EntityType Name="Message">
+          <Key>
+            <PropertyRef Name="MessageId" />
+          </Key>
+          <Property Name="MessageId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="ArtistID" Type="Int32" Nullable="false" />
+          <Property Name="Subject" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Importance" Type="Int16" Nullable="false" />
+          <Property Name="DateSent" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="MessageBody" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="MessageRecipients" Relationship="MobModel.FK_MessageRecipient_Message" FromRole="Message" ToRole="MessageRecipient" />
+          <NavigationProperty Name="Artist" Relationship="MobModel.FK_Message_Artist" FromRole="Message" ToRole="Artist" />
+        </EntityType>
+        <EntityType Name="MessageRecipient">
+          <Key>
+            <PropertyRef Name="MessageRecipientId" />
+          </Key>
+          <Property Name="MessageRecipientId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="MessageId" Type="Int32" Nullable="false" />
+          <Property Name="ArtistId" Type="Int32" Nullable="false" />
+          <Property Name="MessageRead" Type="Boolean" Nullable="false" />
+          <Property Name="MessageStatus" Type="Int16" Nullable="false" />
+          <Property Name="Folder" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Message" Relationship="MobModel.FK_MessageRecipient_Message" FromRole="MessageRecipient" ToRole="Message" />
+          <NavigationProperty Name="Artist" Relationship="MobModel.FK_MessageRecipient_Artist" FromRole="MessageRecipient" ToRole="Artist" />
+        </EntityType>
+        <EntityType Name="MessageSpam">
+          <Key>
+            <PropertyRef Name="MessageSpamID" />
+          </Key>
+          <Property Name="MessageSpamID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="MessageID" Type="Int32" Nullable="false" />
+          <Property Name="MessageBodyHash" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="OpenPosition">
+          <Key>
+            <PropertyRef Name="OpenPositionId" />
+          </Key>
+          <Property Name="OpenPositionId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="CollaborationSpaceId" Type="Int32" />
+          <Property Name="Talent" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SkillLevel" Type="Int32" Nullable="false" />
+          <Property Name="Details" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+          <Property Name="DatePosted" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DateModified" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Status" Type="Int32" Nullable="false" />
+          <Property Name="BandId" Type="Int32" />
+          <Property Name="LocalOnly" Type="Boolean" Nullable="false" />
+          <Property Name="LocalCity" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="LocalCountry" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="LocalProvence" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="AuditionsSubmitted" Type="Int32" Nullable="false" />
+          <Property Name="ApprovalMode" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PlayList">
+          <Key>
+            <PropertyRef Name="PlaylistId" />
+          </Key>
+          <Property Name="PlaylistId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ArtistId" Type="Int32" />
+          <Property Name="BandId" Type="Int32" />
+          <Property Name="IsSitePlaylist" Type="Boolean" Nullable="false" />
+          <Property Name="IsDefaultPlaylist" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Artist" Relationship="MobModel.FK_Playlist_Artist" FromRole="PlayList" ToRole="Artist" />
+          <NavigationProperty Name="Band" Relationship="MobModel.FK_PlayList_Band" FromRole="PlayList" ToRole="Band" />
+          <NavigationProperty Name="PlaylistItems" Relationship="MobModel.FK_PlaylistItem_PayList" FromRole="PlayList" ToRole="PlaylistItem" />
+        </EntityType>
+        <EntityType Name="PlaylistItem">
+          <Key>
+            <PropertyRef Name="PlaylistItemId" />
+          </Key>
+          <Property Name="PlaylistItemId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="PlayListId" Type="Int32" Nullable="false" />
+          <Property Name="SongId" Type="Int32" Nullable="false" />
+          <Property Name="DisplayOrder" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="PlayList" Relationship="MobModel.FK_PlaylistItem_PayList" FromRole="PlaylistItem" ToRole="PlayList" />
+          <NavigationProperty Name="Song" Relationship="MobModel.FK_PlaylistItem_Song" FromRole="PlaylistItem" ToRole="Song" />
+        </EntityType>
+        <EntityType Name="Song">
+          <Key>
+            <PropertyRef Name="SongId" />
+          </Key>
+          <Property Name="SongId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="MediaId" Type="Int32" Nullable="false" />
+          <Property Name="SongTitle" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ReleaseYear" Type="Int32" />
+          <Property Name="ArtworkURL" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Lyrics" Type="String" MaxLength="1024" Unicode="false" FixedLength="false" />
+          <Property Name="SongDescription" Type="String" MaxLength="1024" Unicode="false" FixedLength="false" />
+          <Property Name="ActionParameter" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Action" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Controller" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="GenreId" Type="Int32" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ShowInLibrary" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="BandAuditions" Relationship="MobModel.FK_BandAudition_Song" FromRole="Song" ToRole="BandAudition" />
+          <NavigationProperty Name="Medium" Relationship="MobModel.FK_Song_Media" FromRole="Song" ToRole="Media" />
+          <NavigationProperty Name="PlaylistItems" Relationship="MobModel.FK_PlaylistItem_Song" FromRole="Song" ToRole="PlaylistItem" />
+          <NavigationProperty Name="SongComments" Relationship="MobModel.FK_SongComment_Song" FromRole="Song" ToRole="SongComment" />
+        </EntityType>
+        <EntityType Name="SongComment">
+          <Key>
+            <PropertyRef Name="SongCommentId" />
+          </Key>
+          <Property Name="SongCommentId" Type="Int32" Nullable="false" />
+          <Property Name="SongId" Type="Int32" />
+          <Property Name="Comment" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+          <Property Name="Rating" Type="Int32" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Precision="3" />
+          <Property Name="IsApproved" Type="Boolean" Nullable="false" />
+          <Property Name="IsAnonymous" Type="Boolean" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="EmailAddress" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Song" Relationship="MobModel.FK_SongComment_Song" FromRole="SongComment" ToRole="Song" />
+        </EntityType>
+        <EntityType Name="Task">
+          <Key>
+            <PropertyRef Name="TaskID" />
+          </Key>
+          <Property Name="TaskID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="ArtistId" Type="Int32" Nullable="false" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Details" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="DueDate" Type="DateTime" Precision="3" />
+          <Property Name="State" Type="Int32" />
+          <Property Name="LinkType" Type="Int32" />
+          <Property Name="LinkTypeID" Type="Int32" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="0" />
+          <NavigationProperty Name="Artist" Relationship="MobModel.FK_Task_Artist" FromRole="Task" ToRole="Artist" />
+        </EntityType>
+        <Association Name="FK_AlertTag_Alert">
+          <End Role="Alert" Type="MobModel.Alert" Multiplicity="1" />
+          <End Role="AlertTag" Type="MobModel.AlertTag" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Alert">
+              <PropertyRef Name="AlertId" />
+            </Principal>
+            <Dependent Role="AlertTag">
+              <PropertyRef Name="AlertId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AlertSubscription_Artist">
+          <End Role="Artist" Type="MobModel.Artist" Multiplicity="1" />
+          <End Role="AlertSubscription" Type="MobModel.AlertSubscription" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Artist">
+              <PropertyRef Name="ArtistId" />
+            </Principal>
+            <Dependent Role="AlertSubscription">
+              <PropertyRef Name="ArtistId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ArtistBand_ToArtist">
+          <End Role="Artist" Type="MobModel.Artist" Multiplicity="1" />
+          <End Role="ArtistBand" Type="MobModel.ArtistBand" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Artist">
+              <PropertyRef Name="ArtistId" />
+            </Principal>
+            <Dependent Role="ArtistBand">
+              <PropertyRef Name="ArtistId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ArtistBlock_Artist">
+          <End Role="Artist" Type="MobModel.Artist" Multiplicity="1" />
+          <End Role="ArtistBlock" Type="MobModel.ArtistBlock" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Artist">
+              <PropertyRef Name="ArtistId" />
+            </Principal>
+            <Dependent Role="ArtistBlock">
+              <PropertyRef Name="ArtistId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ArtistCollaborationSpaces_ToTable">
+          <End Role="Artist" Type="MobModel.Artist" Multiplicity="1" />
+          <End Role="ArtistCollaborationSpaces" Type="MobModel.ArtistCollaborationSpace" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Artist">
+              <PropertyRef Name="ArtistId" />
+            </Principal>
+            <Dependent Role="ArtistCollaborationSpaces">
+              <PropertyRef Name="ArtistId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ArtistFavorites_Artist">
+          <End Role="Artist" Type="MobModel.Artist" Multiplicity="1" />
+          <End Role="ArtistFavorites" Type="MobModel.ArtistFavorite" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Artist">
+              <PropertyRef Name="ArtistId" />
+            </Principal>
+            <Dependent Role="ArtistFavorites">
+              <PropertyRef Name="ArtistId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ArtistSkill_Artist">
+          <End Role="Artist" Type="MobModel.Artist" Multiplicity="1" />
+          <End Role="ArtistSkill" Type="MobModel.ArtistSkill" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Artist">
+              <PropertyRef Name="ArtistId" />
+            </Principal>
+            <Dependent Role="ArtistSkill">
+              <PropertyRef Name="ArtistId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BandAudition_Artist">
+          <End Role="Artist" Type="MobModel.Artist" Multiplicity="1" />
+          <End Role="BandAudition" Type="MobModel.BandAudition" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Artist">
+              <PropertyRef Name="ArtistId" />
+            </Principal>
+            <Dependent Role="BandAudition">
+              <PropertyRef Name="ArtistId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BandAuditionComment_Artist">
+          <End Role="Artist" Type="MobModel.Artist" Multiplicity="1" />
+          <End Role="BandAuditionComment" Type="MobModel.BandAuditionComment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Artist">
+              <PropertyRef Name="ArtistId" />
+            </Principal>
+            <Dependent Role="BandAuditionComment">
+              <PropertyRef Name="ArtistId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CollaborationSpaceAlerts_Artist">
+          <End Role="Artist" Type="MobModel.Artist" Multiplicity="1" />
+          <End Role="CollaborationSpaceAlerts" Type="MobModel.CollaborationSpaceAlert" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Artist">
+              <PropertyRef Name="ArtistId" />
+            </Principal>
+            <Dependent Role="CollaborationSpaceAlerts">
+              <PropertyRef Name="ArtistId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CollaborationSpaceComment_Artist">
+          <End Role="Artist" Type="MobModel.Artist" Multiplicity="1" />
+          <End Role="CollaborationSpaceComment" Type="MobModel.CollaborationSpaceComment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Artist">
+              <PropertyRef Name="ArtistId" />
+            </Principal>
+            <Dependent Role="CollaborationSpaceComment">
+              <PropertyRef Name="ArtistId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CollaborationSpaceInvite_Artist">
+          <End Role="Artist" Type="MobModel.Artist" Multiplicity="1" />
+          <End Role="CollaborationSpaceInvite" Type="MobModel.CollaborationSpaceInvite" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Artist">
+              <PropertyRef Name="ArtistId" />
+            </Principal>
+            <Dependent Role="CollaborationSpaceInvite">
+              <PropertyRef Name="ArtistId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Media_ToTable">
+          <End Role="Artist" Type="MobModel.Artist" Multiplicity="0..1" />
+          <End Role="Media" Type="MobModel.Medium" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Artist">
+              <PropertyRef Name="ArtistId" />
+            </Principal>
+            <Dependent Role="Media">
+              <PropertyRef Name="ArtistId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Playlist_Artist">
+          <End Role="Artist" Type="MobModel.Artist" Multiplicity="0..1" />
+          <End Role="PlayList" Type="MobModel.PlayList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Artist">
+              <PropertyRef Name="ArtistId" />
+            </Principal>
+            <Dependent Role="PlayList">
+              <PropertyRef Name="ArtistId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Task_Artist">
+          <End Role="Artist" Type="MobModel.Artist" Multiplicity="1" />
+          <End Role="Task" Type="MobModel.Task" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Artist">
+              <PropertyRef Name="ArtistId" />
+            </Principal>
+            <Dependent Role="Task">
+              <PropertyRef Name="ArtistId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ArtistBand_ToBand">
+          <End Role="Band" Type="MobModel.Band" Multiplicity="0..1" />
+          <End Role="ArtistBand" Type="MobModel.ArtistBand" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Band">
+              <PropertyRef Name="BandId" />
+            </Principal>
+            <Dependent Role="ArtistBand">
+              <PropertyRef Name="BandId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ArtistCollaborationSpaces_ToTable_1">
+          <End Role="CollaborationSpace" Type="MobModel.CollaborationSpace" Multiplicity="1" />
+          <End Role="ArtistCollaborationSpaces" Type="MobModel.ArtistCollaborationSpace" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CollaborationSpace">
+              <PropertyRef Name="CollaborationSpaceId" />
+            </Principal>
+            <Dependent Role="ArtistCollaborationSpaces">
+              <PropertyRef Name="CollaborationSpaceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BandGenre_Band">
+          <End Role="Band" Type="MobModel.Band" Multiplicity="1" />
+          <End Role="BandGenre" Type="MobModel.BandGenre" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Band">
+              <PropertyRef Name="BandId" />
+            </Principal>
+            <Dependent Role="BandGenre">
+              <PropertyRef Name="BandId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CollaborationSpace_ToTable">
+          <End Role="Band" Type="MobModel.Band" Multiplicity="0..1" />
+          <End Role="CollaborationSpace" Type="MobModel.CollaborationSpace" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Band">
+              <PropertyRef Name="BandId" />
+            </Principal>
+            <Dependent Role="CollaborationSpace">
+              <PropertyRef Name="BandId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PlayList_Band">
+          <End Role="Band" Type="MobModel.Band" Multiplicity="0..1" />
+          <End Role="PlayList" Type="MobModel.PlayList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Band">
+              <PropertyRef Name="BandId" />
+            </Principal>
+            <Dependent Role="PlayList">
+              <PropertyRef Name="BandId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BandAudition_Song">
+          <End Role="Song" Type="MobModel.Song" Multiplicity="1" />
+          <End Role="BandAudition" Type="MobModel.BandAudition" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Song">
+              <PropertyRef Name="SongId" />
+            </Principal>
+            <Dependent Role="BandAudition">
+              <PropertyRef Name="SongId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BandAuditionComment_BandAudition">
+          <End Role="BandAudition" Type="MobModel.BandAudition" Multiplicity="1" />
+          <End Role="BandAuditionComment" Type="MobModel.BandAuditionComment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BandAudition">
+              <PropertyRef Name="BandAuditionId" />
+            </Principal>
+            <Dependent Role="BandAuditionComment">
+              <PropertyRef Name="BandAuditionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BandGenre_GenreLookUp">
+          <End Role="GenreLookUp" Type="MobModel.GenreLookUp" Multiplicity="1" />
+          <End Role="BandGenre" Type="MobModel.BandGenre" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GenreLookUp">
+              <PropertyRef Name="GenreLookUpId" />
+            </Principal>
+            <Dependent Role="BandGenre">
+              <PropertyRef Name="GenreLookUpId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CollaborationSpaceAlerts_CollaborationSpace">
+          <End Role="CollaborationSpace" Type="MobModel.CollaborationSpace" Multiplicity="1" />
+          <End Role="CollaborationSpaceAlerts" Type="MobModel.CollaborationSpaceAlert" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CollaborationSpace">
+              <PropertyRef Name="CollaborationSpaceId" />
+            </Principal>
+            <Dependent Role="CollaborationSpaceAlerts">
+              <PropertyRef Name="CollaborationSpaceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CollaborationSpaceComment_CollaborationSpace">
+          <End Role="CollaborationSpace" Type="MobModel.CollaborationSpace" Multiplicity="1" />
+          <End Role="CollaborationSpaceComment" Type="MobModel.CollaborationSpaceComment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CollaborationSpace">
+              <PropertyRef Name="CollaborationSpaceId" />
+            </Principal>
+            <Dependent Role="CollaborationSpaceComment">
+              <PropertyRef Name="CollaborationSpaceID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CollaborationSpaceFile_CollaborationSpace">
+          <End Role="CollaborationSpace" Type="MobModel.CollaborationSpace" Multiplicity="1" />
+          <End Role="CollaborationSpaceFile" Type="MobModel.CollaborationSpaceFile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CollaborationSpace">
+              <PropertyRef Name="CollaborationSpaceId" />
+            </Principal>
+            <Dependent Role="CollaborationSpaceFile">
+              <PropertyRef Name="CollaborationSpaceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CollaborationSpaceGenre_CollaborationSpace">
+          <End Role="CollaborationSpace" Type="MobModel.CollaborationSpace" Multiplicity="1" />
+          <End Role="CollaborationSpaceGenre" Type="MobModel.CollaborationSpaceGenre" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CollaborationSpace">
+              <PropertyRef Name="CollaborationSpaceId" />
+            </Principal>
+            <Dependent Role="CollaborationSpaceGenre">
+              <PropertyRef Name="CollaborationSpaceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CollaborationSpaceInvite_CollaborationSpace">
+          <End Role="CollaborationSpace" Type="MobModel.CollaborationSpace" Multiplicity="1" />
+          <End Role="CollaborationSpaceInvite" Type="MobModel.CollaborationSpaceInvite" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CollaborationSpace">
+              <PropertyRef Name="CollaborationSpaceId" />
+            </Principal>
+            <Dependent Role="CollaborationSpaceInvite">
+              <PropertyRef Name="CollaborationSpaceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CollaborationSpaceMedia_CollaborationSpace">
+          <End Role="CollaborationSpace" Type="MobModel.CollaborationSpace" Multiplicity="1" />
+          <End Role="CollaborationSpaceMedia" Type="MobModel.CollaborationSpaceMedia" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CollaborationSpace">
+              <PropertyRef Name="CollaborationSpaceId" />
+            </Principal>
+            <Dependent Role="CollaborationSpaceMedia">
+              <PropertyRef Name="CollaborationSpaceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CollaborationSpaceComment_ToTable">
+          <End Role="CollaborationSpaceFile" Type="MobModel.CollaborationSpaceFile" Multiplicity="0..1" />
+          <End Role="CollaborationSpaceComment" Type="MobModel.CollaborationSpaceComment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CollaborationSpaceFile">
+              <PropertyRef Name="CollaborationSpaceFileId" />
+            </Principal>
+            <Dependent Role="CollaborationSpaceComment">
+              <PropertyRef Name="CollabortationSpaceFileId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CollaborationSpaceFile_Media">
+          <End Role="Media" Type="MobModel.Medium" Multiplicity="1" />
+          <End Role="CollaborationSpaceFile" Type="MobModel.CollaborationSpaceFile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Media">
+              <PropertyRef Name="MediaId" />
+            </Principal>
+            <Dependent Role="CollaborationSpaceFile">
+              <PropertyRef Name="MediaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CollaborationSpaceGenre_GenreLookUp">
+          <End Role="GenreLookUp" Type="MobModel.GenreLookUp" Multiplicity="1" />
+          <End Role="CollaborationSpaceGenre" Type="MobModel.CollaborationSpaceGenre" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GenreLookUp">
+              <PropertyRef Name="GenreLookUpId" />
+            </Principal>
+            <Dependent Role="CollaborationSpaceGenre">
+              <PropertyRef Name="GenreLookUpId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CollaborationSpaceMedia_ToTable_1">
+          <End Role="Media" Type="MobModel.Medium" Multiplicity="1" />
+          <End Role="CollaborationSpaceMedia" Type="MobModel.CollaborationSpaceMedia" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Media">
+              <PropertyRef Name="MediaId" />
+            </Principal>
+            <Dependent Role="CollaborationSpaceMedia">
+              <PropertyRef Name="MediaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Song_Media">
+          <End Role="Media" Type="MobModel.Medium" Multiplicity="1" />
+          <End Role="Song" Type="MobModel.Song" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Media">
+              <PropertyRef Name="MediaId" />
+            </Principal>
+            <Dependent Role="Song">
+              <PropertyRef Name="MediaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MessageRecipient_Message">
+          <End Role="Message" Type="MobModel.Message" Multiplicity="1" />
+          <End Role="MessageRecipient" Type="MobModel.MessageRecipient" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Message">
+              <PropertyRef Name="MessageId" />
+            </Principal>
+            <Dependent Role="MessageRecipient">
+              <PropertyRef Name="MessageId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PlaylistItem_PayList">
+          <End Role="PlayList" Type="MobModel.PlayList" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="PlaylistItem" Type="MobModel.PlaylistItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PlayList">
+              <PropertyRef Name="PlaylistId" />
+            </Principal>
+            <Dependent Role="PlaylistItem">
+              <PropertyRef Name="PlayListId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PlaylistItem_Song">
+          <End Role="Song" Type="MobModel.Song" Multiplicity="1" />
+          <End Role="PlaylistItem" Type="MobModel.PlaylistItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Song">
+              <PropertyRef Name="SongId" />
+            </Principal>
+            <Dependent Role="PlaylistItem">
+              <PropertyRef Name="SongId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Message_Artist">
+          <End Type="MobModel.Artist" Role="Artist" Multiplicity="1" />
+          <End Type="MobModel.Message" Role="Message" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Artist">
+              <PropertyRef Name="ArtistId" />
+            </Principal>
+            <Dependent Role="Message">
+              <PropertyRef Name="ArtistID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MessageRecipient_Artist">
+          <End Type="MobModel.Artist" Role="Artist" Multiplicity="1" />
+          <End Type="MobModel.MessageRecipient" Role="MessageRecipient" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Artist">
+              <PropertyRef Name="ArtistId" />
+            </Principal>
+            <Dependent Role="MessageRecipient">
+              <PropertyRef Name="ArtistId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ArtistProfile_Artist">
+          <End Type="MobModel.Artist" Role="Artist" Multiplicity="1" />
+          <End Type="MobModel.ArtistProfile" Role="ArtistProfile" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Artist">
+              <PropertyRef Name="ArtistId" />
+            </Principal>
+            <Dependent Role="ArtistProfile">
+              <PropertyRef Name="ArtistId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SongComment_Song">
+          <End Type="MobModel.Song" Role="Song" Multiplicity="0..1" />
+          <End Type="MobModel.SongComment" Role="SongComment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Song">
+              <PropertyRef Name="SongId" />
+            </Principal>
+            <Dependent Role="SongComment">
+              <PropertyRef Name="SongId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Membership">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Type="Int32" Name="UserId" Nullable="false" />
+          <Property Type="DateTime" Name="CreateDate" Precision="3" />
+          <Property Type="String" Name="ConfirmationToken" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="IsConfirmed" />
+          <Property Type="DateTime" Name="LastPasswordFailureDate" Precision="3" />
+          <Property Type="Int32" Name="PasswordFailuresSinceLastSuccess" Nullable="false" />
+          <Property Type="String" Name="Password" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" a:SetterAccess="Private" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" a:GetterAccess="Private" />
+          <Property Type="DateTime" Name="PasswordChangedDate" Precision="3" />
+          <Property Type="String" Name="PasswordSalt" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" a:SetterAccess="Private" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" a:GetterAccess="Private" />
+          <Property Type="String" Name="PasswordVerificationToken" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="PasswordVerificationTokenExpirationDate" Precision="3" />
+        </EntityType>
+        <ComplexType Name="GetUserAlerts_Result">
+          <Property Type="Int32" Name="AlertId" Nullable="false" />
+          <Property Type="String" Name="Headline" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Summary" Nullable="false" MaxLength="500" />
+          <Property Type="Int32" Name="ArtistId" Nullable="false" />
+          <Property Type="String" Name="ActorDisplayName" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="ActorUrl" Nullable="false" MaxLength="255" />
+          <Property Type="String" Name="ActorAvatarUrl" Nullable="false" MaxLength="255" />
+          <Property Type="String" Name="AlertUrl" Nullable="false" MaxLength="255" />
+          <Property Type="DateTime" Name="AlertAddedDate" Nullable="false" Precision="23" />
+          <Property Type="Int32" Name="ClickCount" Nullable="false" />
+          <Property Type="DateTime" Name="AlertDate" Nullable="false" Precision="23" />
+          <Property Type="Int32" Name="Category" Nullable="false" />
+          <Property Type="String" Name="ItemIdentifier" Nullable="false" MaxLength="50" />
+          <Property Type="Int32" Name="ItemDetailIdentifier" Nullable="false" />
+        </ComplexType>
+        <EnumType Name="CollaborationSpaceStatus" UnderlyingType="Byte">
+          <Member Name="Recruiting" />
+          <Member Name="Tracking" />
+          <Member Name="TracksCompleted" />
+          <Member Name="FinalReview" />
+          <Member Name="Published" />
+          <Member Name="OnHold" />
+          <Member Name="Canceled" />
+        </EnumType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MobModelStoreContainer" CdmEntityContainer="MobEntities">
+          <EntitySetMapping Name="Alerts">
+            <EntityTypeMapping TypeName="MobModel.Alert">
+              <MappingFragment StoreEntitySet="Alert">
+                <ScalarProperty Name="AlertId" ColumnName="AlertId" />
+                <ScalarProperty Name="Headline" ColumnName="Headline" />
+                <ScalarProperty Name="Summary" ColumnName="Summary" />
+                <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+                <ScalarProperty Name="ActorDisplayName" ColumnName="ActorDisplayName" />
+                <ScalarProperty Name="ActorUrl" ColumnName="ActorUrl" />
+                <ScalarProperty Name="ActorAvatarUrl" ColumnName="ActorAvatarUrl" />
+                <ScalarProperty Name="AlertUrl" ColumnName="AlertUrl" />
+                <ScalarProperty Name="AlertAddedDate" ColumnName="AlertAddedDate" />
+                <ScalarProperty Name="ClickCount" ColumnName="ClickCount" />
+                <ScalarProperty Name="AlertDate" ColumnName="AlertDate" />
+                <ScalarProperty Name="Category" ColumnName="Category" />
+                <ScalarProperty Name="ItemIdentifier" ColumnName="ItemIdentifier" />
+                <ScalarProperty Name="ItemDetailIdentifier" ColumnName="ItemDetailIdentifier" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AlertSubscriptions">
+            <EntityTypeMapping TypeName="MobModel.AlertSubscription">
+              <MappingFragment StoreEntitySet="AlertSubscription">
+                <ScalarProperty Name="AlertSubscriptionId" ColumnName="AlertSubscriptionId" />
+                <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+                <ScalarProperty Name="Tags" ColumnName="Tags" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AlertTags">
+            <EntityTypeMapping TypeName="MobModel.AlertTag">
+              <MappingFragment StoreEntitySet="AlertTag">
+                <ScalarProperty Name="AlertTagId" ColumnName="AlertTagId" />
+                <ScalarProperty Name="AlertId" ColumnName="AlertId" />
+                <ScalarProperty Name="Tag" ColumnName="Tag" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Artists">
+            <EntityTypeMapping TypeName="MobModel.Artist">
+              <MappingFragment StoreEntitySet="Artist">
+                <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+                <ScalarProperty Name="OldUserId" ColumnName="OldUserId" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="Provence" ColumnName="Provence" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="WebSite" ColumnName="WebSite" />
+                <ScalarProperty Name="ProfilePrivacyLevel" ColumnName="ProfilePrivacyLevel" />
+                <ScalarProperty Name="ContactPrivacyLevel" ColumnName="ContactPrivacyLevel" />
+                <ScalarProperty Name="ProfileViews" ColumnName="ProfileViews" />
+                <ScalarProperty Name="ProfileLastViewDate" ColumnName="ProfileLastViewDate" />
+                <ScalarProperty Name="Rating" ColumnName="Rating" />
+                <ScalarProperty Name="AvatarURL" ColumnName="AvatarURL" />
+                <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+                <ScalarProperty Name="FileUploadsInBytes" ColumnName="FileUploadsInBytes" />
+                <ScalarProperty Name="FileUploadQuotaInBytes" ColumnName="FileUploadQuotaInBytes" />
+                <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+                <ScalarProperty Name="ShowChatStatus" ColumnName="ShowChatStatus" />
+                <ScalarProperty Name="AllowChatSounds" ColumnName="AllowChatSounds" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ArtistBands">
+            <EntityTypeMapping TypeName="MobModel.ArtistBand">
+              <MappingFragment StoreEntitySet="ArtistBand">
+                <ScalarProperty Name="ArtistBandId" ColumnName="ArtistBandId" />
+                <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+                <ScalarProperty Name="BandId" ColumnName="BandId" />
+                <ScalarProperty Name="Role" ColumnName="Role" />
+                <ScalarProperty Name="JoinedDate" ColumnName="JoinedDate" />
+                <ScalarProperty Name="IsActiveMember" ColumnName="IsActiveMember" />
+                <ScalarProperty Name="DeactivateDate" ColumnName="DeactivateDate" />
+                <ScalarProperty Name="AllowEditBand" ColumnName="AllowEditBand" />
+                <ScalarProperty Name="IsMemberAdmin" ColumnName="IsMemberAdmin" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ArtistBlocks">
+            <EntityTypeMapping TypeName="MobModel.ArtistBlock">
+              <MappingFragment StoreEntitySet="ArtistBlock">
+                <ScalarProperty Name="ArtistBlockId" ColumnName="ArtistBlockId" />
+                <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+                <ScalarProperty Name="BlockedArtistId" ColumnName="BlockedArtistId" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="ReportAsSpammer" ColumnName="ReportAsSpammer" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ArtistCollaborationSpaces">
+            <EntityTypeMapping TypeName="MobModel.ArtistCollaborationSpace">
+              <MappingFragment StoreEntitySet="ArtistCollaborationSpaces">
+                <ScalarProperty Name="ArtistCollaborationSpaceId" ColumnName="ArtistCollaborationSpaceId" />
+                <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+                <ScalarProperty Name="CollaborationSpaceId" ColumnName="CollaborationSpaceId" />
+                <ScalarProperty Name="IsCreator" ColumnName="IsCreator" />
+                <ScalarProperty Name="FirstContributionDate" ColumnName="FirstContributionDate" />
+                <ScalarProperty Name="LastContributionDate" ColumnName="LastContributionDate" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ArtistFavorites">
+            <EntityTypeMapping TypeName="MobModel.ArtistFavorite">
+              <MappingFragment StoreEntitySet="ArtistFavorites">
+                <ScalarProperty Name="ArtistFavoriteId" ColumnName="ArtistFavoriteId" />
+                <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+                <ScalarProperty Name="Category" ColumnName="Category" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ArtistProfiles">
+            <EntityTypeMapping TypeName="MobModel.ArtistProfile">
+              <MappingFragment StoreEntitySet="ArtistProfile">
+                <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+                <ScalarProperty Name="Bio" ColumnName="Bio" />
+                <ScalarProperty Name="MusicalInfluences" ColumnName="MusicalInfluences" />
+                <ScalarProperty Name="ProfileTemplateName" ColumnName="ProfileTemplateName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ArtistSkills">
+            <EntityTypeMapping TypeName="MobModel.ArtistSkill">
+              <MappingFragment StoreEntitySet="ArtistSkill">
+                <ScalarProperty Name="ArtistTalentID" ColumnName="ArtistTalentID" />
+                <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+                <ScalarProperty Name="TalentName" ColumnName="TalentName" />
+                <ScalarProperty Name="SkillLevel" ColumnName="SkillLevel" />
+                <ScalarProperty Name="Details" ColumnName="Details" />
+                <ScalarProperty Name="Styles" ColumnName="Styles" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Bands">
+            <EntityTypeMapping TypeName="MobModel.Band">
+              <MappingFragment StoreEntitySet="Band">
+                <ScalarProperty Name="BandId" ColumnName="BandId" />
+                <ScalarProperty Name="BandName" ColumnName="BandName" />
+                <ScalarProperty Name="BandBio" ColumnName="BandBio" />
+                <ScalarProperty Name="BandLogoUrl" ColumnName="BandLogoUrl" />
+                <ScalarProperty Name="BandBackgroundImageUrl" ColumnName="BandBackgroundImageUrl" />
+                <ScalarProperty Name="BandDisplayPhotoUrl" ColumnName="BandDisplayPhotoUrl" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BandAuditions">
+            <EntityTypeMapping TypeName="MobModel.BandAudition">
+              <MappingFragment StoreEntitySet="BandAudition">
+                <ScalarProperty Name="BandAuditionId" ColumnName="BandAuditionId" />
+                <ScalarProperty Name="ProjectOpenPositionId" ColumnName="ProjectOpenPositionId" />
+                <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+                <ScalarProperty Name="SongId" ColumnName="SongId" />
+                <ScalarProperty Name="VotesRequired" ColumnName="VotesRequired" />
+                <ScalarProperty Name="VotesRecieved" ColumnName="VotesRecieved" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BandAuditionComments">
+            <EntityTypeMapping TypeName="MobModel.BandAuditionComment">
+              <MappingFragment StoreEntitySet="BandAuditionComment">
+                <ScalarProperty Name="BandAuditionCommentId" ColumnName="BandAuditionCommentId" />
+                <ScalarProperty Name="BandAuditionId" ColumnName="BandAuditionId" />
+                <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+                <ScalarProperty Name="Comment" ColumnName="Comment" />
+                <ScalarProperty Name="Rating" ColumnName="Rating" />
+                <ScalarProperty Name="Vote" ColumnName="Vote" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BandGenres">
+            <EntityTypeMapping TypeName="MobModel.BandGenre">
+              <MappingFragment StoreEntitySet="BandGenre">
+                <ScalarProperty Name="BandGenreId" ColumnName="BandGenreId" />
+                <ScalarProperty Name="BandId" ColumnName="BandId" />
+                <ScalarProperty Name="GenreLookUpId" ColumnName="GenreLookUpId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BannedEmailAddresses">
+            <EntityTypeMapping TypeName="MobModel.BannedEmailAddress">
+              <MappingFragment StoreEntitySet="BannedEmailAddress">
+                <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CollaborationSpaces">
+            <EntityTypeMapping TypeName="MobModel.CollaborationSpace">
+              <MappingFragment StoreEntitySet="CollaborationSpace">
+                <ScalarProperty Name="CollaborationSpaceId" ColumnName="CollaborationSpaceId" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="RestrictContributorsToBand" ColumnName="RestrictContributorsToBand" />
+                <ScalarProperty Name="BandId" ColumnName="BandId" />
+                <ScalarProperty Name="AllowPublicView" ColumnName="AllowPublicView" />
+                <ScalarProperty Name="CopyrightModel" ColumnName="CopyrightModel" />
+                <ScalarProperty Name="AllowContributorsToPublish" ColumnName="AllowContributorsToPublish" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="LastPostDate" ColumnName="LastPostDate" />
+                <ScalarProperty Name="PublishedDate" ColumnName="PublishedDate" />
+                <ScalarProperty Name="NumberViews" ColumnName="NumberViews" />
+                <ScalarProperty Name="NumberComments" ColumnName="NumberComments" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="ConceptId" ColumnName="ConceptId" />
+                <ScalarProperty Name="ConceptMediaType" ColumnName="ConceptMediaType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CollaborationSpaceAlerts">
+            <EntityTypeMapping TypeName="MobModel.CollaborationSpaceAlert">
+              <MappingFragment StoreEntitySet="CollaborationSpaceAlerts">
+                <ScalarProperty Name="CollaborationSpaceAlertId" ColumnName="CollaborationSpaceAlertId" />
+                <ScalarProperty Name="CollaborationSpaceId" ColumnName="CollaborationSpaceId" />
+                <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CollaborationSpaceComments">
+            <EntityTypeMapping TypeName="MobModel.CollaborationSpaceComment">
+              <MappingFragment StoreEntitySet="CollaborationSpaceComment">
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="CollaborationSpaceCommentId" ColumnName="CollaborationSpaceCommentId" />
+                <ScalarProperty Name="CollaborationSpaceID" ColumnName="CollaborationSpaceID" />
+                <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+                <ScalarProperty Name="CollabortationSpaceFileId" ColumnName="CollabortationSpaceFileId" />
+                <ScalarProperty Name="CommentTitle" ColumnName="CommentTitle" />
+                <ScalarProperty Name="CommentBody" ColumnName="CommentBody" />
+                <ScalarProperty Name="ThreadId" ColumnName="ThreadId" />
+                <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+                <ScalarProperty Name="NestLevel" ColumnName="NestLevel" />
+                <ScalarProperty Name="Path" ColumnName="Path" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CollaborationSpaceFiles">
+            <EntityTypeMapping TypeName="MobModel.CollaborationSpaceFile">
+              <MappingFragment StoreEntitySet="CollaborationSpaceFile">
+                <ScalarProperty Name="CollaborationSpaceFileId" ColumnName="CollaborationSpaceFileId" />
+                <ScalarProperty Name="CollaborationSpaceId" ColumnName="CollaborationSpaceId" />
+                <ScalarProperty Name="MediaId" ColumnName="MediaId" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="LikeCount" ColumnName="LikeCount" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CollaborationSpaceGenres">
+            <EntityTypeMapping TypeName="MobModel.CollaborationSpaceGenre">
+              <MappingFragment StoreEntitySet="CollaborationSpaceGenre">
+                <ScalarProperty Name="CollaborationSpaceGenreId" ColumnName="CollaborationSpaceGenreId" />
+                <ScalarProperty Name="CollaborationSpaceId" ColumnName="CollaborationSpaceId" />
+                <ScalarProperty Name="GenreLookUpId" ColumnName="GenreLookUpId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CollaborationSpaceInvites">
+            <EntityTypeMapping TypeName="MobModel.CollaborationSpaceInvite">
+              <MappingFragment StoreEntitySet="CollaborationSpaceInvite">
+                <ScalarProperty Name="CollaborationSpaceInviteId" ColumnName="CollaborationSpaceInviteId" />
+                <ScalarProperty Name="CollaborationSpaceId" ColumnName="CollaborationSpaceId" />
+                <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+                <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+                <ScalarProperty Name="BandId" ColumnName="BandId" />
+                <ScalarProperty Name="LinkIdentifier" ColumnName="LinkIdentifier" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CollaborationSpaceMedias">
+            <EntityTypeMapping TypeName="MobModel.CollaborationSpaceMedia">
+              <MappingFragment StoreEntitySet="CollaborationSpaceMedia">
+                <ScalarProperty Name="CollaborationSpaceMediaId" ColumnName="CollaborationSpaceMediaId" />
+                <ScalarProperty Name="CollaborationSpaceId" ColumnName="CollaborationSpaceId" />
+                <ScalarProperty Name="MediaId" ColumnName="MediaId" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="Archive" ColumnName="Archive" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmailOptOuts">
+            <EntityTypeMapping TypeName="MobModel.EmailOptOut">
+              <MappingFragment StoreEntitySet="EmailOptOut">
+                <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+                <ScalarProperty Name="DateOfOptOut" ColumnName="DateOfOptOut" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmailVerifications">
+            <EntityTypeMapping TypeName="MobModel.EmailVerification">
+              <MappingFragment StoreEntitySet="EmailVerification">
+                <ScalarProperty Name="EmailVerificationId" ColumnName="EmailVerificationId" />
+                <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+                <ScalarProperty Name="emailaddress" ColumnName="emailaddress" />
+                <ScalarProperty Name="VerificationCode" ColumnName="VerificationCode" />
+                <ScalarProperty Name="NotificationSendDate" ColumnName="NotificationSendDate" />
+                <ScalarProperty Name="VerificationDate" ColumnName="VerificationDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GenreLookUps">
+            <EntityTypeMapping TypeName="MobModel.GenreLookUp">
+              <MappingFragment StoreEntitySet="GenreLookUp">
+                <ScalarProperty Name="GenreLookUpId" ColumnName="GenreLookUpId" />
+                <ScalarProperty Name="GenreName" ColumnName="GenreName" />
+                <ScalarProperty Name="Culture" ColumnName="Culture" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Media">
+            <EntityTypeMapping TypeName="MobModel.Medium">
+              <MappingFragment StoreEntitySet="Media">
+                <ScalarProperty Name="MediaId" ColumnName="MediaId" />
+                <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+                <ScalarProperty Name="FriendlyFileName" ColumnName="FriendlyFileName" />
+                <ScalarProperty Name="FileExtention" ColumnName="FileExtention" />
+                <ScalarProperty Name="LocalFilePath" ColumnName="LocalFilePath" />
+                <ScalarProperty Name="WebURL" ColumnName="WebURL" />
+                <ScalarProperty Name="IsCloudBlob" ColumnName="IsCloudBlob" />
+                <ScalarProperty Name="AzureStorageContainer" ColumnName="AzureStorageContainer" />
+                <ScalarProperty Name="AzureBlobReferenceName" ColumnName="AzureBlobReferenceName" />
+                <ScalarProperty Name="MediaType" ColumnName="MediaType" />
+                <ScalarProperty Name="FileSizeInBytes" ColumnName="FileSizeInBytes" />
+                <ScalarProperty Name="BitRateInKbps" ColumnName="BitRateInKbps" />
+                <ScalarProperty Name="AllowDownload" ColumnName="AllowDownload" />
+                <ScalarProperty Name="DownloadCount" ColumnName="DownloadCount" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="IsFileDeleted" ColumnName="IsFileDeleted" />
+                <ScalarProperty Name="RIPEMD160Hash" ColumnName="RIPEMD160Hash" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Messages">
+            <EntityTypeMapping TypeName="MobModel.Message">
+              <MappingFragment StoreEntitySet="Message">
+                <ScalarProperty Name="MessageId" ColumnName="MessageId" />
+                <ScalarProperty Name="ArtistID" ColumnName="ArtistID" />
+                <ScalarProperty Name="Subject" ColumnName="Subject" />
+                <ScalarProperty Name="Importance" ColumnName="Importance" />
+                <ScalarProperty Name="DateSent" ColumnName="DateSent" />
+                <ScalarProperty Name="MessageBody" ColumnName="MessageBody" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MessageRecipients">
+            <EntityTypeMapping TypeName="MobModel.MessageRecipient">
+              <MappingFragment StoreEntitySet="MessageRecipient">
+                <ScalarProperty Name="MessageRecipientId" ColumnName="MessageRecipientId" />
+                <ScalarProperty Name="MessageId" ColumnName="MessageId" />
+                <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+                <ScalarProperty Name="MessageRead" ColumnName="MessageRead" />
+                <ScalarProperty Name="MessageStatus" ColumnName="MessageStatus" />
+                <ScalarProperty Name="Folder" ColumnName="Folder" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MessageSpams">
+            <EntityTypeMapping TypeName="MobModel.MessageSpam">
+              <MappingFragment StoreEntitySet="MessageSpam">
+                <ScalarProperty Name="MessageSpamID" ColumnName="MessageSpamID" />
+                <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+                <ScalarProperty Name="MessageBodyHash" ColumnName="MessageBodyHash" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OpenPositions">
+            <EntityTypeMapping TypeName="MobModel.OpenPosition">
+              <MappingFragment StoreEntitySet="OpenPosition">
+                <ScalarProperty Name="OpenPositionId" ColumnName="OpenPositionId" />
+                <ScalarProperty Name="CollaborationSpaceId" ColumnName="CollaborationSpaceId" />
+                <ScalarProperty Name="Talent" ColumnName="Talent" />
+                <ScalarProperty Name="SkillLevel" ColumnName="SkillLevel" />
+                <ScalarProperty Name="Details" ColumnName="Details" />
+                <ScalarProperty Name="DatePosted" ColumnName="DatePosted" />
+                <ScalarProperty Name="DateModified" ColumnName="DateModified" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="BandId" ColumnName="BandId" />
+                <ScalarProperty Name="LocalOnly" ColumnName="LocalOnly" />
+                <ScalarProperty Name="LocalCity" ColumnName="LocalCity" />
+                <ScalarProperty Name="LocalCountry" ColumnName="LocalCountry" />
+                <ScalarProperty Name="LocalProvence" ColumnName="LocalProvence" />
+                <ScalarProperty Name="AuditionsSubmitted" ColumnName="AuditionsSubmitted" />
+                <ScalarProperty Name="ApprovalMode" ColumnName="ApprovalMode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PlayLists">
+            <EntityTypeMapping TypeName="MobModel.PlayList">
+              <MappingFragment StoreEntitySet="PlayList">
+                <ScalarProperty Name="PlaylistId" ColumnName="PlaylistId" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+                <ScalarProperty Name="BandId" ColumnName="BandId" />
+                <ScalarProperty Name="IsSitePlaylist" ColumnName="IsSitePlaylist" />
+                <ScalarProperty Name="IsDefaultPlaylist" ColumnName="IsDefaultPlaylist" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PlaylistItems">
+            <EntityTypeMapping TypeName="MobModel.PlaylistItem">
+              <MappingFragment StoreEntitySet="PlaylistItem">
+                <ScalarProperty Name="PlaylistItemId" ColumnName="PlaylistItemId" />
+                <ScalarProperty Name="PlayListId" ColumnName="PlayListId" />
+                <ScalarProperty Name="SongId" ColumnName="SongId" />
+                <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Songs">
+            <EntityTypeMapping TypeName="MobModel.Song">
+              <MappingFragment StoreEntitySet="Song">
+                <ScalarProperty Name="SongId" ColumnName="SongId" />
+                <ScalarProperty Name="MediaId" ColumnName="MediaId" />
+                <ScalarProperty Name="SongTitle" ColumnName="SongTitle" />
+                <ScalarProperty Name="ReleaseYear" ColumnName="ReleaseYear" />
+                <ScalarProperty Name="ArtworkURL" ColumnName="ArtworkURL" />
+                <ScalarProperty Name="Lyrics" ColumnName="Lyrics" />
+                <ScalarProperty Name="SongDescription" ColumnName="SongDescription" />
+                <ScalarProperty Name="ActionParameter" ColumnName="ActionParameter" />
+                <ScalarProperty Name="Action" ColumnName="Action" />
+                <ScalarProperty Name="Controller" ColumnName="Controller" />
+                <ScalarProperty Name="GenreId" ColumnName="GenreId" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="ShowInLibrary" ColumnName="ShowInLibrary" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SongComments">
+            <EntityTypeMapping TypeName="MobModel.SongComment">
+              <MappingFragment StoreEntitySet="SongComment">
+                <ScalarProperty Name="SongCommentId" ColumnName="SongCommentId" />
+                <ScalarProperty Name="SongId" ColumnName="SongId" />
+                <ScalarProperty Name="Comment" ColumnName="Comment" />
+                <ScalarProperty Name="Rating" ColumnName="Rating" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+                <ScalarProperty Name="IsAnonymous" ColumnName="IsAnonymous" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tasks">
+            <EntityTypeMapping TypeName="MobModel.Task">
+              <MappingFragment StoreEntitySet="Task">
+                <ScalarProperty Name="TaskID" ColumnName="TaskID" />
+                <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Details" ColumnName="Details" />
+                <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="LinkType" ColumnName="LinkType" />
+                <ScalarProperty Name="LinkTypeID" ColumnName="LinkTypeID" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="DeleteArtist" FunctionName="MobModel.Store.u_DeleteArtist" />
+          <EntitySetMapping Name="Membership">
+            <EntityTypeMapping TypeName="MobModel.Membership">
+              <MappingFragment StoreEntitySet="webpages_Membership">
+                <ScalarProperty Name="PasswordVerificationTokenExpirationDate" ColumnName="PasswordVerificationTokenExpirationDate" />
+                <ScalarProperty Name="PasswordVerificationToken" ColumnName="PasswordVerificationToken" />
+                <ScalarProperty Name="PasswordSalt" ColumnName="PasswordSalt" />
+                <ScalarProperty Name="PasswordChangedDate" ColumnName="PasswordChangedDate" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="PasswordFailuresSinceLastSuccess" ColumnName="PasswordFailuresSinceLastSuccess" />
+                <ScalarProperty Name="LastPasswordFailureDate" ColumnName="LastPasswordFailureDate" />
+                <ScalarProperty Name="IsConfirmed" ColumnName="IsConfirmed" />
+                <ScalarProperty Name="ConfirmationToken" ColumnName="ConfirmationToken" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="GetUserAlerts" FunctionName="MobModel.Store.GetUserAlerts">
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

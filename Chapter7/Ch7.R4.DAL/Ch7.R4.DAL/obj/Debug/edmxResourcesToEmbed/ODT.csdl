@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Ch7.R4.Model" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="Entities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="ARTISTs" EntityType="Ch7.R4.Model.ARTIST" />
+  </EntityContainer>
+  <EntityType Name="ARTIST">
+    <Key>
+      <PropertyRef Name="ARTISTID" />
+    </Key>
+    <Property Name="ARTISTID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="USERNAME" Type="String" Nullable="false" MaxLength="256" Unicode="false" FixedLength="false" />
+    <Property Name="COUNTRY" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="PROVENCE" Type="String" MaxLength="65" Unicode="false" FixedLength="false" />
+    <Property Name="CITY" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="0" />
+    <Property Name="MODIFIEDDATE" Type="DateTime" Precision="0" />
+    <Property Name="PROFILEPRIVACYLEVEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="CONTACTPRIVACYLEVEL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="PROFILEVIEWS" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+  </EntityType>
+</Schema>

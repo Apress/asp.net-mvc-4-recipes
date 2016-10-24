@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Ch7R4ModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="ARTISTs">
+      <EntityTypeMapping TypeName="Ch7.R4.Model.ARTIST">
+        <MappingFragment StoreEntitySet="ARTIST">
+          <ScalarProperty Name="ARTISTID" ColumnName="ARTISTID" />
+          <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+          <ScalarProperty Name="COUNTRY" ColumnName="COUNTRY" />
+          <ScalarProperty Name="PROVENCE" ColumnName="PROVENCE" />
+          <ScalarProperty Name="CITY" ColumnName="CITY" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFIEDDATE" ColumnName="MODIFIEDDATE" />
+          <ScalarProperty Name="PROFILEPRIVACYLEVEL" ColumnName="PROFILEPRIVACYLEVEL" />
+          <ScalarProperty Name="CONTACTPRIVACYLEVEL" ColumnName="CONTACTPRIVACYLEVEL" />
+          <ScalarProperty Name="PROFILEVIEWS" ColumnName="PROFILEVIEWS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

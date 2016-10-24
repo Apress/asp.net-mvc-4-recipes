@@ -1,0 +1,24 @@
+﻿.RelatedFieldSection {
+    border: thin solid #CCCCCC;
+    padding:1em;
+}
+
+fieldset div {
+    padding:0.5em;
+}
+.label {
+    font-weight: 700;
+}
+input[type="checkbox"] {
+            background: transparent;
+            border: inherit;
+            width: auto;
+            padding:0.2em;
+            margin-right:5px;
+        }
+        input[type="radio"] {
+            background: transparent;
+            border: inherit;
+            width: auto;
+            margin-right:5px;
+        }

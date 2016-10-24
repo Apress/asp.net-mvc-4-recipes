@@ -1,0 +1,11 @@
+G:\WorkingFolder\MVCBook\Chapter10\Ch10.MvcExamples\Before\Ch10.Shared.Helpers.Tests\bin\Debug\Ch10.Shared.Helpers.Tests.dll
+G:\WorkingFolder\MVCBook\Chapter10\Ch10.MvcExamples\Before\Ch10.Shared.Helpers.Tests\bin\Debug\Ch10.Shared.Helpers.Tests.pdb
+G:\WorkingFolder\MVCBook\Chapter10\Ch10.MvcExamples\Before\Ch10.Shared.Helpers.Tests\bin\Debug\Ch10.Shared.Helpers.dll
+G:\WorkingFolder\MVCBook\Chapter10\Ch10.MvcExamples\Before\Ch10.Shared.Helpers.Tests\bin\Debug\nunit.framework.dll
+G:\WorkingFolder\MVCBook\Chapter10\Ch10.MvcExamples\Before\Ch10.Shared.Helpers.Tests\bin\Debug\Rhino.Mocks.dll
+G:\WorkingFolder\MVCBook\Chapter10\Ch10.MvcExamples\Before\Ch10.Shared.Helpers.Tests\bin\Debug\Ch10.Shared.Helpers.pdb
+G:\WorkingFolder\MVCBook\Chapter10\Ch10.MvcExamples\Before\Ch10.Shared.Helpers.Tests\bin\Debug\nunit.framework.xml
+G:\WorkingFolder\MVCBook\Chapter10\Ch10.MvcExamples\Before\Ch10.Shared.Helpers.Tests\bin\Debug\Rhino.Mocks.xml
+G:\WorkingFolder\MVCBook\Chapter10\Ch10.MvcExamples\Before\Ch10.Shared.Helpers.Tests\obj\Debug\Ch10.Shared.Helpers.Tests.csprojResolveAssemblyReference.cache
+G:\WorkingFolder\MVCBook\Chapter10\Ch10.MvcExamples\Before\Ch10.Shared.Helpers.Tests\obj\Debug\Ch10.Shared.Helpers.Tests.dll
+G:\WorkingFolder\MVCBook\Chapter10\Ch10.MvcExamples\Before\Ch10.Shared.Helpers.Tests\obj\Debug\Ch10.Shared.Helpers.Tests.pdb

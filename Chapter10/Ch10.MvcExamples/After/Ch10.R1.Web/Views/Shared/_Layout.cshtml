@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @RenderSection("headContent", required: false)
+</head>
+<body>
+    <header id="siteHeader">
+        <div class="content-wrapper">
+            <div class="float-left">
+                <p class="site-title">
+                    <a runat="server" href="~/" id="siteLogo">ASP.NET MVC Recipes Samples Chapter 10</a>
+                </p>
+            </div>
+            <div class="float-right">
+                <nav>
+                    <ul id="menu">
+                        <li><a runat="server" href="~/">Home</a></li>
+                        <li><a runat="server" href="~/About.aspx">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="content-wrapper main-content clear-fix">
+    @RenderBody()
+    </section>
+    <footer>
+        <div class="content-wrapper">
+            <div class="float-left">
+                <p>&copy; 2012 - John A. Ciliberti</p>
+            </div>
+        </div>
+    </footer>
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

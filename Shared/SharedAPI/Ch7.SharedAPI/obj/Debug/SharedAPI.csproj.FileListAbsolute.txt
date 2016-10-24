@@ -1,0 +1,7 @@
+G:\WorkingFolder\MVCBook\Shared\SharedAPI\Ch7.SharedAPI\obj\Debug\SharedAPI.pdb
+G:\WorkingFolder\MVCBook\Shared\SharedAPI\Ch7.SharedAPI\bin\Debug\SharedAPI.dll.config
+G:\WorkingFolder\MVCBook\Shared\SharedAPI\Ch7.SharedAPI\bin\Debug\SharedAPI.dll
+G:\WorkingFolder\MVCBook\Shared\SharedAPI\Ch7.SharedAPI\bin\Debug\SharedAPI.pdb
+G:\WorkingFolder\MVCBook\Shared\SharedAPI\Ch7.SharedAPI\bin\Debug\EntityFramework.dll
+G:\WorkingFolder\MVCBook\Shared\SharedAPI\Ch7.SharedAPI\bin\Debug\EntityFramework.xml
+G:\WorkingFolder\MVCBook\Shared\SharedAPI\Ch7.SharedAPI\obj\Debug\SharedAPI.dll

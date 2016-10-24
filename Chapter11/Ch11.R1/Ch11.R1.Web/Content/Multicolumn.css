@@ -1,0 +1,58 @@
+﻿
+.DynamicColumns {
+    margin:5px;
+}
+
+    .DynamicColumns ul {
+        list-style: none;
+        display: inline;
+    }
+
+    .DynamicColumns li {
+        display: inline;
+    }
+
+    .DynamicColumns h3 {
+        text-align: center;
+        margin: 0;
+    }
+
+.AvatarImage {
+    height: 90%;
+    width: 90%;
+}
+
+.ImageDiv {
+    float: left;
+    width: 40%;
+}
+
+@media all and (max-width: 700px) and (min-width: 500px) {
+    .ImageDiv {
+        width: 30%;
+    }
+}
+
+@media all and (max-width: 1200px) and (min-width: 700px) {
+    .ImageDiv {
+        width: 20%;
+    }
+}
+
+@media all and (max-width: 1500px) and (min-width: 1200px) {
+    .ImageDiv {
+        width: 15%;
+    }
+}
+
+@media all and (max-width: 1800px) and (min-width: 1501px) {
+    .ImageDiv {
+        width: 10%;
+    }
+}
+
+@media all and (max-width: 20000px) and (min-width: 1801px) {
+    .ImageDiv {
+        width: 5%;
+    }
+}

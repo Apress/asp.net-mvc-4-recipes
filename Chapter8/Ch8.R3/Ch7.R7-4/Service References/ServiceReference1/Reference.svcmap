@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="203815d1-9328-454f-8a9e-a36784f2dfc0" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="System" />
+      <ReferencedAssembly AssemblyName="System.Runtime.Serialization" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/WebAPIForLoadTest/WcfServices/PlaylistService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PlaylistService.wsdl" MetadataType="Wsdl" ID="1cb3bda9-059f-4a52-88b1-a2dfeba0a026" SourceId="1" SourceUrl="http://localhost/WebAPIForLoadTest/WcfServices/PlaylistService.svc?wsdl" />
+    <MetadataFile FileName="PlaylistService.xsd" MetadataType="Schema" ID="588b96dc-4a8d-4260-9ad9-f2100ab756af" SourceId="1" SourceUrl="http://localhost/WebAPIForLoadTest/WcfServices/PlaylistService.svc?xsd=xsd1" />
+    <MetadataFile FileName="PlaylistService.disco" MetadataType="Disco" ID="1b2e1d53-029d-4ed0-98f5-5b5cca246f78" SourceId="1" SourceUrl="http://localhost/WebAPIForLoadTest/WcfServices/PlaylistService.svc?disco" />
+    <MetadataFile FileName="PlaylistService1.xsd" MetadataType="Schema" ID="7d7900ca-a76a-4a44-9191-9f130e692138" SourceId="1" SourceUrl="http://localhost/WebAPIForLoadTest/WcfServices/PlaylistService.svc?xsd=xsd0" />
+    <MetadataFile FileName="PlaylistService2.xsd" MetadataType="Schema" ID="9554709d-f8fb-4152-be06-fc896ebfb4cb" SourceId="1" SourceUrl="http://localhost/WebAPIForLoadTest/WcfServices/PlaylistService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

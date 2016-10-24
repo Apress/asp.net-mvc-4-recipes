@@ -1,0 +1,269 @@
+﻿html {
+    background-color: #e2e2e2;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+    font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+display:block;
+}
+mark {
+    background-color: #a6dbed;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+img {
+border:0;
+}
+a {
+    color: #333;
+    -moz-outline: none;
+    outline: none;
+    padding-left: 3px;
+    padding-right: 3px;
+    text-decoration: underline;
+}
+
+    a:link, a:visited,
+    a:active, a:hover {
+        color: #333;
+    }
+
+    a:hover {
+        background-color: #c7d1d6;
+    }
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.clear-fix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+fieldset {
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 75px;
+}
+
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #f00;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+header {
+margin-left:0;
+font-size:12pt;
+color:#fff;
+background-color:#333;
+border:1px solid #000;
+padding:5px 0 20px;
+}
+header .content-wrapper {
+    padding-top: 10px; 
+    padding-bottom: 20px;
+}
+
+H1 {
+font-size:14pt;
+font-weight:500;
+color:#222;
+background-repeat:repeat;
+margin-top:0;
+margin-bottom:0;
+padding:0;
+}
+
+
+H2 {
+font-size:12pt;
+font-weight:500;
+margin:10px 0 2px;
+}
+
+
+/* site title
+----------------------------------------------------------*/
+.site-title {
+    color: #c8c8c8;
+    font-family: Rockwell, Consolas, "Courier New", Courier, monospace;
+    font-size: 2.3em;
+    margin: 0;
+}
+
+    .site-title a, .site-title a:hover, .site-title a:active {
+        background: none;
+        color: #c8c8c8;
+        -moz-outline: none;
+        outline: none;
+        text-decoration: none;
+    }
+
+/* page titles */
+hgroup.title {
+    margin-bottom: 10px;
+}
+
+hgroup.title h1, hgroup.title h2 {
+    display: inline;
+}
+
+hgroup.title h2 {
+    font-weight: normal;
+    margin-left: 3px;
+}
+
+/* menu
+----------------------------------------------------------*/
+ul#menu {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin: 0 0 5px;
+    padding: 0;
+    text-align: right;
+}
+
+    ul#menu li {
+        display: inline;
+        list-style: none;
+        padding-left: 15px;
+    }
+
+        ul#menu li a {
+            background: none;
+            color: #999;
+            text-decoration: none;
+        }
+
+        ul#menu li a:hover {
+            color: #333;
+            text-decoration: none;
+        }
+
+    .content-wrapper {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+/* main layout
+----------------------------------------------------------*/
+
+
+#body {
+    background-color: #efeeef;
+    clear: both;
+    padding-bottom: 35px;
+}
+
+    .main-content {
+        padding-left: 10px;
+        padding-top: 30px;
+    }
+
+/* content */
+article {
+    float: left;
+    width: 70%;
+}
+
+aside {
+    float: right;
+    width: 25%;
+}
+
+    aside ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        aside ul li {
+            background: url("../Images/bullet.png") no-repeat 0 50%;
+            padding: 2px 0 2px 20px;
+        }
+
+
+.AristImage {
+    height: 75px;
+    width: 75px;
+    -webkit-box-shadow: 3px 3px 7px #777;
+    -moz-box-shadow: 3px 3px 7px #777;
+    box-shadow: 3px 3px 7px #777;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin: 5px;
+}
+.ItemList {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+    .ItemList li {
+        margin-bottom:5px;
+    }
+
+.MasterList {
+    width: 40%;
+    height: 600px;
+    overflow: scroll;
+    display: block;
+}
+.DetailView {
+    width: 60%;
+}
+

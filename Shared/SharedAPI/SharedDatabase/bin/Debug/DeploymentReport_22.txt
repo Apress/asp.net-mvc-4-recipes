@@ -1,0 +1,24 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Alter
+       [dbo].[Artist] (Table)
+     Create
+       [dbo].[webpages_Membership] (Table)
+       [dbo].[webpages_OAuthMembership] (Table)
+       [dbo].[webpages_Roles] (Table)
+       [dbo].[webpages_UsersInRoles] (Table)
+       Default Constraint on [dbo].[webpages_Membership].[IsConfirmed] (Default Constraint)
+       Default Constraint on [dbo].[webpages_Membership].[PasswordFailuresSinceLastSuccess] (Default Constraint)
+       [dbo].[fk_UserId] (Foreign Key)
+       [dbo].[fk_RoleId] (Foreign Key)
+
+** Supporting actions

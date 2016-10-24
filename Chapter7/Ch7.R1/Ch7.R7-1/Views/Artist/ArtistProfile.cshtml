@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.Title = "Profile";
+}
+
+<h2>Profile</h2>
+The following is a list of your projects<br />
+@foreach (var item in Model)
+{
+    @item.Title
+
+}

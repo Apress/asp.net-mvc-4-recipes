@@ -1,0 +1,187 @@
+﻿@model Ch10.Mvc.Web.Models.ArtistMasterDetailsModel
+
+@{
+    ViewBag.Title = "Master Details View";
+}
+
+<h2>@ViewBag.Title</h2>
+<section id="ArtistMasterList" class="float-left MasterList">
+    <table class="grid">
+        @foreach (var item in Model.ArtistList)
+        {
+            <tr>
+                <td>
+
+                    <div class="ImageDiv float-left">
+                        <img src="@item.AvatarUrlSample" class="AristImage" alt="Click Image to view full profile" />
+                    </div>
+                    <div class="ContentDiv float-right">
+                        <ul>
+                            <li class="ProfileLink">@item.UserName</li>
+                            <li>@item.Provence</li>
+                            <li>@item.Country</li>
+                            <li>Joined :
+                <time>@String.Format("{0:d}", item.CreateDate)</time>
+                            </li>
+                            <li>@Html.ActionLink("View Details","MasterDetailsView", new{ SelectedItemId=item.ArtistId})</li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+        }
+    </table>
+</section>
+<section id="ArtistDetails" class="float-right DetailView ">
+@if(Model.SelectedArtistId>0){
+<fieldset>
+    <legend>Artist</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SelectedArtist.OldUserId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SelectedArtist.OldUserId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SelectedArtist.UserName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SelectedArtist.UserName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SelectedArtist.Country)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SelectedArtist.Country)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SelectedArtist.Provence)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SelectedArtist.Provence)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SelectedArtist.City)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SelectedArtist.City)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SelectedArtist.CreateDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SelectedArtist.CreateDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SelectedArtist.ModifiedDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SelectedArtist.ModifiedDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SelectedArtist.WebSite)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SelectedArtist.WebSite)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SelectedArtist.ProfilePrivacyLevel)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SelectedArtist.ProfilePrivacyLevel)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SelectedArtist.ContactPrivacyLevel)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SelectedArtist.ContactPrivacyLevel)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SelectedArtist.ProfileViews)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SelectedArtist.ProfileViews)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SelectedArtist.ProfileLastViewDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SelectedArtist.ProfileLastViewDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SelectedArtist.Rating)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SelectedArtist.Rating)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SelectedArtist.AvatarURL)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SelectedArtist.AvatarURL)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SelectedArtist.EmailAddress)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SelectedArtist.EmailAddress)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SelectedArtist.FileUploadsInBytes)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SelectedArtist.FileUploadsInBytes)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SelectedArtist.FileUploadQuotaInBytes)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SelectedArtist.FileUploadQuotaInBytes)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SelectedArtist.LastActivityDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SelectedArtist.LastActivityDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SelectedArtist.ShowChatStatus)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SelectedArtist.ShowChatStatus)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SelectedArtist.AllowChatSounds)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SelectedArtist.AllowChatSounds)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SelectedArtist.AvatarUrlSample)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SelectedArtist.AvatarUrlSample)
+    </div>
+</fieldset>
+}
+</section>

@@ -1,0 +1,24 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[ArtistSkill]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The column [dbo].[ArtistSkill].[UserTalentID] is being dropped, data loss could occur.
+
+** User actions
+     Drop
+       on [dbo].[ArtistSkill].[SkillLevel] (Default Constraint)
+     Table rebuild
+       [dbo].[ArtistSkill] (Table)
+
+** Supporting actions
+     Drop
+       [dbo].[FK_ArtistSkill_Artist] (Foreign Key)
+     Create
+       [dbo].[FK_ArtistSkill_Artist] (Foreign Key)
+
+The column [dbo].[ArtistSkill].[UserTalentID] is being dropped, data loss could occur.
+

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="G:\WorkingFolder\MVCBook\Chapter10\Ch10.MvcExamples\After\Ch10.Shared.Helpers.Tests\bin\Debug\Ch10.Shared.Helpers.Tests.dll" total="4" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2012-11-06" time="22:27:48">
+  <environment nunit-version="2.6.1.12217" clr-version="2.0.50727.6387" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.6.1\bin" machine-name="MUSICSTUDIO" user="John" user-domain="MUSICSTUDIO" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="G:\WorkingFolder\MVCBook\Chapter10\Ch10.MvcExamples\After\Ch10.Shared.Helpers.Tests\bin\Debug\Ch10.Shared.Helpers.Tests.dll" executed="True" result="Success" success="True" time="3.470" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="Ch10" executed="True" result="Success" success="True" time="3.418" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="Shared" executed="True" result="Success" success="True" time="3.418" asserts="0">
+            <results>
+              <test-suite type="Namespace" name="Helpers" executed="True" result="Success" success="True" time="3.417" asserts="0">
+                <results>
+                  <test-suite type="Namespace" name="Tests" executed="True" result="Success" success="True" time="3.417" asserts="0">
+                    <results>
+                      <test-suite type="TestFixture" name="Ch10GridHelperTests" executed="True" result="Success" success="True" time="3.415" asserts="0">
+                        <results>
+                          <test-case name="Ch10.Shared.Helpers.Tests.Ch10GridHelperTests.CreateNumericPager_1PagesOnPage1_ReturnsEmptyString" executed="True" result="Success" success="True" time="2.605" asserts="1" />
+                          <test-case name="Ch10.Shared.Helpers.Tests.Ch10GridHelperTests.CreateNumericPager21PagesOnPage9_ReturnsStart1End20" executed="True" result="Success" success="True" time="0.714" asserts="2" />
+                          <test-case name="Ch10.Shared.Helpers.Tests.Ch10GridHelperTests.CreateNumericPager69PagesOnPage68_ReturnsStart49End69" executed="True" result="Success" success="True" time="0.011" asserts="2" />
+                          <test-case name="Ch10.Shared.Helpers.Tests.Ch10GridHelperTests.CreateNumericPager69PagesOnPage69_ReturnsStart49End69" executed="True" result="Success" success="True" time="0.010" asserts="2" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPIForLoadTest", "WebAPIForLoadTest\WebAPIForLoadTest.csproj", "{C3EFAB80-A493-4B27-BCEB-8F3A49143E35}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{46DD1B22-1FF2-4B18-90B3-94570FC4EAB2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3EFAB80-A493-4B27-BCEB-8F3A49143E35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3EFAB80-A493-4B27-BCEB-8F3A49143E35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3EFAB80-A493-4B27-BCEB-8F3A49143E35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3EFAB80-A493-4B27-BCEB-8F3A49143E35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46DD1B22-1FF2-4B18-90B3-94570FC4EAB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46DD1B22-1FF2-4B18-90B3-94570FC4EAB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46DD1B22-1FF2-4B18-90B3-94570FC4EAB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46DD1B22-1FF2-4B18-90B3-94570FC4EAB2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

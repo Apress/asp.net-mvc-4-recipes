@@ -1,0 +1,24 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[CollaborationSpaceMedia]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Drop
+       on [dbo].[CollaborationSpaceMedia].[ModifiedDate] (Default Constraint)
+       on [dbo].[CollaborationSpaceMedia].[Archive] (Default Constraint)
+     Table rebuild
+       [dbo].[CollaborationSpaceMedia] (Table)
+
+** Supporting actions
+     Drop
+       [dbo].[FK_CollaborationSpaceMedia_CollaborationSpace] (Foreign Key)
+       [dbo].[FK_CollaborationSpaceMedia_ToTable_1] (Foreign Key)
+     Create
+       [dbo].[FK_CollaborationSpaceMedia_CollaborationSpace] (Foreign Key)
+       [dbo].[FK_CollaborationSpaceMedia_ToTable_1] (Foreign Key)

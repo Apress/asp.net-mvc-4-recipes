@@ -1,0 +1,61 @@
+﻿@using Ch12.R9.Web.Models
+@using Microsoft.AspNet.Mvc.Facebook.Models
+@{
+    ViewBag.Title = "Home Page";
+    MyAppUser user = ViewBag.User;
+    IEnumerable<MyAppUserFriend> friends = ViewBag.Friends;
+}
+
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title.</h1>
+                <h2>@ViewBag.Message</h2>
+            </hgroup>
+            <p>
+                To learn more about building Facebook apps using ASP.NET MVC visit
+                <a href="http://asp.net/mvc/facebook" title="ASP.NET MVC Website">http://asp.net/mvc/facebook</a>.
+                The page features <mark>videos, tutorials, and samples</mark> to help you get the most from ASP.NET MVC.
+                If you have any questions about ASP.NET MVC visit
+                <a href="http://forums.asp.net/1146.aspx/1?MVC" title="ASP.NET MVC Forum">our forums</a>.
+            </p>
+        </div>
+    </section>
+}
+@if (user == null)
+{
+    <h3>You are not logged in.</h3>
+}
+else
+{
+    <h3>Welcome @user.Name (@user.FacebookId)</h3>
+    if (!String.IsNullOrEmpty(@user.PictureUrl))
+    {
+        <img src="@user.PictureUrl" />    
+    }
+    else
+    {
+        <p>No picture available.</p>
+    }
+    <p><a href="mailto:@user.Email">@user.Email</a></p>
+    <h4>Here are some of your friends:</h4>
+    <table>
+        @foreach (var friend in friends)
+        {
+            <tr>
+                <td>@friend.Name</td>
+                <td>
+                    @if (!String.IsNullOrEmpty(friend.PictureUrl))
+                    {
+                        <img src="@friend.PictureUrl" />
+                    }
+                    else
+                    {
+                        <p>No picture available.</p>
+                    }
+                </td>
+            </tr>       
+        }
+    </table>
+}

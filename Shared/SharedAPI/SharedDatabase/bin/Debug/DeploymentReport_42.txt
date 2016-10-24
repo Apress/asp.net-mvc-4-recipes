@@ -1,0 +1,57 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[ArtistBlock] (Table)
+       [dbo].[ArtistFavorites] (Table)
+       [dbo].[BandAudition] (Table)
+       [dbo].[BandAuditionComment] (Table)
+       [dbo].[BandGenre] (Table)
+       [dbo].[CollaborationSpaceAlerts] (Table)
+       [dbo].[CollaborationSpaceGenre] (Table)
+       [dbo].[CollaborationSpaceInvite] (Table)
+       [dbo].[CollaborationSpaceMedia] (Table)
+       [dbo].[EmailOptOut] (Table)
+       [dbo].[EmailVerification] (Table)
+       [dbo].[OpenPosition] (Table)
+       Default Constraint on [dbo].[ArtistBlock].[CreateDate] (Default Constraint)
+       Default Constraint on [dbo].[ArtistBlock].[ReportAsSpammer] (Default Constraint)
+       Default Constraint on [dbo].[ArtistFavorites].[CreateDate] (Default Constraint)
+       Default Constraint on [dbo].[BandAuditionComment].[Rating] (Default Constraint)
+       Default Constraint on [dbo].[BandAuditionComment].[Vote] (Default Constraint)
+       Default Constraint on [dbo].[CollaborationSpaceAlerts].[CreateDate] (Default Constraint)
+       Default Constraint on [dbo].[CollaborationSpaceMedia].[ModifiedDate] (Default Constraint)
+       Default Constraint on [dbo].[CollaborationSpaceMedia].[Archive] (Default Constraint)
+       Default Constraint on [dbo].[OpenPosition].[SkillLevel] (Default Constraint)
+       Default Constraint on [dbo].[OpenPosition].[DatePosted] (Default Constraint)
+       Default Constraint on [dbo].[OpenPosition].[DateModified] (Default Constraint)
+       Default Constraint on [dbo].[OpenPosition].[Status] (Default Constraint)
+       Default Constraint on [dbo].[OpenPosition].[LocalOnly] (Default Constraint)
+       Default Constraint on [dbo].[OpenPosition].[AuditionsSubmitted] (Default Constraint)
+       Default Constraint on [dbo].[OpenPosition].[ApprovalMode] (Default Constraint)
+       [dbo].[FK_ArtistBlock_Artist] (Foreign Key)
+       [dbo].[FK_ArtistFavorites_Artist] (Foreign Key)
+       [dbo].[FK_BandAudition_Artist] (Foreign Key)
+       [dbo].[FK_BandAudition_Song] (Foreign Key)
+       [dbo].[FK_BandAuditionComment_Artist] (Foreign Key)
+       [dbo].[FK_BandAuditionComment_BandAudition] (Foreign Key)
+       [dbo].[FK_BandGenre_Band] (Foreign Key)
+       [dbo].[FK_BandGenre_GenreLookUp] (Foreign Key)
+       [dbo].[FK_CollaborationSpaceAlerts_CollaborationSpace] (Foreign Key)
+       [dbo].[FK_CollaborationSpaceAlerts_Artist] (Foreign Key)
+       [dbo].[FK_CollaborationSpaceGenre_CollaborationSpace] (Foreign Key)
+       [dbo].[FK_CollaborationSpaceGenre_GenreLookUp] (Foreign Key)
+       [dbo].[FK_CollaborationSpaceInvite_CollaborationSpace] (Foreign Key)
+       [dbo].[FK_CollaborationSpaceInvite_Artist] (Foreign Key)
+       [dbo].[FK_CollaborationSpaceMedia_CollaborationSpace] (Foreign Key)
+       [dbo].[FK_CollaborationSpaceMedia_ToTable_1] (Foreign Key)
+
+** Supporting actions

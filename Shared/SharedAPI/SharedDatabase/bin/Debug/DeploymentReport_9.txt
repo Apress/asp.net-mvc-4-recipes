@@ -1,0 +1,108 @@
+﻿** Warnings
+     The object reference [dbo].[PlaylistItem].[PlaylistId] differs only by case from the object definition
+       [dbo].[PlaylistItem].[PlayListId].
+     The object reference [dbo].[Playlist] differs only by case from the object definition [dbo].[PlayList].
+     The object reference [dbo].[Playlist].[PlaylistId] differs only by case from the object definition
+       [dbo].[PlayList].[PlaylistId].
+     The object reference [dbo].[media] differs only by case from the object definition [dbo].[Media].
+     The object reference [dbo].[media].[ArtistId] differs only by case from the object definition [dbo].[Media].[ArtistId].
+     The object reference [dbo].[media].[IsDeleted] differs only by case from the object definition
+       [dbo].[Media].[IsDeleted].
+     The object reference [dbo].[PlaylistItem].[songId] differs only by case from the object definition
+       [dbo].[PlaylistItem].[SongId].
+     The object reference [dbo].[PlayListItem] differs only by case from the object definition [dbo].[PlaylistItem].
+     The object reference [dbo].[PlayListItem].[PlayListId] differs only by case from the object definition
+       [dbo].[PlaylistItem].[PlayListId].
+     The object reference [dbo].[ArtistCollaborationSpaces].[artistId] differs only by case from the object definition
+       [dbo].[ArtistCollaborationSpaces].[ArtistId].
+     The object reference [dbo].[ArtistBand].[artistid] differs only by case from the object definition
+       [dbo].[ArtistBand].[ArtistId].
+
+** Highlights
+     Tables that will be rebuilt
+       [dbo].[CollaborationSpace]
+       [dbo].[Media]
+       [dbo].[Artist]
+       [dbo].[ArtistBand]
+       [dbo].[ArtistCollaborationSpaces]
+       [dbo].[Band]
+       [dbo].[PlayList]
+       [dbo].[PlaylistItem]
+       [dbo].[Song]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Drop
+       [dbo].[DF__tmp_ms_xx__Conta__21B6055D] (Default Constraint)
+       [dbo].[DF__tmp_ms_xx__Profi__1FCDBCEB] (Default Constraint)
+       [dbo].[DF__tmp_ms_xx__Profi__20C1E124] (Default Constraint)
+       [dbo].[DF__tmp_ms_xx__Profi__22AA2996] (Default Constraint)
+       [dbo].[DF__tmp_ms_xx__Ratin__239E4DCF] (Default Constraint)
+       [dbo].[DF__ArtistBan__Allow__46E78A0C] (Default Constraint)
+       [dbo].[DF__ArtistBan__IsAct__45F365D3] (Default Constraint)
+       [dbo].[DF__ArtistBan__IsMem__47DBAE45] (Default Constraint)
+       [dbo].[DF__ArtistCol__First__2B3F6F97] (Default Constraint)
+       [dbo].[DF__ArtistCol__IsCre__2A4B4B5E] (Default Constraint)
+       [dbo].[DF__ArtistCol__LastC__2C3393D0] (Default Constraint)
+       [dbo].[DF__Collabora__Allow__2E1BDC42] (Default Constraint)
+       [dbo].[DF__Collabora__Allow__300424B4] (Default Constraint)
+       [dbo].[DF__Collabora__Conce__35BCFE0A] (Default Constraint)
+       [dbo].[DF__Collabora__Copyr__2F10007B] (Default Constraint)
+       [dbo].[DF__Collabora__Creat__30F848ED] (Default Constraint)
+       [dbo].[DF__Collabora__Modif__31EC6D26] (Default Constraint)
+       [dbo].[DF__Collabora__Numbe__32E0915F] (Default Constraint)
+       [dbo].[DF__Collabora__Numbe__33D4B598] (Default Constraint)
+       [dbo].[DF__Collabora__Restr__2D27B809] (Default Constraint)
+       [dbo].[DF__Collabora__Statu__34C8D9D1] (Default Constraint)
+       [dbo].[DF__Media__AllowDown__5629CD9C] (Default Constraint)
+       [dbo].[DF__Media__BitRateIn__5535A963] (Default Constraint)
+       [dbo].[DF__Media__DownloadC__571DF1D5] (Default Constraint)
+       [dbo].[DF__Media__FileSizeI__5441852A] (Default Constraint)
+       [dbo].[DF__Media__IsCloudBl__52593CB8] (Default Constraint)
+       [dbo].[DF__Media__MediaType__534D60F1] (Default Constraint)
+       [dbo].[DF__PlayList__IsDefa__59063A47] (Default Constraint)
+       [dbo].[DF__PlayList__IsSite__5812160E] (Default Constraint)
+       [dbo].[DF__PlaylistI__Displ__59FA5E80] (Default Constraint)
+     Table rebuild
+       [dbo].[CollaborationSpace] (Table)
+       [dbo].[Media] (Table)
+       [dbo].[Artist] (Table)
+       [dbo].[ArtistBand] (Table)
+       [dbo].[ArtistCollaborationSpaces] (Table)
+       [dbo].[Band] (Table)
+       [dbo].[PlayList] (Table)
+       [dbo].[PlaylistItem] (Table)
+       [dbo].[Song] (Table)
+
+** Supporting actions
+     Drop
+       [dbo].[FK_CollaborationSpace_ToTable] (Foreign Key)
+       [dbo].[FK_Media_ToTable] (Foreign Key)
+       [dbo].[FK_ArtistCollaborationSpaces_ToTable] (Foreign Key)
+       [dbo].[FK_ArtistBand_ToArtist] (Foreign Key)
+       [dbo].[FK_PlayList_Artist] (Foreign Key)
+       [dbo].[FK_ArtistBand_ToBand] (Foreign Key)
+       [dbo].[FK_ArtistCollaborationSpaces_ToTable_1] (Foreign Key)
+       [dbo].[FK_PlayList_Band] (Foreign Key)
+       [dbo].[FK_Song_Media] (Foreign Key)
+       [dbo].[FK_PlaylistItem_PayList] (Foreign Key)
+       [dbo].[FK_PlaylistItem_Song] (Foreign Key)
+     Create
+       [dbo].[FK_CollaborationSpace_ToTable] (Foreign Key)
+       [dbo].[FK_Media_ToTable] (Foreign Key)
+       [dbo].[FK_ArtistCollaborationSpaces_ToTable] (Foreign Key)
+       [dbo].[FK_ArtistBand_ToArtist] (Foreign Key)
+       [dbo].[FK_PlayList_Artist] (Foreign Key)
+       [dbo].[FK_ArtistBand_ToBand] (Foreign Key)
+       [dbo].[FK_ArtistCollaborationSpaces_ToTable_1] (Foreign Key)
+       [dbo].[FK_PlayList_Band] (Foreign Key)
+       [dbo].[FK_Song_Media] (Foreign Key)
+       [dbo].[FK_PlaylistItem_PayList] (Foreign Key)
+       [dbo].[FK_PlaylistItem_Song] (Foreign Key)
+     Refresh
+       [dbo].[u_DeleteArtist] (Procedure)

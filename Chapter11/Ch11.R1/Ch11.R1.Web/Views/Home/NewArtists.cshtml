@@ -1,0 +1,27 @@
+﻿@model List<Ch7.SharedAPI.Artist>
+@{
+    ViewBag.Title = "New Artists";
+}
+@section headercontent{
+    <link href="~/Content/Multicolumn.css" rel="stylesheet" />
+}
+<h2>New Artists Photos</h2>
+
+<div class="DynamicColumns">
+    <ul>
+        @foreach (var item in Model)
+        {
+            <li>
+                <div class="ImageDiv">
+
+                    <img src="@item.AvatarUrlSample" class="AvatarImage" alt="@item.UserName" />
+                    <h3>@item.UserName</h3>
+                </div>
+            </li>
+    }
+    </ul>
+</div>
+@section scripts{
+    <script src="~/Scripts/respond.min.js"></script>
+}
+

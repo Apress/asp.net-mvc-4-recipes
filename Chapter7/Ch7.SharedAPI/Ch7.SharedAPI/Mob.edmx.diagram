@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2c981130b69c428bbf741deb903da33d" Name="Diagram1" ZoomLevel="100">
+        <EntityTypeShape EntityType="MobModel.Alert" Width="1.5" PointX="7.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobModel.AlertSubscription" Width="1.5" PointX="3" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobModel.AlertTag" Width="1.5" PointX="10" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobModel.Artist" Width="2" PointX="0.75" PointY="25.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobModel.ArtistBand" Width="1.5" PointX="6" PointY="27.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobModel.ArtistBlock" Width="1.5" PointX="3" PointY="25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobModel.ArtistCollaborationSpace" Width="1.5" PointX="6" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobModel.ArtistFavorite" Width="1.5" PointX="3" PointY="31.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobModel.ArtistProfile" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobModel.ArtistSkill" Width="1.5" PointX="3" PointY="34.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobModel.Band" Width="1.5" PointX="1.5" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobModel.BandAudition" Width="1.5" PointX="7.5" PointY="42.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobModel.BandAuditionComment" Width="1.5" PointX="9.75" PointY="34.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobModel.BandGenre" Width="1.5" PointX="3.75" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobModel.BannedEmailAddress" Width="1.5" PointX="4.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobModel.CollaborationSpace" Width="1.5" PointX="3.75" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobModel.CollaborationSpaceAlert" Width="1.5" PointX="3" PointY="28" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobModel.CollaborationSpaceComment" Width="1.5" PointX="6" PointY="32.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobModel.CollaborationSpaceFile" Width="1.5" PointX="5.25" PointY="53.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobModel.CollaborationSpaceGenre" Width="1.5" PointX="6" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobModel.CollaborationSpaceInvite" Width="1.5" PointX="9" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobModel.CollaborationSpaceMedia" Width="1.5" PointX="8.25" PointY="53.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobModel.EmailOptOut" Width="1.5" PointX="6.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobModel.EmailVerification" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobModel.GenreLookUp" Width="1.5" PointX="0.75" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobModel.Medium" Width="1.5" PointX="3" PointY="52" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobModel.Message" Width="1.5" PointX="2.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobModel.MessageRecipient" Width="1.5" PointX="5" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobModel.MessageSpam" Width="1.5" PointX="8.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobModel.OpenPosition" Width="1.5" PointX="8.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobModel.PlayList" Width="1.5" PointX="9" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobModel.PlaylistItem" Width="1.5" PointX="7.5" PointY="60.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobModel.Song" Width="1.5" PointX="5.25" PointY="59.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobModel.SongComment" Width="1.5" PointX="10.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobModel.Task" Width="1.5" PointX="3" PointY="61.75" IsExpanded="true" />
+        <AssociationConnector Association="MobModel.FK_AlertTag_Alert" ManuallyRouted="false" />
+        <AssociationConnector Association="MobModel.FK_AlertSubscription_Artist" ManuallyRouted="false" />
+        <AssociationConnector Association="MobModel.FK_ArtistBand_ToArtist" ManuallyRouted="false" />
+        <AssociationConnector Association="MobModel.FK_ArtistBlock_Artist" ManuallyRouted="false" />
+        <AssociationConnector Association="MobModel.FK_ArtistCollaborationSpaces_ToTable" ManuallyRouted="false" />
+        <AssociationConnector Association="MobModel.FK_ArtistFavorites_Artist" ManuallyRouted="false" />
+        <AssociationConnector Association="MobModel.FK_ArtistSkill_Artist" ManuallyRouted="false" />
+        <AssociationConnector Association="MobModel.FK_BandAudition_Artist" ManuallyRouted="false" />
+        <AssociationConnector Association="MobModel.FK_BandAuditionComment_Artist" ManuallyRouted="false" />
+        <AssociationConnector Association="MobModel.FK_CollaborationSpaceAlerts_Artist" ManuallyRouted="false" />
+        <AssociationConnector Association="MobModel.FK_CollaborationSpaceComment_Artist" ManuallyRouted="false" />
+        <AssociationConnector Association="MobModel.FK_CollaborationSpaceInvite_Artist" ManuallyRouted="false" />
+        <AssociationConnector Association="MobModel.FK_Media_ToTable" ManuallyRouted="false" />
+        <AssociationConnector Association="MobModel.FK_Playlist_Artist" ManuallyRouted="false" />
+        <AssociationConnector Association="MobModel.FK_Task_Artist" ManuallyRouted="false" />
+        <AssociationConnector Association="MobModel.FK_ArtistBand_ToBand" ManuallyRouted="false" />
+        <AssociationConnector Association="MobModel.FK_ArtistCollaborationSpaces_ToTable_1" ManuallyRouted="false" />
+        <AssociationConnector Association="MobModel.FK_BandGenre_Band" ManuallyRouted="false" />
+        <AssociationConnector Association="MobModel.FK_CollaborationSpace_ToTable" ManuallyRouted="false" />
+        <AssociationConnector Association="MobModel.FK_PlayList_Band" ManuallyRouted="false" />
+        <AssociationConnector Association="MobModel.FK_BandAudition_Song" ManuallyRouted="false" />
+        <AssociationConnector Association="MobModel.FK_BandAuditionComment_BandAudition" ManuallyRouted="false" />
+        <AssociationConnector Association="MobModel.FK_BandGenre_GenreLookUp" ManuallyRouted="false" />
+        <AssociationConnector Association="MobModel.FK_CollaborationSpaceAlerts_CollaborationSpace" ManuallyRouted="false" />
+        <AssociationConnector Association="MobModel.FK_CollaborationSpaceComment_CollaborationSpace" ManuallyRouted="false" />
+        <AssociationConnector Association="MobModel.FK_CollaborationSpaceFile_CollaborationSpace" ManuallyRouted="false" />
+        <AssociationConnector Association="MobModel.FK_CollaborationSpaceGenre_CollaborationSpace" ManuallyRouted="false" />
+        <AssociationConnector Association="MobModel.FK_CollaborationSpaceInvite_CollaborationSpace" ManuallyRouted="false" />
+        <AssociationConnector Association="MobModel.FK_CollaborationSpaceMedia_CollaborationSpace" ManuallyRouted="false" />
+        <AssociationConnector Association="MobModel.FK_CollaborationSpaceComment_ToTable" ManuallyRouted="false" />
+        <AssociationConnector Association="MobModel.FK_CollaborationSpaceFile_Media" ManuallyRouted="false" />
+        <AssociationConnector Association="MobModel.FK_CollaborationSpaceGenre_GenreLookUp" ManuallyRouted="false" />
+        <AssociationConnector Association="MobModel.FK_CollaborationSpaceMedia_ToTable_1" ManuallyRouted="false" />
+        <AssociationConnector Association="MobModel.FK_Song_Media" ManuallyRouted="false" />
+        <AssociationConnector Association="MobModel.FK_MessageRecipient_Message" ManuallyRouted="false" />
+        <AssociationConnector Association="MobModel.FK_PlaylistItem_PayList" ManuallyRouted="false" />
+        <AssociationConnector Association="MobModel.FK_PlaylistItem_Song" ManuallyRouted="false" />
+        <AssociationConnector Association="MobModel.FK_Message_Artist" />
+        <AssociationConnector Association="MobModel.FK_MessageRecipient_Artist" />
+        <AssociationConnector Association="MobModel.FK_ArtistProfile_Artist" />
+        <AssociationConnector Association="MobModel.FK_SongComment_Song" />
+        <EntityTypeShape EntityType="MobModel.Membership" Width="1.5" PointX="10.739294500434442" PointY="23.786167677392331" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

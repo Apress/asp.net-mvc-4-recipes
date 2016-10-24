@@ -1,0 +1,5 @@
+G:\WorkingFolder\MVCBook\Chapter10\Ch10.WebFormsExamples\ControlLibrary\bin\Debug\Ch10.WebFormsExamples.ControlLibrary.dll
+G:\WorkingFolder\MVCBook\Chapter10\Ch10.WebFormsExamples\ControlLibrary\bin\Debug\Ch10.WebFormsExamples.ControlLibrary.pdb
+G:\WorkingFolder\MVCBook\Chapter10\Ch10.WebFormsExamples\ControlLibrary\obj\Debug\Ch10.WebFormsExamples.ControlLibrary.csprojResolveAssemblyReference.cache
+G:\WorkingFolder\MVCBook\Chapter10\Ch10.WebFormsExamples\ControlLibrary\obj\Debug\Ch10.WebFormsExamples.ControlLibrary.dll
+G:\WorkingFolder\MVCBook\Chapter10\Ch10.WebFormsExamples\ControlLibrary\obj\Debug\Ch10.WebFormsExamples.ControlLibrary.pdb

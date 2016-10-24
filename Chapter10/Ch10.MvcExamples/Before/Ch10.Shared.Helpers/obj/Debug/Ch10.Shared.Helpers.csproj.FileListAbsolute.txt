@@ -1,0 +1,4 @@
+G:\WorkingFolder\MVCBook\Chapter10\Ch10.MvcExamples\Before\Ch10.Shared.Helpers\bin\Debug\Ch10.Shared.Helpers.dll
+G:\WorkingFolder\MVCBook\Chapter10\Ch10.MvcExamples\Before\Ch10.Shared.Helpers\bin\Debug\Ch10.Shared.Helpers.pdb
+G:\WorkingFolder\MVCBook\Chapter10\Ch10.MvcExamples\Before\Ch10.Shared.Helpers\obj\Debug\Ch10.Shared.Helpers.dll
+G:\WorkingFolder\MVCBook\Chapter10\Ch10.MvcExamples\Before\Ch10.Shared.Helpers\obj\Debug\Ch10.Shared.Helpers.pdb

@@ -1,0 +1,21 @@
+﻿#PeepsList {
+    width: 400px;
+    float: left;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+#PeepsForm {
+    width:600px;
+    float:right;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+    #PeepsForm ul {
+        list-style:none;
+    }
+
+
+#ContainerDiv {
+    display: none;
+}

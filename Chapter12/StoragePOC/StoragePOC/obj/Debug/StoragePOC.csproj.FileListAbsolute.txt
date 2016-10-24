@@ -1,0 +1,86 @@
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\obj\Debug\StoragePOC.csprojResolveAssemblyReference.cache
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\obj\Debug\StoragePOC.Properties.Resources.resources
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\obj\Debug\StoragePOC.csproj.GenerateResource.Cache
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\StoragePOC.dll
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\StoragePOC.pdb
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\Antlr3.Runtime.dll
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\EntityFramework.dll
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\Microsoft.Data.Edm.dll
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\Microsoft.Data.OData.dll
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\Microsoft.WindowsAzure.Storage.dll
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\Newtonsoft.Json.dll
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Net.Http.Formatting.dll
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Spatial.dll
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Web.Helpers.dll
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Web.Http.dll
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Web.Http.WebHost.dll
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Web.Mvc.dll
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Web.Optimization.dll
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Web.Providers.dll
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Web.Razor.dll
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Web.WebPages.Deployment.dll
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Web.WebPages.dll
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Web.WebPages.Razor.dll
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\WebGrease.dll
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\Microsoft.Data.Edm.xml
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\Microsoft.Data.OData.xml
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\Microsoft.WindowsAzure.Storage.xml
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Spatial.xml
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\EntityFramework.xml
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\Newtonsoft.Json.xml
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Net.Http.Formatting.xml
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Web.Helpers.xml
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Web.Http.xml
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Web.Http.WebHost.xml
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Web.Mvc.xml
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Web.Razor.xml
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Web.WebPages.xml
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Web.WebPages.Deployment.xml
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Web.WebPages.Razor.xml
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\obj\Debug\StoragePOC.dll
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter12\StoragePOC\StoragePOC\obj\Debug\StoragePOC.pdb
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\StoragePOC.dll
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\StoragePOC.pdb
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\Antlr3.Runtime.dll
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\EntityFramework.dll
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\Microsoft.Data.Edm.dll
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\Microsoft.Data.OData.dll
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\Microsoft.Web.Infrastructure.dll
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\Microsoft.WindowsAzure.Storage.dll
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\Newtonsoft.Json.dll
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Net.Http.Formatting.dll
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Spatial.dll
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Web.Helpers.dll
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Web.Http.dll
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Web.Http.WebHost.dll
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Web.Mvc.dll
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Web.Optimization.dll
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Web.Providers.dll
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Web.Razor.dll
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Web.WebPages.Deployment.dll
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Web.WebPages.dll
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Web.WebPages.Razor.dll
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\WebGrease.dll
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\Microsoft.Data.Edm.xml
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\Microsoft.Data.OData.xml
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\Microsoft.WindowsAzure.Storage.xml
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Spatial.xml
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\EntityFramework.xml
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\Newtonsoft.Json.xml
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Net.Http.Formatting.xml
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Web.Helpers.xml
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Web.Http.xml
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Web.Http.WebHost.xml
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Web.Mvc.xml
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Web.Razor.xml
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Web.WebPages.xml
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Web.WebPages.Deployment.xml
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\bin\System.Web.WebPages.Razor.xml
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\obj\Debug\StoragePOC.csprojResolveAssemblyReference.cache
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\obj\Debug\StoragePOC.Properties.Resources.resources
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\obj\Debug\StoragePOC.csproj.GenerateResource.Cache
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\obj\Debug\StoragePOC.dll
+C:\WorkingFolder\MVCBook\Chapter12\StoragePOC\StoragePOC\obj\Debug\StoragePOC.pdb

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Ch7.R4.Model.Store" Alias="Self" Provider="Oracle.DataAccess.Client" ProviderManifestToken="11.2" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="Ch7R4ModelStoreContainer">
+    <EntitySet Name="ARTIST" EntityType="Ch7.R4.Model.Store.ARTIST" store:Type="Tables" Schema="JOHN" />
+  </EntityContainer>
+  <EntityType Name="ARTIST">
+    <Key>
+      <PropertyRef Name="ARTISTID" />
+    </Key>
+    <Property Name="ARTISTID" Type="number" Nullable="false" />
+    <Property Name="USERNAME" Type="varchar2" Nullable="false" MaxLength="256" />
+    <Property Name="COUNTRY" Type="varchar2" MaxLength="50" />
+    <Property Name="PROVENCE" Type="varchar2" MaxLength="65" />
+    <Property Name="CITY" Type="varchar2" MaxLength="50" />
+    <Property Name="CREATEDATE" Type="date" />
+    <Property Name="MODIFIEDDATE" Type="date" />
+    <Property Name="PROFILEPRIVACYLEVEL" Type="number" Nullable="false" />
+    <Property Name="CONTACTPRIVACYLEVEL" Type="number" Nullable="false" />
+    <Property Name="PROFILEVIEWS" Type="number" Nullable="false" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,50 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[Artist]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The column [dbo].[Artist].[ArtistId] on table [dbo].[Artist] must be added, but the column has no default value and does
+         not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either:
+         add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a
+         deployment option.
+       The type for column UserId in table [dbo].[Artist] is currently  INT NOT NULL but is being changed to  UNIQUEIDENTIFIER
+         NOT NULL. There is no implicit or explicit conversion.
+
+** User actions
+     Drop
+       on [dbo].[Artist].[ProfileCreateDate] (Default Constraint)
+       on [dbo].[Artist].[ProfilePrivacyLevel] (Default Constraint)
+       on [dbo].[Artist].[ContactPrivacyLevel] (Default Constraint)
+       on [dbo].[Artist].[ProfileViews] (Default Constraint)
+       on [dbo].[Artist].[Rating] (Default Constraint)
+     Table rebuild
+       [dbo].[Artist] (Table)
+     Create
+       [dbo].[ArtistCollaborationSpaces] (Table)
+       [dbo].[Band] (Table)
+       [dbo].[CollaborationSpace] (Table)
+       Default Constraint on [dbo].[ArtistCollaborationSpaces].[IsCreator] (Default Constraint)
+       Default Constraint on [dbo].[ArtistCollaborationSpaces].[FirstContributionDate] (Default Constraint)
+       Default Constraint on [dbo].[ArtistCollaborationSpaces].[LastContributionDate] (Default Constraint)
+       Default Constraint on [dbo].[CollaborationSpace].[RestrictContributorsToBand] (Default Constraint)
+       Default Constraint on [dbo].[CollaborationSpace].[AllowPublicView] (Default Constraint)
+       Default Constraint on [dbo].[CollaborationSpace].[CopyrightModel] (Default Constraint)
+       Default Constraint on [dbo].[CollaborationSpace].[AllowContributorsToPublish] (Default Constraint)
+       Default Constraint on [dbo].[CollaborationSpace].[CreateDate] (Default Constraint)
+       Default Constraint on [dbo].[CollaborationSpace].[ModifiedDate] (Default Constraint)
+       Default Constraint on [dbo].[CollaborationSpace].[NumberViews] (Default Constraint)
+       Default Constraint on [dbo].[CollaborationSpace].[NumberComments] (Default Constraint)
+       Default Constraint on [dbo].[CollaborationSpace].[Status] (Default Constraint)
+       Default Constraint on [dbo].[CollaborationSpace].[ConceptId] (Default Constraint)
+       [dbo].[FK_ArtistCollaborationSpaces_ToTable] (Foreign Key)
+       [dbo].[FK_ArtistCollaborationSpaces_ToTable_1] (Foreign Key)
+       [dbo].[FK_CollaborationSpace_ToTable] (Foreign Key)
+
+** Supporting actions
+
+The column [dbo].[Artist].[ArtistId] on table [dbo].[Artist] must be added, but the column has no default value and does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+The type for column UserId in table [dbo].[Artist] is currently  INT NOT NULL but is being changed to  UNIQUEIDENTIFIER NOT NULL. There is no implicit or explicit conversion.
+

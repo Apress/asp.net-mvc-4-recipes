@@ -1,0 +1,111 @@
+﻿** Warnings
+     The object reference [dbo].[media] differs only by case from the object definition [dbo].[Media].
+     The object reference [dbo].[media].[ArtistId] differs only by case from the object definition [dbo].[Media].[ArtistId].
+     The object reference [dbo].[media].[IsDeleted] differs only by case from the object definition
+       [dbo].[Media].[IsDeleted].
+     The object reference [dbo].[ArtistBand].[artistid] differs only by case from the object definition
+       [dbo].[ArtistBand].[ArtistId].
+     The object reference [dbo].[ArtistCollaborationSpaces].[artistId] differs only by case from the object definition
+       [dbo].[ArtistCollaborationSpaces].[ArtistId].
+     The object reference [dbo].[PlayList].[artistid] differs only by case from the object definition
+       [dbo].[PlayList].[ArtistId].
+     The object reference [dbo].[PlayListItem] differs only by case from the object definition [dbo].[PlaylistItem].
+     The object reference [dbo].[PlayListItem].[PlayListId] differs only by case from the object definition
+       [dbo].[PlaylistItem].[PlayListId].
+     The object reference [dbo].[PlaylistItem].[PlaylistId] differs only by case from the object definition
+       [dbo].[PlaylistItem].[PlayListId].
+     The object reference [dbo].[Playlist] differs only by case from the object definition [dbo].[PlayList].
+     The object reference [dbo].[Playlist].[PlaylistId] differs only by case from the object definition
+       [dbo].[PlayList].[PlaylistId].
+     The object reference [dbo].[PlaylistItem].[songId] differs only by case from the object definition
+       [dbo].[PlaylistItem].[SongId].
+
+** Highlights
+     Tables that will be rebuilt
+       [dbo].[Artist]
+       [dbo].[ArtistBand]
+       [dbo].[ArtistCollaborationSpaces]
+       [dbo].[Band]
+       [dbo].[CollaborationSpace]
+       [dbo].[Media]
+       [dbo].[PlayList]
+       [dbo].[PlaylistItem]
+       [dbo].[Song]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Drop
+       on [dbo].[Artist].[ProfileCreateDate] (Default Constraint)
+       on [dbo].[Artist].[ProfilePrivacyLevel] (Default Constraint)
+       on [dbo].[Artist].[ContactPrivacyLevel] (Default Constraint)
+       on [dbo].[Artist].[ProfileViews] (Default Constraint)
+       on [dbo].[Artist].[Rating] (Default Constraint)
+       on [dbo].[ArtistBand].[IsActiveMember] (Default Constraint)
+       on [dbo].[ArtistBand].[AllowEditBand] (Default Constraint)
+       on [dbo].[ArtistBand].[IsMemberAdmin] (Default Constraint)
+       on [dbo].[ArtistCollaborationSpaces].[IsCreator] (Default Constraint)
+       on [dbo].[ArtistCollaborationSpaces].[FirstContributionDate] (Default Constraint)
+       on [dbo].[ArtistCollaborationSpaces].[LastContributionDate] (Default Constraint)
+       on [dbo].[CollaborationSpace].[RestrictContributorsToBand] (Default Constraint)
+       on [dbo].[CollaborationSpace].[AllowPublicView] (Default Constraint)
+       on [dbo].[CollaborationSpace].[CopyrightModel] (Default Constraint)
+       on [dbo].[CollaborationSpace].[AllowContributorsToPublish] (Default Constraint)
+       on [dbo].[CollaborationSpace].[CreateDate] (Default Constraint)
+       on [dbo].[CollaborationSpace].[ModifiedDate] (Default Constraint)
+       on [dbo].[CollaborationSpace].[NumberViews] (Default Constraint)
+       on [dbo].[CollaborationSpace].[NumberComments] (Default Constraint)
+       on [dbo].[CollaborationSpace].[Status] (Default Constraint)
+       on [dbo].[CollaborationSpace].[ConceptId] (Default Constraint)
+       on [dbo].[Media].[IsCloudBlob] (Default Constraint)
+       on [dbo].[Media].[MediaType] (Default Constraint)
+       on [dbo].[Media].[FileSizeInBytes] (Default Constraint)
+       on [dbo].[Media].[BitRateInKbps] (Default Constraint)
+       on [dbo].[Media].[AllowDownload] (Default Constraint)
+       on [dbo].[Media].[DownloadCount] (Default Constraint)
+       on [dbo].[Media].[IsDeleted] (Default Constraint)
+       on [dbo].[PlayList].[IsSitePlaylist] (Default Constraint)
+       on [dbo].[PlayList].[IsDefaultPlaylist] (Default Constraint)
+       on [dbo].[PlaylistItem].[DisplayOrder] (Default Constraint)
+     Table rebuild
+       [dbo].[Artist] (Table)
+       [dbo].[ArtistBand] (Table)
+       [dbo].[ArtistCollaborationSpaces] (Table)
+       [dbo].[Band] (Table)
+       [dbo].[CollaborationSpace] (Table)
+       [dbo].[Media] (Table)
+       [dbo].[PlayList] (Table)
+       [dbo].[PlaylistItem] (Table)
+       [dbo].[Song] (Table)
+     Alter
+       [dbo].[u_DeleteArtist] (Procedure)
+
+** Supporting actions
+     Drop
+       [dbo].[FK_ArtistCollaborationSpaces_ToTable] (Foreign Key)
+       [dbo].[FK_ArtistBand_ToArtist] (Foreign Key)
+       [dbo].[FK_Media_ToTable] (Foreign Key)
+       [dbo].[FK_PlayList_Artist] (Foreign Key)
+       [dbo].[FK_ArtistBand_ToBand] (Foreign Key)
+       [dbo].[FK_ArtistCollaborationSpaces_ToTable_1] (Foreign Key)
+       [dbo].[FK_CollaborationSpace_ToTable] (Foreign Key)
+       [dbo].[FK_PlayList_Band] (Foreign Key)
+       [dbo].[FK_Song_Media] (Foreign Key)
+       [dbo].[FK_PlaylistItem_PayList] (Foreign Key)
+       [dbo].[FK_PlaylistItem_Song] (Foreign Key)
+     Create
+       [dbo].[FK_ArtistCollaborationSpaces_ToTable] (Foreign Key)
+       [dbo].[FK_ArtistBand_ToArtist] (Foreign Key)
+       [dbo].[FK_Media_ToTable] (Foreign Key)
+       [dbo].[FK_PlayList_Artist] (Foreign Key)
+       [dbo].[FK_ArtistBand_ToBand] (Foreign Key)
+       [dbo].[FK_ArtistCollaborationSpaces_ToTable_1] (Foreign Key)
+       [dbo].[FK_CollaborationSpace_ToTable] (Foreign Key)
+       [dbo].[FK_PlayList_Band] (Foreign Key)
+       [dbo].[FK_Song_Media] (Foreign Key)
+       [dbo].[FK_PlaylistItem_PayList] (Foreign Key)
+       [dbo].[FK_PlaylistItem_Song] (Foreign Key)

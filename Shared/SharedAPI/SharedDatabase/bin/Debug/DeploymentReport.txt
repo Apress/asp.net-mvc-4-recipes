@@ -1,0 +1,20 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[Artist] (Table)
+       Default Constraint on [dbo].[Artist].[ProfileCreateDate] (Default Constraint)
+       Default Constraint on [dbo].[Artist].[ProfilePrivacyLevel] (Default Constraint)
+       Default Constraint on [dbo].[Artist].[ContactPrivacyLevel] (Default Constraint)
+       Default Constraint on [dbo].[Artist].[ProfileViews] (Default Constraint)
+       Default Constraint on [dbo].[Artist].[Rating] (Default Constraint)
+
+** Supporting actions

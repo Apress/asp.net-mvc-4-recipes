@@ -1,0 +1,64 @@
+﻿@model Ch7.R6.Library.Entities.Artist
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Artist</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.UserName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.UserName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Country)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Country)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Provence)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Provence)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.City)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.City)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CreateDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CreateDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ModifiedDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ModifiedDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.WebSite)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.WebSite)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ArtistId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

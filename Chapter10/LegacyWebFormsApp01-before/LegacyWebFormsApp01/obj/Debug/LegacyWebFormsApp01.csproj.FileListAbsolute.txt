@@ -1,0 +1,5 @@
+C:\WorkingFolder\oldschool\LegacyWebFormsApp01\LegacyWebFormsApp01\bin\LegacyWebFormsApp01.dll
+C:\WorkingFolder\oldschool\LegacyWebFormsApp01\LegacyWebFormsApp01\bin\LegacyWebFormsApp01.pdb
+C:\WorkingFolder\oldschool\LegacyWebFormsApp01\LegacyWebFormsApp01\obj\Debug\ResolveAssemblyReference.cache
+C:\WorkingFolder\oldschool\LegacyWebFormsApp01\LegacyWebFormsApp01\obj\Debug\LegacyWebFormsApp01.dll
+C:\WorkingFolder\oldschool\LegacyWebFormsApp01\LegacyWebFormsApp01\obj\Debug\LegacyWebFormsApp01.pdb

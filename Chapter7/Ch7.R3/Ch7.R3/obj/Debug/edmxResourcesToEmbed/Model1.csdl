@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Ch7SharedDatabaseModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="Ch7SharedDatabaseEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Artists" EntityType="Ch7SharedDatabaseModel.Artist" />
+    <EntitySet Name="ArtistSkills" EntityType="Ch7SharedDatabaseModel.ArtistSkill" />
+    <AssociationSet Name="FK_ArtistSkill_Artist" Association="Ch7SharedDatabaseModel.FK_ArtistSkill_Artist">
+      <End Role="Artist" EntitySet="Artists" />
+      <End Role="ArtistSkill" EntitySet="ArtistSkills" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Artist">
+    <Key>
+      <PropertyRef Name="ArtistId" />
+    </Key>
+    <Property Name="ArtistId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="OldUserId" Type="Guid" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" Unicode="false" FixedLength="false" />
+    <Property Name="Country" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Provence" Type="String" MaxLength="65" Unicode="false" FixedLength="false" />
+    <Property Name="City" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="WebSite" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="ProfilePrivacyLevel" Type="Byte" Nullable="false" />
+    <Property Name="ContactPrivacyLevel" Type="Byte" Nullable="false" />
+    <Property Name="ProfileViews" Type="Int64" Nullable="false" />
+    <Property Name="ProfileLastViewDate" Type="DateTime" Precision="0" />
+    <Property Name="Rating" Type="Byte" />
+    <Property Name="AvatarURL" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="EmailAddress" Type="String" MaxLength="256" Unicode="false" FixedLength="false" />
+    <Property Name="FileUploadsInBytes" Type="Int32" Nullable="false" />
+    <Property Name="FileUploadQuotaInBytes" Type="Int32" Nullable="false" />
+    <Property Name="LastActivityDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ShowChatStatus" Type="Boolean" Nullable="false" />
+    <Property Name="AllowChatSounds" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="ArtistSkills" Relationship="Ch7SharedDatabaseModel.FK_ArtistSkill_Artist" FromRole="Artist" ToRole="ArtistSkill" />
+  </EntityType>
+  <EntityType Name="ArtistSkill">
+    <Key>
+      <PropertyRef Name="ArtistTalentID" />
+    </Key>
+    <Property Name="ArtistTalentID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="ArtistId" Type="Int32" Nullable="false" />
+    <Property Name="TalentName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="SkillLevel" Type="Int32" Nullable="false" />
+    <Property Name="Details" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="Styles" Type="String" Nullable="false" MaxLength="500" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Artist" Relationship="Ch7SharedDatabaseModel.FK_ArtistSkill_Artist" FromRole="ArtistSkill" ToRole="Artist" />
+  </EntityType>
+  <Association Name="FK_ArtistSkill_Artist">
+    <End Role="Artist" Type="Ch7SharedDatabaseModel.Artist" Multiplicity="1" />
+    <End Role="ArtistSkill" Type="Ch7SharedDatabaseModel.ArtistSkill" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Artist">
+        <PropertyRef Name="ArtistId" />
+      </Principal>
+      <Dependent Role="ArtistSkill">
+        <PropertyRef Name="ArtistId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

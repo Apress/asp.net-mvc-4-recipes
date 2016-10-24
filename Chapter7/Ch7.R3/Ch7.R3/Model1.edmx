@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Ch7SharedDatabaseModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="Ch7SharedDatabaseModelStoreContainer">
+          <EntitySet Name="Artist" EntityType="Ch7SharedDatabaseModel.Store.Artist" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ArtistSkill" EntityType="Ch7SharedDatabaseModel.Store.ArtistSkill" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_ArtistSkill_Artist" Association="Ch7SharedDatabaseModel.Store.FK_ArtistSkill_Artist">
+            <End Role="Artist" EntitySet="Artist" />
+            <End Role="ArtistSkill" EntitySet="ArtistSkill" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Artist">
+          <Key>
+            <PropertyRef Name="ArtistId" />
+          </Key>
+          <Property Name="ArtistId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="OldUserId" Type="uniqueidentifier" />
+          <Property Name="UserName" Type="varchar" Nullable="false" MaxLength="256" />
+          <Property Name="Country" Type="varchar" MaxLength="50" />
+          <Property Name="Provence" Type="varchar" MaxLength="65" />
+          <Property Name="City" Type="varchar" MaxLength="50" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+          <Property Name="WebSite" Type="varchar" MaxLength="255" />
+          <Property Name="ProfilePrivacyLevel" Type="tinyint" Nullable="false" />
+          <Property Name="ContactPrivacyLevel" Type="tinyint" Nullable="false" />
+          <Property Name="ProfileViews" Type="bigint" Nullable="false" />
+          <Property Name="ProfileLastViewDate" Type="smalldatetime" />
+          <Property Name="Rating" Type="tinyint" />
+          <Property Name="AvatarURL" Type="varchar" MaxLength="255" />
+          <Property Name="EmailAddress" Type="varchar" MaxLength="256" />
+          <Property Name="FileUploadsInBytes" Type="int" Nullable="false" />
+          <Property Name="FileUploadQuotaInBytes" Type="int" Nullable="false" />
+          <Property Name="LastActivityDate" Type="datetime" Nullable="false" />
+          <Property Name="ShowChatStatus" Type="bit" Nullable="false" />
+          <Property Name="AllowChatSounds" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ArtistSkill">
+          <Key>
+            <PropertyRef Name="ArtistTalentID" />
+          </Key>
+          <Property Name="ArtistTalentID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ArtistId" Type="int" Nullable="false" />
+          <Property Name="TalentName" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="SkillLevel" Type="int" Nullable="false" />
+          <Property Name="Details" Type="varchar" MaxLength="500" />
+          <Property Name="Styles" Type="varchar" Nullable="false" MaxLength="500" />
+        </EntityType>
+        <Association Name="FK_ArtistSkill_Artist">
+          <End Role="Artist" Type="Ch7SharedDatabaseModel.Store.Artist" Multiplicity="1" />
+          <End Role="ArtistSkill" Type="Ch7SharedDatabaseModel.Store.ArtistSkill" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Artist">
+              <PropertyRef Name="ArtistId" />
+            </Principal>
+            <Dependent Role="ArtistSkill">
+              <PropertyRef Name="ArtistId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Ch7SharedDatabaseModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="Ch7SharedDatabaseEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="Artists" EntityType="Ch7SharedDatabaseModel.Artist" />
+          <EntitySet Name="ArtistSkills" EntityType="Ch7SharedDatabaseModel.ArtistSkill" />
+          <AssociationSet Name="FK_ArtistSkill_Artist" Association="Ch7SharedDatabaseModel.FK_ArtistSkill_Artist">
+            <End Role="Artist" EntitySet="Artists" />
+            <End Role="ArtistSkill" EntitySet="ArtistSkills" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Artist">
+          <Key>
+            <PropertyRef Name="ArtistId" />
+          </Key>
+          <Property Name="ArtistId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="OldUserId" Type="Guid" />
+          <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" Unicode="false" FixedLength="false" />
+          <Property Name="Country" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Provence" Type="String" MaxLength="65" Unicode="false" FixedLength="false" />
+          <Property Name="City" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="WebSite" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="ProfilePrivacyLevel" Type="Byte" Nullable="false" />
+          <Property Name="ContactPrivacyLevel" Type="Byte" Nullable="false" />
+          <Property Name="ProfileViews" Type="Int64" Nullable="false" />
+          <Property Name="ProfileLastViewDate" Type="DateTime" Precision="0" />
+          <Property Name="Rating" Type="Byte" />
+          <Property Name="AvatarURL" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="EmailAddress" Type="String" MaxLength="256" Unicode="false" FixedLength="false" />
+          <Property Name="FileUploadsInBytes" Type="Int32" Nullable="false" />
+          <Property Name="FileUploadQuotaInBytes" Type="Int32" Nullable="false" />
+          <Property Name="LastActivityDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ShowChatStatus" Type="Boolean" Nullable="false" />
+          <Property Name="AllowChatSounds" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="ArtistSkills" Relationship="Ch7SharedDatabaseModel.FK_ArtistSkill_Artist" FromRole="Artist" ToRole="ArtistSkill" />
+        </EntityType>
+        <EntityType Name="ArtistSkill">
+          <Key>
+            <PropertyRef Name="ArtistTalentID" />
+          </Key>
+          <Property Name="ArtistTalentID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="ArtistId" Type="Int32" Nullable="false" />
+          <Property Name="TalentName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SkillLevel" Type="Int32" Nullable="false" />
+          <Property Name="Details" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="Styles" Type="String" Nullable="false" MaxLength="500" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Artist" Relationship="Ch7SharedDatabaseModel.FK_ArtistSkill_Artist" FromRole="ArtistSkill" ToRole="Artist" />
+        </EntityType>
+        <Association Name="FK_ArtistSkill_Artist">
+          <End Role="Artist" Type="Ch7SharedDatabaseModel.Artist" Multiplicity="1" />
+          <End Role="ArtistSkill" Type="Ch7SharedDatabaseModel.ArtistSkill" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Artist">
+              <PropertyRef Name="ArtistId" />
+            </Principal>
+            <Dependent Role="ArtistSkill">
+              <PropertyRef Name="ArtistId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Ch7SharedDatabaseModelStoreContainer" CdmEntityContainer="Ch7SharedDatabaseEntities">
+          <EntitySetMapping Name="Artists">
+            <EntityTypeMapping TypeName="Ch7SharedDatabaseModel.Artist">
+              <MappingFragment StoreEntitySet="Artist">
+                <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+                <ScalarProperty Name="OldUserId" ColumnName="OldUserId" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="Provence" ColumnName="Provence" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="WebSite" ColumnName="WebSite" />
+                <ScalarProperty Name="ProfilePrivacyLevel" ColumnName="ProfilePrivacyLevel" />
+                <ScalarProperty Name="ContactPrivacyLevel" ColumnName="ContactPrivacyLevel" />
+                <ScalarProperty Name="ProfileViews" ColumnName="ProfileViews" />
+                <ScalarProperty Name="ProfileLastViewDate" ColumnName="ProfileLastViewDate" />
+                <ScalarProperty Name="Rating" ColumnName="Rating" />
+                <ScalarProperty Name="AvatarURL" ColumnName="AvatarURL" />
+                <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+                <ScalarProperty Name="FileUploadsInBytes" ColumnName="FileUploadsInBytes" />
+                <ScalarProperty Name="FileUploadQuotaInBytes" ColumnName="FileUploadQuotaInBytes" />
+                <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+                <ScalarProperty Name="ShowChatStatus" ColumnName="ShowChatStatus" />
+                <ScalarProperty Name="AllowChatSounds" ColumnName="AllowChatSounds" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ArtistSkills">
+            <EntityTypeMapping TypeName="Ch7SharedDatabaseModel.ArtistSkill">
+              <MappingFragment StoreEntitySet="ArtistSkill">
+                <ScalarProperty Name="ArtistTalentID" ColumnName="ArtistTalentID" />
+                <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+                <ScalarProperty Name="TalentName" ColumnName="TalentName" />
+                <ScalarProperty Name="SkillLevel" ColumnName="SkillLevel" />
+                <ScalarProperty Name="Details" ColumnName="Details" />
+                <ScalarProperty Name="Styles" ColumnName="Styles" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

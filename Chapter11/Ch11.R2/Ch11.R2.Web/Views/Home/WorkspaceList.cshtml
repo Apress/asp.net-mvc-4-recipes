@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "WorkspaceList";
+}
+@section header{
+    <link href="~/Content/Home/WorkspaceList.css" rel="stylesheet" />
+}
+<h2>Collaboration space List</h2>
+<p><span id="ItemsFound" data-bind="text: NumberOfResults"></span> Records Found</p>
+<br />
+<table data-bind="template: {name: 'CollaborationSpaceTemplate', foreach: CollaborationSpaceSearchResults}" class="grid">
+    <thead>
+        <tr>
+            <th><a href="#UserName" onclick="Sort('UserName')">User Name</a></th>
+            <th><a href="#Title" onclick="Sort('Title')">Title</a></th>
+            <th><a href="#NumberComments" onclick="Sort('NumberComments')">Status</a></th>
+            <th><a href="#CreateDate" onclick="Sort('CreateDate')">Create Date</a></th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <td colspan="4" class="Pager">
+                <span id="back" onclick="Move(-1)">&lt; Back</span>
+                <span id="next" onclick="Move(1)">Next &gt;</span>
+            </td>
+        </tr>
+    </tfoot>
+</table>
+<div id="LoadingDiv">Loading...</div>
+
+<script id="CollaborationSpaceTemplate" type="text/html">
+    <tr>
+        <td data-bind="text: UserName"></td>
+        <td data-bind="text: Title"></td>
+        <td>
+            Views:    <span data-bind="text: NumberViews"></span><br />
+            Comments: <span data-bind="text: NumberComments"></span>
+        </td>
+        <td data-bind="text: CreateDate"></td>
+    </tr>
+</script>
+
+@section scripts{
+    <script src="~/Scripts/knockout-2.2.0.js"></script>
+    <script src="~/Scripts/knockout.mapping-latest.js"></script>
+    <script src="~/Scripts/Home/WorkspaceList.cshtml.js"></script>
+}

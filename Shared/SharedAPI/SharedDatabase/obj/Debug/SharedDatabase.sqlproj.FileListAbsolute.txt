@@ -1,0 +1,14 @@
+G:\WorkingFolder\MVCBook\Chapter7\Ch7.SharedAPI\SharedDatabase\bin\Debug\SharedDatabase.dacpac
+G:\WorkingFolder\MVCBook\Chapter7\Ch7.SharedAPI\SharedDatabase\bin\Debug\SharedDatabase.dll
+G:\WorkingFolder\MVCBook\Chapter7\Ch7.SharedAPI\SharedDatabase\bin\Debug\SharedDatabase.pdb
+G:\WorkingFolder\MVCBook\Chapter7\Ch7.SharedAPI\SharedDatabase\obj\Debug\SharedDatabase.dll
+G:\WorkingFolder\MVCBook\Chapter7\Ch7.SharedAPI\SharedDatabase\obj\Debug\SharedDatabase.pdb
+G:\WorkingFolder\MVCBook\Chapter7\Ch7.SharedAPI\SharedDatabase\obj\Debug\Model.xml
+G:\WorkingFolder\MVCBook\Chapter7\Ch7.SharedAPI\SharedDatabase\obj\Debug\refactor.xml
+G:\WorkingFolder\MVCBook\Chapter7\Ch7.SharedAPI\SharedDatabase\obj\Debug\postdeploy.sql
+G:\WorkingFolder\MVCBook\Chapter7\Ch7.SharedAPI\SharedDatabase\obj\Debug\predeploy.sql
+G:\WorkingFolder\MVCBook\Shared\SharedAPI\SharedDatabase\bin\Debug\SharedDatabase.dacpac
+G:\WorkingFolder\MVCBook\Shared\SharedAPI\SharedDatabase\bin\Debug\SharedDatabase.dll
+G:\WorkingFolder\MVCBook\Shared\SharedAPI\SharedDatabase\bin\Debug\SharedDatabase.pdb
+G:\WorkingFolder\MVCBook\Shared\SharedAPI\SharedDatabase\obj\Debug\SharedDatabase.dll
+G:\WorkingFolder\MVCBook\Shared\SharedAPI\SharedDatabase\obj\Debug\SharedDatabase.pdb

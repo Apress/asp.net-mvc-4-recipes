@@ -1,0 +1,52 @@
+﻿@model Ch5.R5_3.BasicFormValidation.Models.RequestAQuoteModel
+@{
+    ViewBag.Title = "Request a Free Quote";
+    List<string> ProjectTypes = new List<string>();
+    ProjectTypes.Add("Electrical Wiring");
+    ProjectTypes.Add("Home Security & Alarms");
+    ProjectTypes.Add("Appliance Install");
+    ProjectTypes.Add("Lighting");
+    ProjectTypes.Add("Generator Installation");
+    
+}
+
+<h2>Request A Quote</h2>
+@using (Html.BeginForm()){
+    @Html.ValidationSummary()
+    <fieldset>
+        <legend>Request Quote Form</legend>
+        <ol>
+            <li>
+                @Html.LabelFor(m=>m.ProjectType)
+                @Html.DropDownListFor(m=>m.ProjectType, new MultiSelectList(ProjectTypes))
+            </li>
+            <li>
+                @Html.LabelFor(m=>m.ZipCode)
+                @Html.EditorFor(m=>m.ZipCode)
+            </li>
+            <li>
+                @Html.LabelFor(m=>m.ContactName)
+                @Html.EditorFor(m=>m.ContactName)
+            </li>
+            <li>
+                @Html.LabelFor(m=>m.DayTimePhone)
+                @Html.EditorFor(m=>m.DayTimePhone)
+            </li>
+            <li>
+                @Html.LabelFor(m=>m.Email)
+                @Html.EditorFor(m=>m.Email)
+            </li>
+            <li>
+                @Html.LabelFor(m=>m.ProjectDescription)
+                @Html.EditorFor(m=>m.ProjectDescription)
+                
+            </li>
+        </ol>
+        <input type="submit" value="Request Quote" />
+    </fieldset>
+    
+}
+
+@section scripts{
+     @Scripts.Render("~/bundles/jqueryval")
+}

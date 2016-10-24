@@ -1,0 +1,43 @@
+﻿@model List<Ch7.SharedAPI.Artist>
+@{
+    ViewBag.Title = "Repeater Replacement";
+}
+<h2>Repeater Replacement</h2>
+<table class="grid">
+    <thead>
+        <tr>
+            <th>User
+            </th>
+            <th>Location
+            </th>
+            <th>Account Creation Date
+            </th>
+        </tr>
+    </thead>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td class="imgColumn">
+                <img class="AvatarImage"
+                src="@item.AvatarUrlSample"
+                alt="@item.UserName" />
+                <br />
+                <a href="/@item.UserName" class="ProfileLink">@item.UserName</a>
+            </td>
+            <td>@Html.ConcatProperty(item.City, item.Provence, item.Country)</td>
+            <td>@item.CreateDate.ToShortDateString()</td>
+        </tr>
+        <tr class="SeparatorRow">
+            <td colspan="3"></td>
+        </tr>
+    }
+
+</table>
+@section scripts{
+    <script>
+        $(function () {
+            $("tr:not(.SeparatorRow):even").addClass("even");
+            $("tr:not(.SeparatorRow):odd").addClass("odd");
+        });
+    </script>
+}

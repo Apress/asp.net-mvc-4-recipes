@@ -1,0 +1,155 @@
+﻿@model Ch7.R3.Artist
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Artist</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.OldUserId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.OldUserId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.UserName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.UserName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Country)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Country)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Provence)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Provence)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.City)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.City)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CreateDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CreateDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ModifiedDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ModifiedDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.WebSite)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.WebSite)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ProfilePrivacyLevel)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ProfilePrivacyLevel)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ContactPrivacyLevel)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ContactPrivacyLevel)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ProfileViews)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ProfileViews)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ProfileLastViewDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ProfileLastViewDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Rating)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Rating)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AvatarURL)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AvatarURL)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.EmailAddress)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.EmailAddress)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.FileUploadsInBytes)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FileUploadsInBytes)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.FileUploadQuotaInBytes)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FileUploadQuotaInBytes)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.LastActivityDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LastActivityDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ShowChatStatus)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ShowChatStatus)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AllowChatSounds)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AllowChatSounds)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ArtistId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,58 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[Artist]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The column [dbo].[Artist].[ArtistDisplayName] is being dropped, data loss could occur.
+       The column [dbo].[Artist].[Bio] is being dropped, data loss could occur.
+       The column [dbo].[Artist].[MusicalInfluences] is being dropped, data loss could occur.
+       The column [dbo].[Artist].[ProfileCreateDate] is being dropped, data loss could occur.
+       The column [dbo].[Artist].[UserId] is being dropped, data loss could occur.
+       The column [dbo].[Artist].[UserName] on table [dbo].[Artist] must be added, but the column has no default value and does
+         not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either:
+         add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a
+         deployment option.
+
+** User actions
+     Drop
+       on [dbo].[Artist].[ProfileCreateDate] (Default Constraint)
+       on [dbo].[Artist].[ProfilePrivacyLevel] (Default Constraint)
+       on [dbo].[Artist].[ContactPrivacyLevel] (Default Constraint)
+       on [dbo].[Artist].[ProfileViews] (Default Constraint)
+       on [dbo].[Artist].[Rating] (Default Constraint)
+       on [dbo].[Artist].[FileUploadsInBytes] (Default Constraint)
+       on [dbo].[Artist].[FileUploadQuotaInBytes] (Default Constraint)
+     Table rebuild
+       [dbo].[Artist] (Table)
+     Create
+       [dbo].[ArtistProfile] (Table)
+       Default Constraint on [dbo].[ArtistProfile].[ProfileTemplateName] (Default Constraint)
+
+** Supporting actions
+     Drop
+       [dbo].[FK_Media_ToTable] (Foreign Key)
+       [dbo].[FK_ArtistBand_ToArtist] (Foreign Key)
+       [dbo].[FK_ArtistCollaborationSpaces_ToTable] (Foreign Key)
+       [dbo].[FK_Playlist_Artist] (Foreign Key)
+       [dbo].[FK_CollaborationSpaceComment_Artist] (Foreign Key)
+       [dbo].[fk_UserId] (Foreign Key)
+       [dbo].[FK_Task_Artist] (Foreign Key)
+     Create
+       [dbo].[FK_Media_ToTable] (Foreign Key)
+       [dbo].[FK_ArtistBand_ToArtist] (Foreign Key)
+       [dbo].[FK_ArtistCollaborationSpaces_ToTable] (Foreign Key)
+       [dbo].[FK_Playlist_Artist] (Foreign Key)
+       [dbo].[FK_CollaborationSpaceComment_Artist] (Foreign Key)
+       [dbo].[fk_UserId] (Foreign Key)
+       [dbo].[FK_Task_Artist] (Foreign Key)
+
+The column [dbo].[Artist].[ArtistDisplayName] is being dropped, data loss could occur.
+The column [dbo].[Artist].[Bio] is being dropped, data loss could occur.
+The column [dbo].[Artist].[MusicalInfluences] is being dropped, data loss could occur.
+The column [dbo].[Artist].[ProfileCreateDate] is being dropped, data loss could occur.
+The column [dbo].[Artist].[UserId] is being dropped, data loss could occur.
+The column [dbo].[Artist].[UserName] on table [dbo].[Artist] must be added, but the column has no default value and does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+

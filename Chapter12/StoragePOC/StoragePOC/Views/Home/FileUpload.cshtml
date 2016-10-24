@@ -1,0 +1,33 @@
+﻿﻿@model BlobUploader.Html5.Web.Models.FileUploadModel 
+@{ 
+    ViewBag.Title = "HTML5 Blob Upload Control"; 
+}
+@section header{
+    <link href="~/Content/Home/FileUpload.css" rel="stylesheet" />
+    @Styles.Render("~/Content/themes/base/css")
+} 
+<h2>Large File Upload Using Azure</h2>
+@using(Html.BeginForm()){
+
+        <div id="outerPanel">
+            <h3>Please select a file to upload</h3>
+
+            <input type="file" id="FileInput" />
+
+            <input type="button" id="upload" value="Upload" 
+                onclick="startUpload('FileInput', 1048576, 'uploadProgress', 'statusMessage', 'upload', 'cancel');"
+                 />
+        </div>
+    
+    <div id="ProgressPanel">
+            <progress id="uploadProgress" value="0" max="100" />
+            <span id="statusMessage" class="message"></span>
+            <input type="button" id="cancel" value="Cancel" disabled="disabled"
+                onclick="cancelUpload();" />
+    </div>
+
+}
+@section Scripts{
+    @Scripts.Render("~/bundles/jqueryui")
+    <script src="~/Scripts/Home/FileUpload.js"></script>
+}

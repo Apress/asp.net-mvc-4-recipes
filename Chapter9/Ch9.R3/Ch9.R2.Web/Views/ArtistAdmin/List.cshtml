@@ -1,0 +1,29 @@
+﻿@model List<Ch7.SharedAPI.Artist>
+@{
+    ViewBag.Title = "New Artists";
+}
+
+<h2>Here is a list of new Artists</h2>
+<table>
+    <thead>
+        <tr>
+            <th>User Name</th>
+            <th>Email</th>
+            <th>Website</th>
+            <th>Create Date</th>
+      </tr>
+    </thead>
+
+@foreach (var item in Model)
+{
+    <tr>
+        <td>@item.UserName</td>
+        <td>@item.EmailAddress</td>
+        <td>@item.WebSite</td>
+        <td>@item.CreateDate</td>
+    </tr>
+    
+}
+</table>
+
+@ViewBag.Message

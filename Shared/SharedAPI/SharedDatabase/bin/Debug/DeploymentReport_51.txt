@@ -1,0 +1,22 @@
+﻿** Warnings
+     The object reference [dbo].[alertTag] differs only by case from the object definition [dbo].[AlertTag].
+     The object reference [dbo].[Alert].[alertId] differs only by case from the object definition [dbo].[Alert].[AlertId].
+     The object reference [dbo].[alertTag].[alertId] differs only by case from the object definition
+       [dbo].[AlertTag].[AlertId].
+     The object reference [dbo].[alertTag].[tag] differs only by case from the object definition [dbo].[AlertTag].[Tag].
+
+** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[GetUserAlerts] (Procedure)
+
+** Supporting actions

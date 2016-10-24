@@ -1,0 +1,6 @@
+G:\WorkingFolder\MVCBook\Chapter7\test\test\bin\Debug\test.exe.config
+G:\WorkingFolder\MVCBook\Chapter7\test\test\bin\Debug\test.exe
+G:\WorkingFolder\MVCBook\Chapter7\test\test\bin\Debug\test.pdb
+G:\WorkingFolder\MVCBook\Chapter7\test\test\obj\Debug\test.csprojResolveAssemblyReference.cache
+G:\WorkingFolder\MVCBook\Chapter7\test\test\obj\Debug\test.exe
+G:\WorkingFolder\MVCBook\Chapter7\test\test\obj\Debug\test.pdb

@@ -1,0 +1,22 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The column [dbo].[ArtistBand].[AuditionDate] is being dropped, data loss could occur.
+       The column [dbo].[ArtistBand].[AuditionStatus] is being dropped, data loss could occur.
+
+** User actions
+     Alter
+       [dbo].[ArtistBand] (Table)
+
+** Supporting actions
+     Refresh
+       [dbo].[u_DeleteArtist] (Procedure)
+
+The column [dbo].[ArtistBand].[AuditionDate] is being dropped, data loss could occur.
+The column [dbo].[ArtistBand].[AuditionStatus] is being dropped, data loss could occur.
+

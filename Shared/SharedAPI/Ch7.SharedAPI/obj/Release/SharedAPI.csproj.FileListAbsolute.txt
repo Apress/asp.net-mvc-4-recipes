@@ -1,0 +1,8 @@
+G:\WorkingFolder\MVCBook\Shared\SharedAPI\Ch7.SharedAPI\bin\Release\SharedAPI.dll.config
+G:\WorkingFolder\MVCBook\Shared\SharedAPI\Ch7.SharedAPI\bin\Release\SharedAPI.dll
+G:\WorkingFolder\MVCBook\Shared\SharedAPI\Ch7.SharedAPI\bin\Release\SharedAPI.pdb
+G:\WorkingFolder\MVCBook\Shared\SharedAPI\Ch7.SharedAPI\bin\Release\EntityFramework.dll
+G:\WorkingFolder\MVCBook\Shared\SharedAPI\Ch7.SharedAPI\bin\Release\EntityFramework.xml
+G:\WorkingFolder\MVCBook\Shared\SharedAPI\Ch7.SharedAPI\obj\Release\SharedAPI.dll
+G:\WorkingFolder\MVCBook\Shared\SharedAPI\Ch7.SharedAPI\obj\Release\SharedAPI.pdb
+G:\WorkingFolder\MVCBook\Shared\SharedAPI\Ch7.SharedAPI\obj\Release\SharedAPI.csprojResolveAssemblyReference.cache

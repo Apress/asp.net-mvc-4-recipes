@@ -1,0 +1,4 @@
+G:\WorkingFolder\MVCBook\Chapter5\Ch5.R5-8.CustomReg\MusicCollaborationLib\bin\Debug\MusicCollaborationLib.dll
+G:\WorkingFolder\MVCBook\Chapter5\Ch5.R5-8.CustomReg\MusicCollaborationLib\bin\Debug\MusicCollaborationLib.pdb
+G:\WorkingFolder\MVCBook\Chapter5\Ch5.R5-8.CustomReg\MusicCollaborationLib\obj\Debug\MusicCollaborationLib.dll
+G:\WorkingFolder\MVCBook\Chapter5\Ch5.R5-8.CustomReg\MusicCollaborationLib\obj\Debug\MusicCollaborationLib.pdb

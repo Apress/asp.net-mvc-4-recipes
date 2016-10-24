@@ -1,0 +1,185 @@
+﻿
+.grid {
+    background-color: #fff;
+    margin: 5px 0 10px;
+    padding-left: 15px;
+    width: 95%;
+}
+
+    .grid td {
+        color: #1a1a1a;
+        vertical-align: top;
+    }
+
+        .grid td textarea {
+            width: 98%;
+            border-width: 2px;
+            height: 3em;
+            border-color: lightblue;
+        }
+
+        .grid td input[type="text"], .grid td input[type="number"] {
+            border: 2px solid lightblue;
+            width: 98%;
+            height: 2em;
+        }
+
+
+    .grid th {
+        background-color: #333;
+        color: #fff;
+        font-size: large;
+        font-weight: bolder;
+        padding-bottom: 5px;
+        padding-left: 13px;
+        padding-top: 5px;
+        text-align: left;
+    }
+
+        .grid th a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+    .grid td input {
+        width: 100%;
+        height: 100%;
+    }
+
+.SeparatorRow td {
+    background-color: #C0C0C0;
+    border-style: dotted none none none;
+    color: #717171;
+    height: 1px;
+    margin: 0;
+    padding: 0;
+}
+
+.imgColumn {
+    text-align: center;
+    width: 100px;
+}
+
+.odd {
+    background-color: #ebeced;
+}
+
+.even {
+    background-color: #99acb9;
+}
+
+.AvatarImage {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 3px 3px 7px #777;
+    -moz-box-shadow: 3px 3px 7px #777;
+    box-shadow: 3px 3px 7px #777;
+    height: 100px;
+    margin: 5px;
+    width: 100px;
+}
+
+.ProfileLink {
+    font-size: 12pt;
+    font-weight: bolder;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+
+/*used for Data List*/
+.evenbox {
+    background-color: #f4f5f5;
+    font-size: 10pt;
+    border: 1px solid #ccc;
+    width: 320px;
+    height: 90px;
+    color: #333;
+}
+
+.oddbox {
+    border: 1px solid #ccc;
+    background-color: #ebeced;
+    font-size: 10pt;
+    width: 320px;
+}
+
+.ImageDiv {
+    float: left;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.ContentDiv {
+    float: left;
+    padding: 5px;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+    .ContentDiv ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .ContentDiv li {
+        padding: 2px;
+    }
+
+.FullWidth {
+    width: 100%;
+}
+
+.Facet {
+    font-size: larger;
+    font-weight: bolder;
+    color: #333333;
+}
+
+    .Facet li {
+        margin-top: 0.1em;
+        margin-bottom: 0.1em;
+        padding-bottom: 0.5em;
+        padding-left: 0.2em;
+        padding-right: 0.2em;
+    }
+
+        .Facet li :hover {
+            background-color: #ebe9e9;
+        }
+
+    .Facet a {
+        text-decoration: none;
+    }
+
+.rightColumn {
+    width: 85%;
+    padding: 0.2em;
+    vertical-align: top;
+}
+
+.Pager {
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+    padding: 1px;
+}
+
+    .Pager li {
+        display: inline;
+        font-size: large;
+        font-weight: bolder;
+        padding-left: 13px;
+        text-align: left;
+        color: #fff;
+    }
+
+        .Pager li a {
+            color: #fff;
+        }

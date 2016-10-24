@@ -1,0 +1,7 @@
+G:\WorkingFolder\MVCBook\Chapter8\Ch9.R2.Calc\Ch9.R2.Calc.Tests\bin\Debug\Ch9.R2.Calc.Tests.dll
+G:\WorkingFolder\MVCBook\Chapter8\Ch9.R2.Calc\Ch9.R2.Calc.Tests\bin\Debug\Ch9.R2.Calc.Tests.pdb
+G:\WorkingFolder\MVCBook\Chapter8\Ch9.R2.Calc\Ch9.R2.Calc.Tests\bin\Debug\Ch9.R2.Calc.dll
+G:\WorkingFolder\MVCBook\Chapter8\Ch9.R2.Calc\Ch9.R2.Calc.Tests\bin\Debug\Ch9.R2.Calc.pdb
+G:\WorkingFolder\MVCBook\Chapter8\Ch9.R2.Calc\Ch9.R2.Calc.Tests\obj\Debug\Ch9.R2.Calc.Tests.csprojResolveAssemblyReference.cache
+G:\WorkingFolder\MVCBook\Chapter8\Ch9.R2.Calc\Ch9.R2.Calc.Tests\obj\Debug\Ch9.R2.Calc.Tests.dll
+G:\WorkingFolder\MVCBook\Chapter8\Ch9.R2.Calc\Ch9.R2.Calc.Tests\obj\Debug\Ch9.R2.Calc.Tests.pdb

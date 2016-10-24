@@ -1,0 +1,9 @@
+﻿body {
+    background: url("/Content/Images/Night.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+    color: #FFF;
+}

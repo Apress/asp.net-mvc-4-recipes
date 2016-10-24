@@ -1,0 +1,5 @@
+G:\WorkingFolder\MVCBook\Shared\SharedAPI\SharedDatabase\bin\Release\SharedDatabase.dacpac
+G:\WorkingFolder\MVCBook\Shared\SharedAPI\SharedDatabase\bin\Release\SharedDatabase.dll
+G:\WorkingFolder\MVCBook\Shared\SharedAPI\SharedDatabase\bin\Release\SharedDatabase.pdb
+G:\WorkingFolder\MVCBook\Shared\SharedAPI\SharedDatabase\obj\Release\SharedDatabase.dll
+G:\WorkingFolder\MVCBook\Shared\SharedAPI\SharedDatabase\obj\Release\SharedDatabase.pdb

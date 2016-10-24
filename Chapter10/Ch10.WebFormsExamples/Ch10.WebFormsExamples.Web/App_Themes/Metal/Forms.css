@@ -1,0 +1,74 @@
+﻿fieldset {
+    border: none;
+    margin-left: 1em;
+    padding: 0;
+}
+
+    fieldset legend {
+        font-size:1.5em;
+        padding-bottom:1em;
+    }
+    
+    fieldset ol {
+        padding: 0;
+        list-style: none;
+    }
+
+        fieldset ol li {
+            padding-bottom: 5px;
+        }
+
+    label {
+        font-size: 1em;
+        font-weight: 600;
+    }
+
+
+    input, textarea {
+        border: 1px solid #e2e2e2;
+        background: #fff;
+        color: #333;
+        font-size: 1.2em;
+        margin: 5px 0 6px 0;
+        padding: 5px;
+        width: 300px;
+    }
+
+    textarea {
+        font-family: inherit;
+        width: 500px;
+    }
+    
+        input:focus, textarea:focus {
+            border: 1px solid #7ac0da;
+        }
+
+        input[type="checkbox"] {
+            background: transparent;
+            border: inherit;
+            width: auto;
+            padding:0.2em;
+            margin-right:5px;
+        }
+        input[type="radio"] {
+            background: transparent;
+            border: inherit;
+            width: auto;
+            margin-right:5px;
+        }
+
+input[type="submit"],
+input[type="button"],
+button {
+    background-color: #697b83;
+    border: 1px solid #787878;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 7px;
+    margin-right: 8px;
+    width: auto;
+    -moz-border-radius: 3px 4px;
+    -webkit-border-radius: 3px 4px;
+    border-radius: 3px 4px;
+}

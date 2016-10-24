@@ -1,0 +1,21 @@
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc2" %>
+<asp:GridView  runat="server" AllowPaging="true" AllowSorting="true" EmptyDataRowStyle-CssClass="FormLabel" GridLines="None" CssClass="mGrid">
+        <AlternatingRowStyle  CssClass="odd" VerticalAlign="Top"/>
+        <RowStyle CssClass="alt" VerticalAlign="Top" />
+        <SelectedRowStyle BackColor="#B6E6FF" />
+        <pagerstyle CssClass="pgr"/>
+        
+</asp:GridView>
+
+
+<asp:Label runat="server"  SkinID="formlabelreq" CSSClass="FormLabelReq"></asp:Label>
+<asp:Label runat="server"  SkinID="formlabel" CSSClass="FormLabel"></asp:Label>
+<asp:Wizard  runat="server" Width="800px" Height="250px" SideBarStyle-VerticalAlign="Top" 
+    SideBarButtonStyle-Width="200px" StepStyle-VerticalAlign="Top"  
+ StepStyle-Width="600px" SideBarButtonStyle-CssClass="wizardSideBar" 
+ StepNextButtonStyle-CssClass="ToolbarButton" StepPreviousButtonStyle-CssClass="ToolbarButton" 
+ CancelButtonStyle-CssClass="ToolbarButton" StartNextButtonStyle-CssClass="ToolbarButton" 
+ FinishCompleteButtonStyle-CssClass="ToolbarButton" FinishPreviousButtonStyle-CssClass="ToolbarButton"
+ ><SideBarStyle CssClass="wizardSideBar" /></asp:Wizard>
+ <cc2:ValidatorCalloutExtender  runat="server"  CloseImageUrl="~/images/close.gif" Enabled="True" WarningIconImageUrl="~/images/alert-large.gif">
+                            </cc2:ValidatorCalloutExtender>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1016]G:\WorkingFolder\MVCBook\Chapter10\Ch10.MvcExamples\After\Ch10.Shared.Helpers.Tests\bin\Debug\Ch10.Shared.Helpers.Tests.dll</TopNode>
+  <SelectedNode>[0-1000]Ch10.Shared.Helpers.Tests.Ch10GridHelperTests</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1016]G:\WorkingFolder\MVCBook\Chapter10\Ch10.MvcExamples\After\Ch10.Shared.Helpers.Tests\bin\Debug\Ch10.Shared.Helpers.Tests.dll" Expanded="true" />
+    <Node UniqueName="[0-1017]Ch10" Expanded="true" />
+    <Node UniqueName="[0-1018]Ch10.Shared" Expanded="true" />
+    <Node UniqueName="[0-1019]Ch10.Shared.Helpers" Expanded="true" />
+    <Node UniqueName="[0-1020]Ch10.Shared.Helpers.Tests" Expanded="true" />
+    <Node UniqueName="[0-1000]Ch10.Shared.Helpers.Tests.Ch10GridHelperTests" Expanded="true" />
+    <Node UniqueName="[0-1005]Ch10.Shared.Helpers.Tests.Ch10HelpersRenderTemplateAsColumns" Expanded="true" />
+    <Node UniqueName="[0-1009]Ch10.Shared.Helpers.Tests.ConcatPropertyHelpersTests" Expanded="true" />
+  </Nodes>
+</VisualState>

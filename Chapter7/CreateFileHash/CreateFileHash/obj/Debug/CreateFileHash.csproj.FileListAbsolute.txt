@@ -1,0 +1,6 @@
+G:\WorkingFolder\MVCBook\Chapter7\CreateFileHash\CreateFileHash\bin\Debug\CreateFileHash.exe.config
+G:\WorkingFolder\MVCBook\Chapter7\CreateFileHash\CreateFileHash\bin\Debug\CreateFileHash.exe
+G:\WorkingFolder\MVCBook\Chapter7\CreateFileHash\CreateFileHash\bin\Debug\CreateFileHash.pdb
+G:\WorkingFolder\MVCBook\Chapter7\CreateFileHash\CreateFileHash\obj\Debug\CreateFileHash.csprojResolveAssemblyReference.cache
+G:\WorkingFolder\MVCBook\Chapter7\CreateFileHash\CreateFileHash\obj\Debug\CreateFileHash.exe
+G:\WorkingFolder\MVCBook\Chapter7\CreateFileHash\CreateFileHash\obj\Debug\CreateFileHash.pdb

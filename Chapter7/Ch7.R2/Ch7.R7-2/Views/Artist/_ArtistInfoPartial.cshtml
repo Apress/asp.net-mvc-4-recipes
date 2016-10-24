@@ -1,0 +1,32 @@
+﻿@model Ch7.R7_2.Models.ArtistInfoModel
+<div id="DashBoardOuterWrapper">
+    <div id="profileImg">
+    <img alt="Your Profile Image" class="AristImage" ID="avitarImage" src="@Model.AvatarURL" />
+    <br />
+    
+    </div>
+    <div id="profileStats">
+        <ul id="StatsList">
+            <li>
+                @Html.LabelFor(m=>m.AccountCreatedDate)<br />
+                @Model.AccountCreatedDate.ToLocalTime().ToShortDateString()
+            </li>
+            <li>
+                @Html.LabelFor(m=>m.PasswordLastChangedDate)<br />
+                @Model.PasswordLastChangedDate.ToLocalTime().ToShortDateString()
+            </li>
+            <li>
+                @Html.LabelFor(m=>m.ProfileViews)<br />
+                @Model.ProfileViews
+            </li>
+            <li>
+                @Html.LabelFor(m=>m.ProfileLastViewedDate)<br />
+                @Model.ProfileLastViewedDate.ToLocalTime().ToShortDateString()
+            </li>
+            <li>
+                @Html.LabelFor(m=>m.ProfileBookmark)<br /><br />       
+                @Model.ProfileBookmark
+            </li>
+        </ul>
+    </div>
+</div>

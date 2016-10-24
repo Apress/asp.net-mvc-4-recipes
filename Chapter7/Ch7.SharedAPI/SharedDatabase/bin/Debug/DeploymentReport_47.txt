@@ -1,0 +1,23 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[SongComment]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Drop
+       on [dbo].[SongComment].[Rating] (Default Constraint)
+       on [dbo].[SongComment].[IsApproved] (Default Constraint)
+       on [dbo].[SongComment].[IsAnonymous] (Default Constraint)
+     Table rebuild
+       [dbo].[SongComment] (Table)
+
+** Supporting actions
+     Drop
+       [dbo].[FK_SongComment_Song] (Foreign Key)
+     Create
+       [dbo].[FK_SongComment_Song] (Foreign Key)

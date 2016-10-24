@@ -1,0 +1,14 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Hello World Spark</title>
+</head>
+<body>
+    <div>
+        Hello World from the Spark View Engine
+        <br />
+        The current time in our data center is : ${DateTime.Now}.
+    </div>
+</body>
+</html>

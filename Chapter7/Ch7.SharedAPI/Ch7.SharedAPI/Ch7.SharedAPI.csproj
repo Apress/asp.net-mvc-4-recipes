@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{94964FB1-FB7B-4266-8232-AABC51EE3040}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ch7.SharedAPI</RootNamespace>
+    <AssemblyName>Ch7.SharedAPI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abstract\IArtistRepository.cs" />
+    <Compile Include="Alert.cs">
+      <DependentUpon>Mob.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AlertSubscription.cs">
+      <DependentUpon>Mob.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AlertTag.cs">
+      <DependentUpon>Mob.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Artist.cs">
+      <DependentUpon>Mob.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArtistBand.cs">
+      <DependentUpon>Mob.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArtistBlock.cs">
+      <DependentUpon>Mob.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArtistCollaborationSpace.cs">
+      <DependentUpon>Mob.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArtistFavorite.cs">
+      <DependentUpon>Mob.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArtistProfile.cs">
+      <DependentUpon>Mob.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArtistSkill.cs">
+      <DependentUpon>Mob.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Band.cs">
+      <DependentUpon>Mob.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BandAudition.cs">
+      <DependentUpon>Mob.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BandAuditionComment.cs">
+      <DependentUpon>Mob.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BandGenre.cs">
+      <DependentUpon>Mob.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BannedEmailAddress.cs">
+      <DependentUpon>Mob.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CollaborationSpace.cs">
+      <DependentUpon>Mob.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CollaborationSpaceAlert.cs">
+      <DependentUpon>Mob.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CollaborationSpaceComment.cs">
+      <DependentUpon>Mob.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CollaborationSpaceFile.cs">
+      <DependentUpon>Mob.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CollaborationSpaceGenre.cs">
+      <DependentUpon>Mob.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CollaborationSpaceInvite.cs">
+      <DependentUpon>Mob.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CollaborationSpaceMedia.cs">
+      <DependentUpon>Mob.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\Config.cs" />
+    <Compile Include="Concrete\SQLServerArtistRepository.cs" />
+    <Compile Include="EmailOptOut.cs">
+      <DependentUpon>Mob.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmailVerification.cs">
+      <DependentUpon>Mob.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GenreLookUp.cs">
+      <DependentUpon>Mob.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetUserAlerts_Result.cs">
+      <DependentUpon>Mob.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Medium.cs">
+      <DependentUpon>Mob.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Membership.cs">
+      <DependentUpon>Mob.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Message.cs">
+      <DependentUpon>Mob.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MessageRecipient.cs">
+      <DependentUpon>Mob.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MessageSpam.cs">
+      <DependentUpon>Mob.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Mob.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Mob.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Mob.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Mob.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Mob.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Mob.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="OpenPosition.cs">
+      <DependentUpon>Mob.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PlayList.cs">
+      <DependentUpon>Mob.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PlaylistItem.cs">
+      <DependentUpon>Mob.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Song.cs">
+      <DependentUpon>Mob.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SongComment.cs">
+      <DependentUpon>Mob.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Task.cs">
+      <DependentUpon>Mob.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\SharedConfig.cs" />
+    <Compile Include="Utility\ToolChest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <EntityDeploy Include="Mob.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Mob.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Mob.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Mob.edmx</DependentUpon>
+      <LastGenOutput>Mob.Context.cs</LastGenOutput>
+    </None>
+    <None Include="Mob.edmx.diagram">
+      <DependentUpon>Mob.edmx</DependentUpon>
+    </None>
+    <None Include="Mob.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Mob.edmx</DependentUpon>
+      <LastGenOutput>Mob.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

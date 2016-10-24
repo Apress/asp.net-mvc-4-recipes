@@ -1,0 +1,36 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[Song]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The column [dbo].[Song].[ArtworkThumbURL] is being dropped, data loss could occur.
+       The type for column Controller in table [dbo].[Song] is currently  VARCHAR (255) NULL but is being changed to  VARCHAR
+         (50) NULL. Data loss could occur.
+       The type for column GenreId in table [dbo].[Song] is currently  VARCHAR (50) NULL but is being changed to  INT NULL.
+         Data loss could occur.
+
+** User actions
+     Rename
+       [dbo].[Song].[Action] (Column)
+       [dbo].[Song].[Controller] (Column)
+       [dbo].[Song].[GenreId] (Column)
+     Table rebuild
+       [dbo].[Song] (Table)
+
+** Supporting actions
+     Drop
+       [dbo].[FK_PlaylistItem_Song] (Foreign Key)
+       [dbo].[FK_Song_Media] (Foreign Key)
+     Create
+       [dbo].[FK_PlaylistItem_Song] (Foreign Key)
+       [dbo].[FK_Song_Media] (Foreign Key)
+     Refresh
+       [dbo].[u_DeleteArtist] (Procedure)
+
+The column [dbo].[Song].[ArtworkThumbURL] is being dropped, data loss could occur.
+The type for column Controller in table [dbo].[Song] is currently  VARCHAR (255) NULL but is being changed to  VARCHAR (50) NULL. Data loss could occur.
+The type for column GenreId in table [dbo].[Song] is currently  VARCHAR (50) NULL but is being changed to  INT NULL. Data loss could occur.
+

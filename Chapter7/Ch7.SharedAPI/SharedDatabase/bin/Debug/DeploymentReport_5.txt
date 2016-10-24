@@ -1,0 +1,22 @@
+﻿** Warnings
+     The object reference [dbo].[PlaylistItem].[PlaylistId] differs only by case from the object definition
+       [dbo].[PlaylistItem].[PlayListId].
+     The object reference [dbo].[Playlist] differs only by case from the object definition [dbo].[PlayList].
+     The object reference [dbo].[Playlist].[PlaylistId] differs only by case from the object definition
+       [dbo].[PlayList].[PlaylistId].
+
+** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[FK_PlaylistItem_Song] (Foreign Key)
+
+** Supporting actions

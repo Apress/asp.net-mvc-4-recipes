@@ -1,0 +1,18 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[Task] (Table)
+       Default Constraint on [dbo].[Task].[CreateDate] (Default Constraint)
+       Default Constraint on [dbo].[Task].[ModifiedDate] (Default Constraint)
+       [dbo].[FK_Task_Artist] (Foreign Key)
+
+** Supporting actions

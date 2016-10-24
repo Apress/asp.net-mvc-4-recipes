@@ -1,0 +1,12 @@
+G:\WorkingFolder\MVCBook\Chapter4\DebugSilverlightandJavaScriptAtTheSameTime\DebugMe\Bin\Debug\DebugMe.dll
+G:\WorkingFolder\MVCBook\Chapter4\DebugSilverlightandJavaScriptAtTheSameTime\DebugMe\Bin\Debug\DebugMe.pdb
+G:\WorkingFolder\MVCBook\Chapter4\DebugSilverlightandJavaScriptAtTheSameTime\DebugMe\Bin\Debug\AppManifest.xaml
+G:\WorkingFolder\MVCBook\Chapter4\DebugSilverlightandJavaScriptAtTheSameTime\DebugMe\Bin\Debug\DebugMe.xap
+G:\WorkingFolder\MVCBook\Chapter4\DebugSilverlightandJavaScriptAtTheSameTime\DebugMe\Bin\Debug\DebugMeTestPage.html
+G:\WorkingFolder\MVCBook\Chapter4\DebugSilverlightandJavaScriptAtTheSameTime\DebugMe\obj\Debug\DebugMe.csprojResolveAssemblyReference.cache
+G:\WorkingFolder\MVCBook\Chapter4\DebugSilverlightandJavaScriptAtTheSameTime\DebugMe\obj\Debug\App.g.cs
+G:\WorkingFolder\MVCBook\Chapter4\DebugSilverlightandJavaScriptAtTheSameTime\DebugMe\obj\Debug\MainPage.g.cs
+G:\WorkingFolder\MVCBook\Chapter4\DebugSilverlightandJavaScriptAtTheSameTime\DebugMe\obj\Debug\DebugMe.g.resources
+G:\WorkingFolder\MVCBook\Chapter4\DebugSilverlightandJavaScriptAtTheSameTime\DebugMe\obj\Debug\DebugMe.dll
+G:\WorkingFolder\MVCBook\Chapter4\DebugSilverlightandJavaScriptAtTheSameTime\DebugMe\obj\Debug\DebugMe.pdb
+G:\WorkingFolder\MVCBook\Chapter4\DebugSilverlightandJavaScriptAtTheSameTime\DebugMe\obj\Debug\XapCacheFile.xml

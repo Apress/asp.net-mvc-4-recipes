@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Ch7SharedDatabaseModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="Ch7SharedDatabaseModelStoreContainer">
+    <EntitySet Name="Artist" EntityType="Ch7SharedDatabaseModel.Store.Artist" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ArtistSkill" EntityType="Ch7SharedDatabaseModel.Store.ArtistSkill" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_ArtistSkill_Artist" Association="Ch7SharedDatabaseModel.Store.FK_ArtistSkill_Artist">
+      <End Role="Artist" EntitySet="Artist" />
+      <End Role="ArtistSkill" EntitySet="ArtistSkill" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Artist">
+    <Key>
+      <PropertyRef Name="ArtistId" />
+    </Key>
+    <Property Name="ArtistId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="OldUserId" Type="uniqueidentifier" />
+    <Property Name="UserName" Type="varchar" Nullable="false" MaxLength="256" />
+    <Property Name="Country" Type="varchar" MaxLength="50" />
+    <Property Name="Provence" Type="varchar" MaxLength="65" />
+    <Property Name="City" Type="varchar" MaxLength="50" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+    <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+    <Property Name="WebSite" Type="varchar" MaxLength="255" />
+    <Property Name="ProfilePrivacyLevel" Type="tinyint" Nullable="false" />
+    <Property Name="ContactPrivacyLevel" Type="tinyint" Nullable="false" />
+    <Property Name="ProfileViews" Type="bigint" Nullable="false" />
+    <Property Name="ProfileLastViewDate" Type="smalldatetime" />
+    <Property Name="Rating" Type="tinyint" />
+    <Property Name="AvatarURL" Type="varchar" MaxLength="255" />
+    <Property Name="EmailAddress" Type="varchar" MaxLength="256" />
+    <Property Name="FileUploadsInBytes" Type="int" Nullable="false" />
+    <Property Name="FileUploadQuotaInBytes" Type="int" Nullable="false" />
+    <Property Name="LastActivityDate" Type="datetime" Nullable="false" />
+    <Property Name="ShowChatStatus" Type="bit" Nullable="false" />
+    <Property Name="AllowChatSounds" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ArtistSkill">
+    <Key>
+      <PropertyRef Name="ArtistTalentID" />
+    </Key>
+    <Property Name="ArtistTalentID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ArtistId" Type="int" Nullable="false" />
+    <Property Name="TalentName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="SkillLevel" Type="int" Nullable="false" />
+    <Property Name="Details" Type="varchar" MaxLength="500" />
+    <Property Name="Styles" Type="varchar" Nullable="false" MaxLength="500" />
+  </EntityType>
+  <Association Name="FK_ArtistSkill_Artist">
+    <End Role="Artist" Type="Ch7SharedDatabaseModel.Store.Artist" Multiplicity="1" />
+    <End Role="ArtistSkill" Type="Ch7SharedDatabaseModel.Store.ArtistSkill" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Artist">
+        <PropertyRef Name="ArtistId" />
+      </Principal>
+      <Dependent Role="ArtistSkill">
+        <PropertyRef Name="ArtistId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

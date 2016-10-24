@@ -1,0 +1,27 @@
+﻿@model Ch10.Mvc.Web.Models.WizardModel
+@{
+    ViewBag.Title = "TitleAndDescription";
+    Layout = "~/Views/Shared/_WizardLayout.cshtml";
+}
+
+
+<h2>Title And Description</h2>
+<fieldset>
+    <legend>Describe your project</legend>
+    <div>
+        @Html.LabelFor(a=> a.NewWorkspace.Title)
+        <br />
+        @Html.TextBoxFor(a=> a.NewWorkspace.Title)
+    </div>
+    <div>
+        @Html.LabelFor(a=> a.NewWorkspace.Description)
+        <br />
+        @Html.TextAreaFor(a=> a.NewWorkspace.Description)
+    </div>
+</fieldset>
+<div class="HiddenWizardFields">
+    @Html.HiddenFor(a=>a.NewWorkspace.AllowContributorsToPublish)
+@Html.HiddenFor(a=>a.NewWorkspace.AllowPublicView)
+@Html.HiddenFor(a=>a.NewWorkspace.RestrictContributorsToBand)
+    @Html.EditorFor(a => a.NeededSkills);
+</div>

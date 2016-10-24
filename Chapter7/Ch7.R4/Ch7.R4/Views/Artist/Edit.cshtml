@@ -1,0 +1,101 @@
+﻿@model Ch7.R4.DAL.ARTIST
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>ARTIST</legend>
+
+        @Html.HiddenFor(model => model.ARTISTID)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.USERNAME)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.USERNAME)
+            @Html.ValidationMessageFor(model => model.USERNAME)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.COUNTRY)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.COUNTRY)
+            @Html.ValidationMessageFor(model => model.COUNTRY)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.PROVENCE)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.PROVENCE)
+            @Html.ValidationMessageFor(model => model.PROVENCE)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CITY)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CITY)
+            @Html.ValidationMessageFor(model => model.CITY)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CREATEDATE)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CREATEDATE)
+            @Html.ValidationMessageFor(model => model.CREATEDATE)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.MODIFIEDDATE)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.MODIFIEDDATE)
+            @Html.ValidationMessageFor(model => model.MODIFIEDDATE)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.PROFILEPRIVACYLEVEL)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.PROFILEPRIVACYLEVEL)
+            @Html.ValidationMessageFor(model => model.PROFILEPRIVACYLEVEL)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CONTACTPRIVACYLEVEL)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CONTACTPRIVACYLEVEL)
+            @Html.ValidationMessageFor(model => model.CONTACTPRIVACYLEVEL)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.PROFILEVIEWS)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.PROFILEVIEWS)
+            @Html.ValidationMessageFor(model => model.PROFILEVIEWS)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="EDM.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="EDMStoreContainer">
+    <EntitySet Name="Artists" EntityType="EDM.Store.Artists" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ArtistSkills" EntityType="EDM.Store.ArtistSkills" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="ArtistArtistSkll" Association="EDM.Store.ArtistArtistSkill">
+      <End Role="Artist" EntitySet="Artists" />
+      <End Role="ArtistSkill" EntitySet="ArtistSkills" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Artists">
+    <Key>
+      <PropertyRef Name="ArtistId" />
+    </Key>
+    <Property Name="ArtistId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="Country" Type="nvarchar" Nullable="false" DefaultValue="&quot;USA&quot;" MaxLength="50" />
+    <Property Name="Provence" Type="nvarchar" Nullable="true" DefaultValue="&quot;New Jersey&quot;" MaxLength="65" />
+    <Property Name="City" Type="nvarchar" Nullable="true" DefaultValue="&quot;Paterson&quot;" MaxLength="50" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ArtistSkills">
+    <Key>
+      <PropertyRef Name="ArtistSkillId" />
+    </Key>
+    <Property Name="ArtistSkillId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TalentName" Type="nvarchar" Nullable="false" DefaultValue="&quot;Guitar&quot;" MaxLength="50" />
+    <Property Name="SkillLevel" Type="int" Nullable="false" DefaultValue="0" />
+    <Property Name="Details" Type="nvarchar" Nullable="true" MaxLength="500" />
+    <Property Name="Styles" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="Artist_ArtistId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="ArtistArtistSkill">
+    <End Role="Artist" Type="EDM.Store.Artists" Multiplicity="1" />
+    <End Role="ArtistSkill" Type="EDM.Store.ArtistSkills" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Artist">
+        <PropertyRef Name="ArtistId" />
+      </Principal>
+      <Dependent Role="ArtistSkill">
+        <PropertyRef Name="Artist_ArtistId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="EDM" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="EDMContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Artists" EntityType="EDM.Artist" />
+          <EntitySet Name="ArtistSkills" EntityType="EDM.ArtistSkill" />
+          <AssociationSet Name="ArtistArtistSkll" Association="EDM.ArtistArtistSkill">
+            <End Role="Artist" EntitySet="Artists" />
+            <End Role="ArtistSkill" EntitySet="ArtistSkills" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Artist">
+          <Key>
+            <PropertyRef Name="ArtistId" />
+          </Key>
+          <Property Type="Int32" Name="ArtistId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="UserName" Nullable="false" MaxLength="256" Unicode="true" />
+          <Property Type="String" Name="Country" Nullable="false" MaxLength="50" DefaultValue="&quot;USA&quot;" />
+          <Property Type="String" Name="Provence" Nullable="true" MaxLength="65" Unicode="true" DefaultValue="&quot;New Jersey&quot;" />
+          <Property Type="String" Name="City" Nullable="true" DefaultValue="&quot;Paterson&quot;" MaxLength="50" />
+          <Property Type="DateTime" Name="CreateDate" Nullable="false" />
+          <NavigationProperty Name="ArtistSkills" Relationship="EDM.ArtistArtistSkill" FromRole="Artist" ToRole="ArtistSkill" />
+        </EntityType>
+        <EntityType Name="ArtistSkill">
+          <Key>
+            <PropertyRef Name="ArtistSkillId" />
+          </Key>
+          <Property Type="Int32" Name="ArtistSkillId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="TalentName" Nullable="false" MaxLength="50" DefaultValue="&quot;Guitar&quot;" />
+          <Property Type="Int32" Name="SkillLevel" Nullable="false" DefaultValue="0" />
+          <Property Type="String" Name="Details" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="Styles" Nullable="false" MaxLength="500" />
+          <NavigationProperty Name="Artist" Relationship="EDM.ArtistArtistSkill" FromRole="ArtistSkill" ToRole="Artist" />
+        </EntityType>
+        <Association Name="ArtistArtistSkill">
+          <End Type="EDM.Artist" Role="Artist" Multiplicity="1" />
+          <End Type="EDM.ArtistSkill" Role="ArtistSkill" Multiplicity="*" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EDMStoreContainer" CdmEntityContainer="EDMContainer">
+    <EntitySetMapping Name="Artists">
+      <EntityTypeMapping TypeName="IsTypeOf(EDM.Artist)">
+        <MappingFragment StoreEntitySet="Artists">
+          <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Provence" ColumnName="Provence" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArtistSkills">
+      <EntityTypeMapping TypeName="IsTypeOf(EDM.ArtistSkill)">
+        <MappingFragment StoreEntitySet="ArtistSkills">
+          <ScalarProperty Name="ArtistSkillId" ColumnName="ArtistSkillId" />
+          <ScalarProperty Name="TalentName" ColumnName="TalentName" />
+          <ScalarProperty Name="SkillLevel" ColumnName="SkillLevel" />
+          <ScalarProperty Name="Details" ColumnName="Details" />
+          <ScalarProperty Name="Styles" ColumnName="Styles" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="ArtistArtistSkll" TypeName="EDM.ArtistArtistSkill" StoreEntitySet="ArtistSkills">
+      <EndProperty Name="Artist">
+        <ScalarProperty Name="ArtistId" ColumnName="Artist_ArtistId" />
+      </EndProperty>
+      <EndProperty Name="ArtistSkill">
+        <ScalarProperty Name="ArtistSkillId" ColumnName="ArtistSkillId" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

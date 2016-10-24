@@ -1,0 +1,126 @@
+﻿@model Ch7.R7_1.Models.ArtistDashboardModel
+@{
+    ViewBag.Title = "Index";
+}
+@section InlineCss{
+    <style type="text/css">
+ul { list-style-type:square;}
+.hfeature{ padding: 5px; margin: 5px; }
+.quickLink{ font-size:10pt;}
+#quickLinkContainer{ border-style:solid; border-color:#BBBBBB; border-width:thin; background-color:#DDDDDD;-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px; overflow:auto;}
+#DashBoardOuterWrapper{ width:100%; overflow:auto;}
+#profileImg{ float:left; padding-right:15px;}
+#profileStats{float:left;}
+#quickLinks{float:left; padding-right:10px; padding-left:20px; width:54%; }
+#quickLinksLft{float:right;}
+#quickLinksRgt{float:left; }
+#quickLinksLable{text-align:left; border-width:0; clear:both; padding:5px; margin-left:20px;}
+#StatsList{ list-style-type:none; padding:0; }
+#StatsList li{padding-bottom:8px;}
+#changeProfileLnk{ margin-left:5px;}
+#NewsPane, #flowtabs, #flowtabsPanes{ width:98%;}
+#NewPaneRight{ float:right; padding:5px; height:500px; width:60%; margin-right:5px;}
+#NewsPaneLeft{ float:left; width:35%;}
+</style>
+<link href="/Content/tabs.css" rel="stylesheet" type="text/css" />
+<link href="/Content/AcousticLounge.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/Script/jquery.hoverIntent.js"></script>
+}
+
+<h2>Welcome @Model.ArtistName</h2>
+<div id="DashBoardOuterWrapper">
+    <div id="profileImg">
+    <img alt="Your Profile Image" class="AristImage" ID="avitarImage" src="@Model.AvatarURL" />
+    <br />
+    
+    </div>
+    <div id="profileStats">
+        <ul id="StatsList">
+            <li>
+                @Html.LabelFor(m=>m.AccountCreatedDate)<br />
+                @Model.AccountCreatedDate.ToLocalTime().ToShortDateString()
+            </li>
+            <li>
+                @Html.LabelFor(m=>m.PasswordLastChangedDate)<br />
+                @Model.PasswordLastChangedDate.ToLocalTime().ToShortDateString()
+            </li>
+            <li>
+                @Html.LabelFor(m=>m.ProfileViews)<br />
+                @Model.ProfileViews
+            </li>
+            <li>
+                @Html.LabelFor(m=>m.ProfileLastViewedDate)<br />
+                @Model.ProfileLastViewedDate.ToLocalTime().ToShortDateString()
+            </li>
+            <li>
+                @Html.LabelFor(m=>m.ProfileBookmark)<br /><br />       
+                @Model.ProfileBookmark
+            </li>
+        </ul>
+    </div>
+    <div id="quickLinks">
+  <ul class="tabs" id="flowtabs">
+    <li><a href="#">Inbox</a></li>
+    <li><a href="#">Workspaces</a></li>
+    <li><a href="#">My Music</a></li>
+</ul>
+<div class="panes" id="flowtabsPanes">
+<div class="pane" id="InboxPane">
+    @foreach(var item in Model.Tasks){
+      @item.Title
+        <br />
+     }
+
+</div>
+<div class="pane" id="WorkspacePane">
+    @foreach(var item in Model.CollaborationSpaces){
+      @item.Title
+        <br />
+     }
+</div>
+    <div class="pane" id="PublishedSongPane">
+     </div>
+</div>
+    </div>
+    </div>
+ 
+<br />
+<div id="NewsPaneLeft">
+    <div id="NewsWrapper"> 
+        @foreach( var item in Model.NewsFeed){
+        <div class="NewsItem">
+            <a href="#">
+                <span class="NewsItemImage">
+                        <img src='@item.ActorAvatarUrl' alt='@item.ActorDisplayName'  />
+                    </span>
+                    <span class="NewsItemContent">
+                        <h3>@item.Headline</h3>
+                        @item.Summary
+                    </span>
+            </a>
+        </div>
+        }
+    </div>
+ </div>
+<div id="NewsPaneRight">
+    <div id="SongWrapper"> 
+        @foreach( var item in Model.ArtistSongs){
+        <div class="NewsItem">
+            @item.Song.SongTitle
+        </div>
+        }
+    </div>
+ </div>
+
+@section scripts{
+        <script type="text/javascript">
+            $(function () {
+                $("#flowtabs").tabs("#flowtabsPanes > div").history();
+            });
+    </script>
+<script src="/Scripts/tools.tabs-1.0.4.min.js" type="text/javascript"></script>
+<script src="/Scripts/tools.tabs.history-1.0.2.min.js" type="text/javascript"></script>
+
+}

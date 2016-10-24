@@ -1,0 +1,13 @@
+﻿@model Ch9.R3.Web.Models.NewsItemOfTheDay
+@{
+    ViewBag.Title = "Demo World Home Page";
+}
+
+<h2>Welcome to Demo World</h2>
+
+<div id="OuterContainer">
+    <header>@Model.Headline</header>
+    <article id="SiteWelcome">
+        @Model.Summary
+    </article>
+</div>

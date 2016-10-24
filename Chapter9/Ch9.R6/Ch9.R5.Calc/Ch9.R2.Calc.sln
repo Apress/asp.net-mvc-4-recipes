@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch9.R2.Calc", "Ch9.R2.Calc\Ch9.R2.Calc.csproj", "{BE1AAA5F-7177-4A85-81C9-3535C994270C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch9.R2.Calc.Tests", "Ch9.R2.Calc.Tests\Ch9.R2.Calc.Tests.csproj", "{45131C8B-DC90-453F-898E-EBD77E7D4FE8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE1AAA5F-7177-4A85-81C9-3535C994270C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE1AAA5F-7177-4A85-81C9-3535C994270C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE1AAA5F-7177-4A85-81C9-3535C994270C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE1AAA5F-7177-4A85-81C9-3535C994270C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45131C8B-DC90-453F-898E-EBD77E7D4FE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45131C8B-DC90-453F-898E-EBD77E7D4FE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45131C8B-DC90-453F-898E-EBD77E7D4FE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45131C8B-DC90-453F-898E-EBD77E7D4FE8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,22 @@
+﻿@model Ch10.Mvc.Web.Models.WizardModel
+@{
+    ViewBag.Title = "CollaborationSettings";
+    Layout = "~/Views/Shared/_WizardLayout.cshtml";
+}
+
+<h2>Collaboration Settings</h2>
+@Html.HiddenFor(a => a.NewWorkspace.Description)
+@Html.HiddenFor(a => a.NewWorkspace.Title)
+
+<div>
+@Html.LabelFor(a => a.NewWorkspace.AllowContributorsToPublish)<br />
+@Html.CheckBoxFor(a => a.NewWorkspace.AllowContributorsToPublish)
+</div>
+<div>
+@Html.LabelFor(a => a.NewWorkspace.AllowPublicView)<br />
+@Html.CheckBoxFor(a => a.NewWorkspace.AllowPublicView)
+</div>
+<div>
+@Html.LabelFor(a => a.NewWorkspace.RestrictContributorsToBand)<br />
+@Html.CheckBoxFor(a => a.NewWorkspace.RestrictContributorsToBand)
+</div>

@@ -1,0 +1,92 @@
+﻿.WizardSidebar {
+    padding: 1em;
+    width: 20%;
+    min-width: 200px;
+    min-height: 130px;
+}
+
+    .WizardSidebar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    .WizardSidebar li ,
+    .WizardSidebar a, 
+    .WizardSidebar a:hover, 
+    .WizardButtons a,
+    .WizardButtons input[type="button"],
+    .WizardButtons input[type="submit"]{
+        background-color: #6F868C; /*legacy*/
+        background-image: -moz-linear-gradient(bottom, #555 0%, #222 100%); /*firefox*/
+        background-image: -o-linear-gradient(bottom, #555 0%, #222 100%); /*opera*/
+        background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #555), color-stop(1, #222)); /*Safari*/
+        background-image: -webkit-linear-gradient(bottom, #555 0%, #222 100%); /*Chrome11*/
+        background-image: linear-gradient(to top, #555 0%, #222 100%); /*IE10*/
+        padding: 0.4em;
+        margin: 10px 0 0 0;
+        -moz-border-radius: 3px 4px;
+        -webkit-border-radius: 3px 4px;
+        border-radius: 3px 4px;
+        text-decoration: none;
+        color:#fff;
+        
+    }
+
+.selected {
+    font-weight:600;
+}
+
+ .CheckBoxGroup label, .CheckBoxGroup div {
+    display:inline;
+    padding-right:3px;
+}   
+.btn_box_shadow{
+    margin: auto;
+    background: #ccc;
+    border: 1px solid white;
+    position:relative;
+    box-shadow: 3px 5px 17px rgba(0, 0, 0, 0.80);
+    -moz-box-shadow: 3px 5px 17px rgba(0, 0, 0, 0.80);
+    -webkit-box-shadow: 3px 5px 17px rgba(0, 0, 0, 0.80);
+}
+
+.WizardForm {
+    border-style: solid;
+    border-width: thin;
+    border-color: inherit;
+    display: block;
+    min-height: 30em;
+    width: 76%;
+}
+    .WizardForm h2 {
+        margin-left:0.5em;
+        font-size:1.5em;
+    }
+
+.WizardOuter {
+    display:block;
+    width:98%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.WizardButtons {
+    width: 20%;
+    margin: 2em auto 0 auto;
+    text-align: center;
+    vertical-align:bottom;
+    position:relative;
+    bottom:0;
+
+}
+
+
+.HiddenWizardFields {
+    display:none;
+}
+   
+.WizardStep{
+    display:none;
+} 

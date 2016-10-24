@@ -1,0 +1,629 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ch9.R2.Web.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Ch9.R2.Web.Controllers.Fakes.ShimArtistAdminController">
+            <summary>Shim type of Ch9.R2.Web.Controllers.ArtistAdminController</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.ShimArtistAdminController.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.ShimArtistAdminController.#ctor(Ch9.R2.Web.Controllers.ArtistAdminController)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.ShimArtistAdminController.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.ShimArtistAdminController.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.ShimArtistAdminController.Bind(System.Web.Mvc.IActionFilter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.ShimArtistAdminController.Bind(System.Web.Mvc.IAuthorizationFilter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.ShimArtistAdminController.Bind(System.Web.Mvc.IController)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.ShimArtistAdminController.Bind(System.Web.Mvc.IExceptionFilter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.ShimArtistAdminController.Bind(System.Web.Mvc.IResultFilter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.ShimArtistAdminController.Bind(System.Web.Mvc.Async.IAsyncController)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.ShimArtistAdminController.Bind(System.Web.Mvc.Async.IAsyncManagerContainer)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.ShimArtistAdminController.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Controllers.Fakes.ShimArtistAdminController.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Controllers.Fakes.ShimArtistAdminController.Constructor">
+            <summary>Sets the shim of ArtistAdminController.ArtistAdminController()</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Controllers.Fakes.ShimArtistAdminController.ConstructorIArtistRepository">
+            <summary>Sets the shim of ArtistAdminController.ArtistAdminController(IArtistRepository repository)</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Controllers.Fakes.ShimArtistAdminController.List">
+            <summary>Sets the shim of ArtistAdminController.List()</summary>
+        </member>
+        <member name="T:Ch9.R2.Web.Controllers.Fakes.ShimArtistAdminController.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Controllers.Fakes.ShimArtistAdminController.AllInstances.List">
+            <summary>Sets the shim of ArtistAdminController.List()</summary>
+        </member>
+        <member name="T:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController">
+            <summary>Stub type of Ch9.R2.Web.Controllers.ArtistAdminController</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.#ctor(Ch9.R2.Web.Models.IArtistRepository)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.BeginExecute(System.Web.Routing.RequestContext,System.AsyncCallback,System.Object)">
+            <summary>Sets the stub of Controller.BeginExecute(RequestContext requestContext, AsyncCallback callback, Object state)</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.BeginExecuteCore(System.AsyncCallback,System.Object)">
+            <summary>Sets the stub of Controller.BeginExecuteCore(AsyncCallback callback, Object state)</summary>
+        </member>
+        <member name="F:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.BeginExecuteCoreAsyncCallbackObject">
+            <summary>Sets the stub of Controller.BeginExecuteCore(AsyncCallback callback, Object state)</summary>
+        </member>
+        <member name="F:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.BeginExecuteRequestContextAsyncCallbackObject">
+            <summary>Sets the stub of Controller.BeginExecute(RequestContext requestContext, AsyncCallback callback, Object state)</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.Content(System.String,System.String,System.Text.Encoding)">
+            <summary>Sets the stub of Controller.Content(String content, String contentType, Encoding contentEncoding)</summary>
+        </member>
+        <member name="F:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.ContentStringStringEncoding">
+            <summary>Sets the stub of Controller.Content(String content, String contentType, Encoding contentEncoding)</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.CreateActionInvoker">
+            <summary>Sets the stub of Controller.CreateActionInvoker()</summary>
+        </member>
+        <member name="F:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.CreateActionInvoker01">
+            <summary>Sets the stub of Controller.CreateActionInvoker()</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.CreateTempDataProvider">
+            <summary>Sets the stub of Controller.CreateTempDataProvider()</summary>
+        </member>
+        <member name="F:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.CreateTempDataProvider01">
+            <summary>Sets the stub of Controller.CreateTempDataProvider()</summary>
+        </member>
+        <member name="F:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.DisableAsyncSupportGet">
+            <summary>Sets the stub of Controller.get_DisableAsyncSupport()</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.Dispose(System.Boolean)">
+            <summary>Sets the stub of Controller.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="F:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.DisposeBoolean">
+            <summary>Sets the stub of Controller.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.EndExecute(System.IAsyncResult)">
+            <summary>Sets the stub of Controller.EndExecute(IAsyncResult asyncResult)</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.EndExecuteCore(System.IAsyncResult)">
+            <summary>Sets the stub of Controller.EndExecuteCore(IAsyncResult asyncResult)</summary>
+        </member>
+        <member name="F:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.EndExecuteCoreIAsyncResult">
+            <summary>Sets the stub of Controller.EndExecuteCore(IAsyncResult asyncResult)</summary>
+        </member>
+        <member name="F:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.EndExecuteIAsyncResult">
+            <summary>Sets the stub of Controller.EndExecute(IAsyncResult asyncResult)</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.Execute(System.Web.Routing.RequestContext)">
+            <summary>Sets the stub of ControllerBase.Execute(RequestContext requestContext)</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.ExecuteCore">
+            <summary>Sets the stub of Controller.ExecuteCore()</summary>
+        </member>
+        <member name="F:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.ExecuteCore01">
+            <summary>Sets the stub of Controller.ExecuteCore()</summary>
+        </member>
+        <member name="F:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.ExecuteRequestContext">
+            <summary>Sets the stub of ControllerBase.Execute(RequestContext requestContext)</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.File(System.Byte[],System.String,System.String)">
+            <summary>Sets the stub of Controller.File(Byte[] fileContents, String contentType, String fileDownloadName)</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.File(System.String,System.String,System.String)">
+            <summary>Sets the stub of Controller.File(String fileName, String contentType, String fileDownloadName)</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.File(System.IO.Stream,System.String,System.String)">
+            <summary>Sets the stub of Controller.File(Stream fileStream, String contentType, String fileDownloadName)</summary>
+        </member>
+        <member name="F:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.FileByteArrayStringString">
+            <summary>Sets the stub of Controller.File(Byte[] fileContents, String contentType, String fileDownloadName)</summary>
+        </member>
+        <member name="F:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.FileStreamStringString">
+            <summary>Sets the stub of Controller.File(Stream fileStream, String contentType, String fileDownloadName)</summary>
+        </member>
+        <member name="F:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.FileStringStringString">
+            <summary>Sets the stub of Controller.File(String fileName, String contentType, String fileDownloadName)</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.HandleUnknownAction(System.String)">
+            <summary>Sets the stub of Controller.HandleUnknownAction(String actionName)</summary>
+        </member>
+        <member name="F:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.HandleUnknownActionString">
+            <summary>Sets the stub of Controller.HandleUnknownAction(String actionName)</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.HttpNotFound(System.String)">
+            <summary>Sets the stub of Controller.HttpNotFound(String statusDescription)</summary>
+        </member>
+        <member name="F:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.HttpNotFoundString">
+            <summary>Sets the stub of Controller.HttpNotFound(String statusDescription)</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.Initialize(System.Web.Routing.RequestContext)">
+            <summary>Sets the stub of Controller.Initialize(RequestContext requestContext)</summary>
+        </member>
+        <member name="F:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.InitializeRequestContext">
+            <summary>Sets the stub of Controller.Initialize(RequestContext requestContext)</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.InitializeStub">
+            <summary>Initializes a new instance of type StubArtistAdminController</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.JavaScript(System.String)">
+            <summary>Sets the stub of Controller.JavaScript(String script)</summary>
+        </member>
+        <member name="F:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.JavaScriptString">
+            <summary>Sets the stub of Controller.JavaScript(String script)</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.Json(System.Object,System.String,System.Text.Encoding)">
+            <summary>Sets the stub of Controller.Json(Object data, String contentType, Encoding contentEncoding)</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.Json(System.Object,System.String,System.Text.Encoding,System.Web.Mvc.JsonRequestBehavior)">
+            <summary>Sets the stub of Controller.Json(Object data, String contentType, Encoding contentEncoding, JsonRequestBehavior behavior)</summary>
+        </member>
+        <member name="F:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.JsonObjectStringEncoding">
+            <summary>Sets the stub of Controller.Json(Object data, String contentType, Encoding contentEncoding)</summary>
+        </member>
+        <member name="F:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.JsonObjectStringEncodingJsonRequestBehavior">
+            <summary>Sets the stub of Controller.Json(Object data, String contentType, Encoding contentEncoding, JsonRequestBehavior behavior)</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.OnActionExecuted(System.Web.Mvc.ActionExecutedContext)">
+            <summary>Sets the stub of Controller.OnActionExecuted(ActionExecutedContext filterContext)</summary>
+        </member>
+        <member name="F:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.OnActionExecutedActionExecutedContext">
+            <summary>Sets the stub of Controller.OnActionExecuted(ActionExecutedContext filterContext)</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.OnActionExecuting(System.Web.Mvc.ActionExecutingContext)">
+            <summary>Sets the stub of Controller.OnActionExecuting(ActionExecutingContext filterContext)</summary>
+        </member>
+        <member name="F:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.OnActionExecutingActionExecutingContext">
+            <summary>Sets the stub of Controller.OnActionExecuting(ActionExecutingContext filterContext)</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.OnAuthorization(System.Web.Mvc.AuthorizationContext)">
+            <summary>Sets the stub of Controller.OnAuthorization(AuthorizationContext filterContext)</summary>
+        </member>
+        <member name="F:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.OnAuthorizationAuthorizationContext">
+            <summary>Sets the stub of Controller.OnAuthorization(AuthorizationContext filterContext)</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.OnException(System.Web.Mvc.ExceptionContext)">
+            <summary>Sets the stub of Controller.OnException(ExceptionContext filterContext)</summary>
+        </member>
+        <member name="F:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.OnExceptionExceptionContext">
+            <summary>Sets the stub of Controller.OnException(ExceptionContext filterContext)</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.OnResultExecuted(System.Web.Mvc.ResultExecutedContext)">
+            <summary>Sets the stub of Controller.OnResultExecuted(ResultExecutedContext filterContext)</summary>
+        </member>
+        <member name="F:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.OnResultExecutedResultExecutedContext">
+            <summary>Sets the stub of Controller.OnResultExecuted(ResultExecutedContext filterContext)</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.OnResultExecuting(System.Web.Mvc.ResultExecutingContext)">
+            <summary>Sets the stub of Controller.OnResultExecuting(ResultExecutingContext filterContext)</summary>
+        </member>
+        <member name="F:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.OnResultExecutingResultExecutingContext">
+            <summary>Sets the stub of Controller.OnResultExecuting(ResultExecutingContext filterContext)</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.PartialView(System.String,System.Object)">
+            <summary>Sets the stub of Controller.PartialView(String viewName, Object model)</summary>
+        </member>
+        <member name="F:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.PartialViewStringObject">
+            <summary>Sets the stub of Controller.PartialView(String viewName, Object model)</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.Redirect(System.String)">
+            <summary>Sets the stub of Controller.Redirect(String url)</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.RedirectPermanent(System.String)">
+            <summary>Sets the stub of Controller.RedirectPermanent(String url)</summary>
+        </member>
+        <member name="F:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.RedirectPermanentString">
+            <summary>Sets the stub of Controller.RedirectPermanent(String url)</summary>
+        </member>
+        <member name="F:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.RedirectString">
+            <summary>Sets the stub of Controller.Redirect(String url)</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.RedirectToAction(System.String,System.String,System.Web.Routing.RouteValueDictionary)">
+            <summary>Sets the stub of Controller.RedirectToAction(String actionName, String controllerName, RouteValueDictionary routeValues)</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.RedirectToActionPermanent(System.String,System.String,System.Web.Routing.RouteValueDictionary)">
+            <summary>Sets the stub of Controller.RedirectToActionPermanent(String actionName, String controllerName, RouteValueDictionary routeValues)</summary>
+        </member>
+        <member name="F:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.RedirectToActionPermanentStringStringRouteValueDictionary">
+            <summary>Sets the stub of Controller.RedirectToActionPermanent(String actionName, String controllerName, RouteValueDictionary routeValues)</summary>
+        </member>
+        <member name="F:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.RedirectToActionStringStringRouteValueDictionary">
+            <summary>Sets the stub of Controller.RedirectToAction(String actionName, String controllerName, RouteValueDictionary routeValues)</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.RedirectToRoute(System.String,System.Web.Routing.RouteValueDictionary)">
+            <summary>Sets the stub of Controller.RedirectToRoute(String routeName, RouteValueDictionary routeValues)</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.RedirectToRoutePermanent(System.String,System.Web.Routing.RouteValueDictionary)">
+            <summary>Sets the stub of Controller.RedirectToRoutePermanent(String routeName, RouteValueDictionary routeValues)</summary>
+        </member>
+        <member name="F:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.RedirectToRoutePermanentStringRouteValueDictionary">
+            <summary>Sets the stub of Controller.RedirectToRoutePermanent(String routeName, RouteValueDictionary routeValues)</summary>
+        </member>
+        <member name="F:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.RedirectToRouteStringRouteValueDictionary">
+            <summary>Sets the stub of Controller.RedirectToRoute(String routeName, RouteValueDictionary routeValues)</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.View(System.Web.Mvc.IView,System.Object)">
+            <summary>Sets the stub of Controller.View(IView view, Object model)</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.View(System.String,System.String,System.Object)">
+            <summary>Sets the stub of Controller.View(String viewName, String masterName, Object model)</summary>
+        </member>
+        <member name="F:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.ViewIViewObject">
+            <summary>Sets the stub of Controller.View(IView view, Object model)</summary>
+        </member>
+        <member name="F:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.ViewStringStringObject">
+            <summary>Sets the stub of Controller.View(String viewName, String masterName, Object model)</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.DisableAsyncSupport">
+            <summary>Sets the stub of Controller.get_DisableAsyncSupport()</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Controllers.Fakes.StubArtistAdminController.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Ch9.R2.Web.Fakes.ShimBundleConfig">
+            <summary>Shim type of Ch9.R2.Web.BundleConfig</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Fakes.ShimBundleConfig.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Fakes.ShimBundleConfig.#ctor(Ch9.R2.Web.BundleConfig)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Fakes.ShimBundleConfig.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Fakes.ShimBundleConfig.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Fakes.ShimBundleConfig.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Fakes.ShimBundleConfig.Constructor">
+            <summary>Sets the shim of BundleConfig.BundleConfig()</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Fakes.ShimBundleConfig.RegisterBundlesBundleCollection">
+            <summary>Sets the shim of BundleConfig.RegisterBundles(BundleCollection bundles)</summary>
+        </member>
+        <member name="T:Ch9.R2.Web.Fakes.ShimBundleConfig.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:Ch9.R2.Web.Fakes.ShimFilterConfig">
+            <summary>Shim type of Ch9.R2.Web.FilterConfig</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Fakes.ShimFilterConfig.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Fakes.ShimFilterConfig.#ctor(Ch9.R2.Web.FilterConfig)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Fakes.ShimFilterConfig.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Fakes.ShimFilterConfig.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Fakes.ShimFilterConfig.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Fakes.ShimFilterConfig.Constructor">
+            <summary>Sets the shim of FilterConfig.FilterConfig()</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Fakes.ShimFilterConfig.RegisterGlobalFiltersGlobalFilterCollection">
+            <summary>Sets the shim of FilterConfig.RegisterGlobalFilters(GlobalFilterCollection filters)</summary>
+        </member>
+        <member name="T:Ch9.R2.Web.Fakes.ShimFilterConfig.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:Ch9.R2.Web.Fakes.ShimMvcApplication">
+            <summary>Shim type of Ch9.R2.Web.MvcApplication</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Fakes.ShimMvcApplication.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Fakes.ShimMvcApplication.#ctor(Ch9.R2.Web.MvcApplication)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Fakes.ShimMvcApplication.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Fakes.ShimMvcApplication.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Fakes.ShimMvcApplication.Bind(System.ComponentModel.IComponent)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Fakes.ShimMvcApplication.Bind(System.Web.IHttpAsyncHandler)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Fakes.ShimMvcApplication.Bind(System.Web.IHttpHandler)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Fakes.ShimMvcApplication.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Fakes.ShimMvcApplication.Application_Start">
+            <summary>Sets the shim of MvcApplication.Application_Start()</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Fakes.ShimMvcApplication.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Fakes.ShimMvcApplication.Constructor">
+            <summary>Sets the shim of MvcApplication.MvcApplication()</summary>
+        </member>
+        <member name="T:Ch9.R2.Web.Fakes.ShimMvcApplication.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Fakes.ShimMvcApplication.AllInstances.Application_Start">
+            <summary>Sets the shim of MvcApplication.Application_Start()</summary>
+        </member>
+        <member name="T:Ch9.R2.Web.Fakes.ShimRouteConfig">
+            <summary>Shim type of Ch9.R2.Web.RouteConfig</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Fakes.ShimRouteConfig.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Fakes.ShimRouteConfig.#ctor(Ch9.R2.Web.RouteConfig)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Fakes.ShimRouteConfig.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Fakes.ShimRouteConfig.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Fakes.ShimRouteConfig.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Fakes.ShimRouteConfig.Constructor">
+            <summary>Sets the shim of RouteConfig.RouteConfig()</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Fakes.ShimRouteConfig.RegisterRoutesRouteCollection">
+            <summary>Sets the shim of RouteConfig.RegisterRoutes(RouteCollection routes)</summary>
+        </member>
+        <member name="T:Ch9.R2.Web.Fakes.ShimRouteConfig.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:Ch9.R2.Web.Fakes.ShimWebApiConfig">
+            <summary>Shim type of Ch9.R2.Web.WebApiConfig</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Fakes.ShimWebApiConfig.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Fakes.ShimWebApiConfig.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Fakes.ShimWebApiConfig.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Fakes.ShimWebApiConfig.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Fakes.ShimWebApiConfig.RegisterHttpConfiguration">
+            <summary>Sets the shim of WebApiConfig.Register(HttpConfiguration config)</summary>
+        </member>
+        <member name="T:Ch9.R2.Web.Fakes.StubBundleConfig">
+            <summary>Stub type of Ch9.R2.Web.BundleConfig</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Fakes.StubBundleConfig.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Fakes.StubBundleConfig.InitializeStub">
+            <summary>Initializes a new instance of type StubBundleConfig</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Fakes.StubBundleConfig.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Fakes.StubBundleConfig.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Fakes.StubBundleConfig.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Ch9.R2.Web.Fakes.StubFilterConfig">
+            <summary>Stub type of Ch9.R2.Web.FilterConfig</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Fakes.StubFilterConfig.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Fakes.StubFilterConfig.InitializeStub">
+            <summary>Initializes a new instance of type StubFilterConfig</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Fakes.StubFilterConfig.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Fakes.StubFilterConfig.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Fakes.StubFilterConfig.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Ch9.R2.Web.Fakes.StubMvcApplication">
+            <summary>Stub type of Ch9.R2.Web.MvcApplication</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Fakes.StubMvcApplication.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Fakes.StubMvcApplication.Dispose">
+            <summary>Sets the stub of HttpApplication.Dispose()</summary>
+        </member>
+        <member name="F:Ch9.R2.Web.Fakes.StubMvcApplication.Dispose01">
+            <summary>Sets the stub of HttpApplication.Dispose()</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Fakes.StubMvcApplication.GetOutputCacheProviderName(System.Web.HttpContext)">
+            <summary>Sets the stub of HttpApplication.GetOutputCacheProviderName(HttpContext context)</summary>
+        </member>
+        <member name="F:Ch9.R2.Web.Fakes.StubMvcApplication.GetOutputCacheProviderNameHttpContext">
+            <summary>Sets the stub of HttpApplication.GetOutputCacheProviderName(HttpContext context)</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Fakes.StubMvcApplication.GetVaryByCustomString(System.Web.HttpContext,System.String)">
+            <summary>Sets the stub of HttpApplication.GetVaryByCustomString(HttpContext context, String custom)</summary>
+        </member>
+        <member name="F:Ch9.R2.Web.Fakes.StubMvcApplication.GetVaryByCustomStringHttpContextString">
+            <summary>Sets the stub of HttpApplication.GetVaryByCustomString(HttpContext context, String custom)</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Fakes.StubMvcApplication.Init">
+            <summary>Sets the stub of HttpApplication.Init()</summary>
+        </member>
+        <member name="F:Ch9.R2.Web.Fakes.StubMvcApplication.Init01">
+            <summary>Sets the stub of HttpApplication.Init()</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Fakes.StubMvcApplication.InitializeStub">
+            <summary>Initializes a new instance of type StubMvcApplication</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Fakes.StubMvcApplication.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Fakes.StubMvcApplication.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Fakes.StubMvcApplication.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Ch9.R2.Web.Fakes.StubRouteConfig">
+            <summary>Stub type of Ch9.R2.Web.RouteConfig</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Fakes.StubRouteConfig.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Fakes.StubRouteConfig.InitializeStub">
+            <summary>Initializes a new instance of type StubRouteConfig</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Fakes.StubRouteConfig.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Fakes.StubRouteConfig.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Fakes.StubRouteConfig.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Ch9.R2.Web.Models.Fakes.ShimSharedAPIArtistRepository">
+            <summary>Shim type of Ch9.R2.Web.Models.SharedAPIArtistRepository</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Models.Fakes.ShimSharedAPIArtistRepository.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Models.Fakes.ShimSharedAPIArtistRepository.#ctor(Ch9.R2.Web.Models.SharedAPIArtistRepository)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Models.Fakes.ShimSharedAPIArtistRepository.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Models.Fakes.ShimSharedAPIArtistRepository.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Models.Fakes.ShimSharedAPIArtistRepository.Bind(Ch9.R2.Web.Models.IArtistRepository)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Models.Fakes.ShimSharedAPIArtistRepository.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Models.Fakes.ShimSharedAPIArtistRepository.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Models.Fakes.ShimSharedAPIArtistRepository.Constructor">
+            <summary>Sets the shim of SharedAPIArtistRepository.SharedAPIArtistRepository()</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Models.Fakes.ShimSharedAPIArtistRepository.DeleteArtistInt32">
+            <summary>Sets the shim of SharedAPIArtistRepository.DeleteArtist(Int32 id)</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Models.Fakes.ShimSharedAPIArtistRepository.Dispose">
+            <summary>Sets the shim of SharedAPIArtistRepository.Dispose()</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Models.Fakes.ShimSharedAPIArtistRepository.GetArtistDetailsInt32">
+            <summary>Sets the shim of SharedAPIArtistRepository.GetArtistDetails(Int32 id)</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Models.Fakes.ShimSharedAPIArtistRepository.GetNewArtistList">
+            <summary>Sets the shim of SharedAPIArtistRepository.GetNewArtistList()</summary>
+        </member>
+        <member name="T:Ch9.R2.Web.Models.Fakes.ShimSharedAPIArtistRepository.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Models.Fakes.ShimSharedAPIArtistRepository.AllInstances.DeleteArtistInt32">
+            <summary>Sets the shim of SharedAPIArtistRepository.DeleteArtist(Int32 id)</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Models.Fakes.ShimSharedAPIArtistRepository.AllInstances.Dispose">
+            <summary>Sets the shim of SharedAPIArtistRepository.Dispose()</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Models.Fakes.ShimSharedAPIArtistRepository.AllInstances.GetArtistDetailsInt32">
+            <summary>Sets the shim of SharedAPIArtistRepository.GetArtistDetails(Int32 id)</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Models.Fakes.ShimSharedAPIArtistRepository.AllInstances.GetNewArtistList">
+            <summary>Sets the shim of SharedAPIArtistRepository.GetNewArtistList()</summary>
+        </member>
+        <member name="T:Ch9.R2.Web.Models.Fakes.StubIArtistRepository">
+            <summary>Stub type of Ch9.R2.Web.Models.IArtistRepository</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Models.Fakes.StubIArtistRepository.#ctor">
+            <summary>Initializes a new instance of type StubIArtistRepository</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Models.Fakes.StubIArtistRepository.c9r2w::Ch9#R2#Web#Models#IArtistRepository#DeleteArtist(System.Int32)">
+            <summary>Sets the stub of IArtistRepository.DeleteArtist(Int32 id)</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Models.Fakes.StubIArtistRepository.c9r2w::Ch9#R2#Web#Models#IArtistRepository#GetArtistDetails(System.Int32)">
+            <summary>Sets the stub of IArtistRepository.GetArtistDetails(Int32 id)</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Models.Fakes.StubIArtistRepository.c9r2w::Ch9#R2#Web#Models#IArtistRepository#GetNewArtistList">
+            <summary>Sets the stub of IArtistRepository.GetNewArtistList()</summary>
+        </member>
+        <member name="F:Ch9.R2.Web.Models.Fakes.StubIArtistRepository.DeleteArtistInt32">
+            <summary>Sets the stub of IArtistRepository.DeleteArtist(Int32 id)</summary>
+        </member>
+        <member name="F:Ch9.R2.Web.Models.Fakes.StubIArtistRepository.GetArtistDetailsInt32">
+            <summary>Sets the stub of IArtistRepository.GetArtistDetails(Int32 id)</summary>
+        </member>
+        <member name="F:Ch9.R2.Web.Models.Fakes.StubIArtistRepository.GetNewArtistList">
+            <summary>Sets the stub of IArtistRepository.GetNewArtistList()</summary>
+        </member>
+        <member name="T:Ch9.R2.Web.Models.Fakes.StubSharedAPIArtistRepository">
+            <summary>Stub type of Ch9.R2.Web.Models.SharedAPIArtistRepository</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Models.Fakes.StubSharedAPIArtistRepository.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Ch9.R2.Web.Models.Fakes.StubSharedAPIArtistRepository.InitializeStub">
+            <summary>Initializes a new instance of type StubSharedAPIArtistRepository</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Models.Fakes.StubSharedAPIArtistRepository.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Models.Fakes.StubSharedAPIArtistRepository.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Ch9.R2.Web.Models.Fakes.StubSharedAPIArtistRepository.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

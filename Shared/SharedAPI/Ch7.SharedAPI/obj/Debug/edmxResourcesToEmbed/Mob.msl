@@ -1,0 +1,493 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MobModelStoreContainer" CdmEntityContainer="MobEntities">
+    <EntitySetMapping Name="Alerts">
+      <EntityTypeMapping TypeName="MobModel.Alert">
+        <MappingFragment StoreEntitySet="Alert">
+          <ScalarProperty Name="AlertId" ColumnName="AlertId" />
+          <ScalarProperty Name="Headline" ColumnName="Headline" />
+          <ScalarProperty Name="Summary" ColumnName="Summary" />
+          <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+          <ScalarProperty Name="ActorDisplayName" ColumnName="ActorDisplayName" />
+          <ScalarProperty Name="ActorUrl" ColumnName="ActorUrl" />
+          <ScalarProperty Name="ActorAvatarUrl" ColumnName="ActorAvatarUrl" />
+          <ScalarProperty Name="AlertUrl" ColumnName="AlertUrl" />
+          <ScalarProperty Name="AlertAddedDate" ColumnName="AlertAddedDate" />
+          <ScalarProperty Name="ClickCount" ColumnName="ClickCount" />
+          <ScalarProperty Name="AlertDate" ColumnName="AlertDate" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="ItemIdentifier" ColumnName="ItemIdentifier" />
+          <ScalarProperty Name="ItemDetailIdentifier" ColumnName="ItemDetailIdentifier" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AlertSubscriptions">
+      <EntityTypeMapping TypeName="MobModel.AlertSubscription">
+        <MappingFragment StoreEntitySet="AlertSubscription">
+          <ScalarProperty Name="AlertSubscriptionId" ColumnName="AlertSubscriptionId" />
+          <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+          <ScalarProperty Name="Tags" ColumnName="Tags" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AlertTags">
+      <EntityTypeMapping TypeName="MobModel.AlertTag">
+        <MappingFragment StoreEntitySet="AlertTag">
+          <ScalarProperty Name="AlertTagId" ColumnName="AlertTagId" />
+          <ScalarProperty Name="AlertId" ColumnName="AlertId" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Artists">
+      <EntityTypeMapping TypeName="MobModel.Artist">
+        <MappingFragment StoreEntitySet="Artist">
+          <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+          <ScalarProperty Name="OldUserId" ColumnName="OldUserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Provence" ColumnName="Provence" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="WebSite" ColumnName="WebSite" />
+          <ScalarProperty Name="ProfilePrivacyLevel" ColumnName="ProfilePrivacyLevel" />
+          <ScalarProperty Name="ContactPrivacyLevel" ColumnName="ContactPrivacyLevel" />
+          <ScalarProperty Name="ProfileViews" ColumnName="ProfileViews" />
+          <ScalarProperty Name="ProfileLastViewDate" ColumnName="ProfileLastViewDate" />
+          <ScalarProperty Name="Rating" ColumnName="Rating" />
+          <ScalarProperty Name="AvatarURL" ColumnName="AvatarURL" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+          <ScalarProperty Name="FileUploadsInBytes" ColumnName="FileUploadsInBytes" />
+          <ScalarProperty Name="FileUploadQuotaInBytes" ColumnName="FileUploadQuotaInBytes" />
+          <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+          <ScalarProperty Name="ShowChatStatus" ColumnName="ShowChatStatus" />
+          <ScalarProperty Name="AllowChatSounds" ColumnName="AllowChatSounds" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArtistBands">
+      <EntityTypeMapping TypeName="MobModel.ArtistBand">
+        <MappingFragment StoreEntitySet="ArtistBand">
+          <ScalarProperty Name="ArtistBandId" ColumnName="ArtistBandId" />
+          <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+          <ScalarProperty Name="BandId" ColumnName="BandId" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="JoinedDate" ColumnName="JoinedDate" />
+          <ScalarProperty Name="IsActiveMember" ColumnName="IsActiveMember" />
+          <ScalarProperty Name="DeactivateDate" ColumnName="DeactivateDate" />
+          <ScalarProperty Name="AllowEditBand" ColumnName="AllowEditBand" />
+          <ScalarProperty Name="IsMemberAdmin" ColumnName="IsMemberAdmin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArtistBlocks">
+      <EntityTypeMapping TypeName="MobModel.ArtistBlock">
+        <MappingFragment StoreEntitySet="ArtistBlock">
+          <ScalarProperty Name="ArtistBlockId" ColumnName="ArtistBlockId" />
+          <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+          <ScalarProperty Name="BlockedArtistId" ColumnName="BlockedArtistId" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="ReportAsSpammer" ColumnName="ReportAsSpammer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArtistCollaborationSpaces">
+      <EntityTypeMapping TypeName="MobModel.ArtistCollaborationSpace">
+        <MappingFragment StoreEntitySet="ArtistCollaborationSpaces">
+          <ScalarProperty Name="ArtistCollaborationSpaceId" ColumnName="ArtistCollaborationSpaceId" />
+          <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+          <ScalarProperty Name="CollaborationSpaceId" ColumnName="CollaborationSpaceId" />
+          <ScalarProperty Name="IsCreator" ColumnName="IsCreator" />
+          <ScalarProperty Name="FirstContributionDate" ColumnName="FirstContributionDate" />
+          <ScalarProperty Name="LastContributionDate" ColumnName="LastContributionDate" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArtistFavorites">
+      <EntityTypeMapping TypeName="MobModel.ArtistFavorite">
+        <MappingFragment StoreEntitySet="ArtistFavorites">
+          <ScalarProperty Name="ArtistFavoriteId" ColumnName="ArtistFavoriteId" />
+          <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArtistProfiles">
+      <EntityTypeMapping TypeName="MobModel.ArtistProfile">
+        <MappingFragment StoreEntitySet="ArtistProfile">
+          <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+          <ScalarProperty Name="Bio" ColumnName="Bio" />
+          <ScalarProperty Name="MusicalInfluences" ColumnName="MusicalInfluences" />
+          <ScalarProperty Name="ProfileTemplateName" ColumnName="ProfileTemplateName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArtistSkills">
+      <EntityTypeMapping TypeName="MobModel.ArtistSkill">
+        <MappingFragment StoreEntitySet="ArtistSkill">
+          <ScalarProperty Name="ArtistTalentID" ColumnName="ArtistTalentID" />
+          <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+          <ScalarProperty Name="TalentName" ColumnName="TalentName" />
+          <ScalarProperty Name="SkillLevel" ColumnName="SkillLevel" />
+          <ScalarProperty Name="Details" ColumnName="Details" />
+          <ScalarProperty Name="Styles" ColumnName="Styles" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Bands">
+      <EntityTypeMapping TypeName="MobModel.Band">
+        <MappingFragment StoreEntitySet="Band">
+          <ScalarProperty Name="BandId" ColumnName="BandId" />
+          <ScalarProperty Name="BandName" ColumnName="BandName" />
+          <ScalarProperty Name="BandBio" ColumnName="BandBio" />
+          <ScalarProperty Name="BandLogoUrl" ColumnName="BandLogoUrl" />
+          <ScalarProperty Name="BandBackgroundImageUrl" ColumnName="BandBackgroundImageUrl" />
+          <ScalarProperty Name="BandDisplayPhotoUrl" ColumnName="BandDisplayPhotoUrl" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BandAuditions">
+      <EntityTypeMapping TypeName="MobModel.BandAudition">
+        <MappingFragment StoreEntitySet="BandAudition">
+          <ScalarProperty Name="BandAuditionId" ColumnName="BandAuditionId" />
+          <ScalarProperty Name="ProjectOpenPositionId" ColumnName="ProjectOpenPositionId" />
+          <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+          <ScalarProperty Name="SongId" ColumnName="SongId" />
+          <ScalarProperty Name="VotesRequired" ColumnName="VotesRequired" />
+          <ScalarProperty Name="VotesRecieved" ColumnName="VotesRecieved" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BandAuditionComments">
+      <EntityTypeMapping TypeName="MobModel.BandAuditionComment">
+        <MappingFragment StoreEntitySet="BandAuditionComment">
+          <ScalarProperty Name="BandAuditionCommentId" ColumnName="BandAuditionCommentId" />
+          <ScalarProperty Name="BandAuditionId" ColumnName="BandAuditionId" />
+          <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Rating" ColumnName="Rating" />
+          <ScalarProperty Name="Vote" ColumnName="Vote" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BandGenres">
+      <EntityTypeMapping TypeName="MobModel.BandGenre">
+        <MappingFragment StoreEntitySet="BandGenre">
+          <ScalarProperty Name="BandGenreId" ColumnName="BandGenreId" />
+          <ScalarProperty Name="BandId" ColumnName="BandId" />
+          <ScalarProperty Name="GenreLookUpId" ColumnName="GenreLookUpId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BannedEmailAddresses">
+      <EntityTypeMapping TypeName="MobModel.BannedEmailAddress">
+        <MappingFragment StoreEntitySet="BannedEmailAddress">
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CollaborationSpaces">
+      <EntityTypeMapping TypeName="MobModel.CollaborationSpace">
+        <MappingFragment StoreEntitySet="CollaborationSpace">
+          <ScalarProperty Name="CollaborationSpaceId" ColumnName="CollaborationSpaceId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="RestrictContributorsToBand" ColumnName="RestrictContributorsToBand" />
+          <ScalarProperty Name="BandId" ColumnName="BandId" />
+          <ScalarProperty Name="AllowPublicView" ColumnName="AllowPublicView" />
+          <ScalarProperty Name="CopyrightModel" ColumnName="CopyrightModel" />
+          <ScalarProperty Name="AllowContributorsToPublish" ColumnName="AllowContributorsToPublish" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="LastPostDate" ColumnName="LastPostDate" />
+          <ScalarProperty Name="PublishedDate" ColumnName="PublishedDate" />
+          <ScalarProperty Name="NumberViews" ColumnName="NumberViews" />
+          <ScalarProperty Name="NumberComments" ColumnName="NumberComments" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ConceptId" ColumnName="ConceptId" />
+          <ScalarProperty Name="ConceptMediaType" ColumnName="ConceptMediaType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CollaborationSpaceAlerts">
+      <EntityTypeMapping TypeName="MobModel.CollaborationSpaceAlert">
+        <MappingFragment StoreEntitySet="CollaborationSpaceAlerts">
+          <ScalarProperty Name="CollaborationSpaceAlertId" ColumnName="CollaborationSpaceAlertId" />
+          <ScalarProperty Name="CollaborationSpaceId" ColumnName="CollaborationSpaceId" />
+          <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CollaborationSpaceComments">
+      <EntityTypeMapping TypeName="MobModel.CollaborationSpaceComment">
+        <MappingFragment StoreEntitySet="CollaborationSpaceComment">
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CollaborationSpaceCommentId" ColumnName="CollaborationSpaceCommentId" />
+          <ScalarProperty Name="CollaborationSpaceID" ColumnName="CollaborationSpaceID" />
+          <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+          <ScalarProperty Name="CollabortationSpaceFileId" ColumnName="CollabortationSpaceFileId" />
+          <ScalarProperty Name="CommentTitle" ColumnName="CommentTitle" />
+          <ScalarProperty Name="CommentBody" ColumnName="CommentBody" />
+          <ScalarProperty Name="ThreadId" ColumnName="ThreadId" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="NestLevel" ColumnName="NestLevel" />
+          <ScalarProperty Name="Path" ColumnName="Path" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CollaborationSpaceFiles">
+      <EntityTypeMapping TypeName="MobModel.CollaborationSpaceFile">
+        <MappingFragment StoreEntitySet="CollaborationSpaceFile">
+          <ScalarProperty Name="CollaborationSpaceFileId" ColumnName="CollaborationSpaceFileId" />
+          <ScalarProperty Name="CollaborationSpaceId" ColumnName="CollaborationSpaceId" />
+          <ScalarProperty Name="MediaId" ColumnName="MediaId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="LikeCount" ColumnName="LikeCount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CollaborationSpaceGenres">
+      <EntityTypeMapping TypeName="MobModel.CollaborationSpaceGenre">
+        <MappingFragment StoreEntitySet="CollaborationSpaceGenre">
+          <ScalarProperty Name="CollaborationSpaceGenreId" ColumnName="CollaborationSpaceGenreId" />
+          <ScalarProperty Name="CollaborationSpaceId" ColumnName="CollaborationSpaceId" />
+          <ScalarProperty Name="GenreLookUpId" ColumnName="GenreLookUpId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CollaborationSpaceInvites">
+      <EntityTypeMapping TypeName="MobModel.CollaborationSpaceInvite">
+        <MappingFragment StoreEntitySet="CollaborationSpaceInvite">
+          <ScalarProperty Name="CollaborationSpaceInviteId" ColumnName="CollaborationSpaceInviteId" />
+          <ScalarProperty Name="CollaborationSpaceId" ColumnName="CollaborationSpaceId" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+          <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+          <ScalarProperty Name="BandId" ColumnName="BandId" />
+          <ScalarProperty Name="LinkIdentifier" ColumnName="LinkIdentifier" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CollaborationSpaceMedias">
+      <EntityTypeMapping TypeName="MobModel.CollaborationSpaceMedia">
+        <MappingFragment StoreEntitySet="CollaborationSpaceMedia">
+          <ScalarProperty Name="CollaborationSpaceMediaId" ColumnName="CollaborationSpaceMediaId" />
+          <ScalarProperty Name="CollaborationSpaceId" ColumnName="CollaborationSpaceId" />
+          <ScalarProperty Name="MediaId" ColumnName="MediaId" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="Archive" ColumnName="Archive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmailOptOuts">
+      <EntityTypeMapping TypeName="MobModel.EmailOptOut">
+        <MappingFragment StoreEntitySet="EmailOptOut">
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+          <ScalarProperty Name="DateOfOptOut" ColumnName="DateOfOptOut" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmailVerifications">
+      <EntityTypeMapping TypeName="MobModel.EmailVerification">
+        <MappingFragment StoreEntitySet="EmailVerification">
+          <ScalarProperty Name="EmailVerificationId" ColumnName="EmailVerificationId" />
+          <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+          <ScalarProperty Name="emailaddress" ColumnName="emailaddress" />
+          <ScalarProperty Name="VerificationCode" ColumnName="VerificationCode" />
+          <ScalarProperty Name="NotificationSendDate" ColumnName="NotificationSendDate" />
+          <ScalarProperty Name="VerificationDate" ColumnName="VerificationDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GenreLookUps">
+      <EntityTypeMapping TypeName="MobModel.GenreLookUp">
+        <MappingFragment StoreEntitySet="GenreLookUp">
+          <ScalarProperty Name="GenreLookUpId" ColumnName="GenreLookUpId" />
+          <ScalarProperty Name="GenreName" ColumnName="GenreName" />
+          <ScalarProperty Name="Culture" ColumnName="Culture" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Media">
+      <EntityTypeMapping TypeName="MobModel.Medium">
+        <MappingFragment StoreEntitySet="Media">
+          <ScalarProperty Name="MediaId" ColumnName="MediaId" />
+          <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+          <ScalarProperty Name="FriendlyFileName" ColumnName="FriendlyFileName" />
+          <ScalarProperty Name="FileExtention" ColumnName="FileExtention" />
+          <ScalarProperty Name="LocalFilePath" ColumnName="LocalFilePath" />
+          <ScalarProperty Name="WebURL" ColumnName="WebURL" />
+          <ScalarProperty Name="IsCloudBlob" ColumnName="IsCloudBlob" />
+          <ScalarProperty Name="AzureStorageContainer" ColumnName="AzureStorageContainer" />
+          <ScalarProperty Name="AzureBlobReferenceName" ColumnName="AzureBlobReferenceName" />
+          <ScalarProperty Name="MediaType" ColumnName="MediaType" />
+          <ScalarProperty Name="FileSizeInBytes" ColumnName="FileSizeInBytes" />
+          <ScalarProperty Name="BitRateInKbps" ColumnName="BitRateInKbps" />
+          <ScalarProperty Name="AllowDownload" ColumnName="AllowDownload" />
+          <ScalarProperty Name="DownloadCount" ColumnName="DownloadCount" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IsFileDeleted" ColumnName="IsFileDeleted" />
+          <ScalarProperty Name="RIPEMD160Hash" ColumnName="RIPEMD160Hash" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Messages">
+      <EntityTypeMapping TypeName="MobModel.Message">
+        <MappingFragment StoreEntitySet="Message">
+          <ScalarProperty Name="MessageId" ColumnName="MessageId" />
+          <ScalarProperty Name="ArtistID" ColumnName="ArtistID" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="Importance" ColumnName="Importance" />
+          <ScalarProperty Name="DateSent" ColumnName="DateSent" />
+          <ScalarProperty Name="MessageBody" ColumnName="MessageBody" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MessageRecipients">
+      <EntityTypeMapping TypeName="MobModel.MessageRecipient">
+        <MappingFragment StoreEntitySet="MessageRecipient">
+          <ScalarProperty Name="MessageRecipientId" ColumnName="MessageRecipientId" />
+          <ScalarProperty Name="MessageId" ColumnName="MessageId" />
+          <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+          <ScalarProperty Name="MessageRead" ColumnName="MessageRead" />
+          <ScalarProperty Name="MessageStatus" ColumnName="MessageStatus" />
+          <ScalarProperty Name="Folder" ColumnName="Folder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MessageSpams">
+      <EntityTypeMapping TypeName="MobModel.MessageSpam">
+        <MappingFragment StoreEntitySet="MessageSpam">
+          <ScalarProperty Name="MessageSpamID" ColumnName="MessageSpamID" />
+          <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+          <ScalarProperty Name="MessageBodyHash" ColumnName="MessageBodyHash" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OpenPositions">
+      <EntityTypeMapping TypeName="MobModel.OpenPosition">
+        <MappingFragment StoreEntitySet="OpenPosition">
+          <ScalarProperty Name="OpenPositionId" ColumnName="OpenPositionId" />
+          <ScalarProperty Name="CollaborationSpaceId" ColumnName="CollaborationSpaceId" />
+          <ScalarProperty Name="Talent" ColumnName="Talent" />
+          <ScalarProperty Name="SkillLevel" ColumnName="SkillLevel" />
+          <ScalarProperty Name="Details" ColumnName="Details" />
+          <ScalarProperty Name="DatePosted" ColumnName="DatePosted" />
+          <ScalarProperty Name="DateModified" ColumnName="DateModified" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="BandId" ColumnName="BandId" />
+          <ScalarProperty Name="LocalOnly" ColumnName="LocalOnly" />
+          <ScalarProperty Name="LocalCity" ColumnName="LocalCity" />
+          <ScalarProperty Name="LocalCountry" ColumnName="LocalCountry" />
+          <ScalarProperty Name="LocalProvence" ColumnName="LocalProvence" />
+          <ScalarProperty Name="AuditionsSubmitted" ColumnName="AuditionsSubmitted" />
+          <ScalarProperty Name="ApprovalMode" ColumnName="ApprovalMode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PlayLists">
+      <EntityTypeMapping TypeName="MobModel.PlayList">
+        <MappingFragment StoreEntitySet="PlayList">
+          <ScalarProperty Name="PlaylistId" ColumnName="PlaylistId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+          <ScalarProperty Name="BandId" ColumnName="BandId" />
+          <ScalarProperty Name="IsSitePlaylist" ColumnName="IsSitePlaylist" />
+          <ScalarProperty Name="IsDefaultPlaylist" ColumnName="IsDefaultPlaylist" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PlaylistItems">
+      <EntityTypeMapping TypeName="MobModel.PlaylistItem">
+        <MappingFragment StoreEntitySet="PlaylistItem">
+          <ScalarProperty Name="PlaylistItemId" ColumnName="PlaylistItemId" />
+          <ScalarProperty Name="PlayListId" ColumnName="PlayListId" />
+          <ScalarProperty Name="SongId" ColumnName="SongId" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Songs">
+      <EntityTypeMapping TypeName="MobModel.Song">
+        <MappingFragment StoreEntitySet="Song">
+          <ScalarProperty Name="SongId" ColumnName="SongId" />
+          <ScalarProperty Name="MediaId" ColumnName="MediaId" />
+          <ScalarProperty Name="SongTitle" ColumnName="SongTitle" />
+          <ScalarProperty Name="ReleaseYear" ColumnName="ReleaseYear" />
+          <ScalarProperty Name="ArtworkURL" ColumnName="ArtworkURL" />
+          <ScalarProperty Name="Lyrics" ColumnName="Lyrics" />
+          <ScalarProperty Name="SongDescription" ColumnName="SongDescription" />
+          <ScalarProperty Name="ActionParameter" ColumnName="ActionParameter" />
+          <ScalarProperty Name="Action" ColumnName="Action" />
+          <ScalarProperty Name="Controller" ColumnName="Controller" />
+          <ScalarProperty Name="GenreId" ColumnName="GenreId" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="ShowInLibrary" ColumnName="ShowInLibrary" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SongComments">
+      <EntityTypeMapping TypeName="MobModel.SongComment">
+        <MappingFragment StoreEntitySet="SongComment">
+          <ScalarProperty Name="SongCommentId" ColumnName="SongCommentId" />
+          <ScalarProperty Name="SongId" ColumnName="SongId" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Rating" ColumnName="Rating" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="IsAnonymous" ColumnName="IsAnonymous" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tasks">
+      <EntityTypeMapping TypeName="MobModel.Task">
+        <MappingFragment StoreEntitySet="Task">
+          <ScalarProperty Name="TaskID" ColumnName="TaskID" />
+          <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Details" ColumnName="Details" />
+          <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="LinkType" ColumnName="LinkType" />
+          <ScalarProperty Name="LinkTypeID" ColumnName="LinkTypeID" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="DeleteArtist" FunctionName="MobModel.Store.u_DeleteArtist" />
+    <EntitySetMapping Name="Membership">
+      <EntityTypeMapping TypeName="MobModel.Membership">
+        <MappingFragment StoreEntitySet="webpages_Membership">
+          <ScalarProperty Name="PasswordVerificationTokenExpirationDate" ColumnName="PasswordVerificationTokenExpirationDate" />
+          <ScalarProperty Name="PasswordVerificationToken" ColumnName="PasswordVerificationToken" />
+          <ScalarProperty Name="PasswordSalt" ColumnName="PasswordSalt" />
+          <ScalarProperty Name="PasswordChangedDate" ColumnName="PasswordChangedDate" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="PasswordFailuresSinceLastSuccess" ColumnName="PasswordFailuresSinceLastSuccess" />
+          <ScalarProperty Name="LastPasswordFailureDate" ColumnName="LastPasswordFailureDate" />
+          <ScalarProperty Name="IsConfirmed" ColumnName="IsConfirmed" />
+          <ScalarProperty Name="ConfirmationToken" ColumnName="ConfirmationToken" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="GetUserAlerts" FunctionName="MobModel.Store.GetUserAlerts" />
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,67 @@
+﻿@using Ch12.R2.Web.Models
+@using Microsoft.AspNet.Mvc.Facebook.Models
+@model MyAppUser
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<article class="intro">
+    <span id="profilePicture">
+        @if (Model.ProfilePicture != null && Model.ProfilePicture.Data != null)
+        {
+            <img src="@Model.ProfilePicture.Data.Url" />
+        }
+    </span>
+    <h3>Welcome @Model.Name</h3>
+    <label>Email: @Model.Email</label>
+    <p>
+        To learn more about building Facebook apps using ASP.NET MVC visit
+        <a href="http://asp.net/mvc/facebook" title="ASP.NET MVC Website">http://asp.net/mvc/facebook</a>.
+        The page features videos, tutorials, and samples to help you get the most from ASP.NET MVC.
+        If you have any questions about ASP.NET MVC visit
+        <a href="http://forums.asp.net/1146.aspx/1?MVC" title="ASP.NET MVC Forum">our forums</a>.
+    </p>
+</article>
+
+<article id="content">
+    <div class="left">
+        <h4>Friends</h4>
+        @if (Model.Friends != null && Model.Friends.Data != null && Model.Friends.Data.Count > 0)
+        {
+            foreach (var myFriend in @Model.Friends.Data)
+            {
+            <a href="@myFriend.Link" target="_blank">
+                <div class="photoTile">
+                    <label>@myFriend.Name</label>
+                    @if (myFriend.Picture != null && myFriend.Picture.Data != null)
+                    {
+                        <img src="@myFriend.Picture.Data.Url" />
+                    }
+                </div>
+            </a>
+            }
+        }
+        else
+        {
+            <p>No friends found.</p>
+        }
+    </div>
+    <div class="right">
+        <h4>Photos</h4>
+        @if (Model.Photos != null && Model.Photos.Data != null && Model.Photos.Data.Count > 0)
+        {
+            foreach (var photo in @Model.Photos.Data)
+            {
+            <a href="@photo.Link" target="_blank">
+                <div class="photoTile">
+                    <img src="@photo.ThumbnailUrl" />
+                </div>
+            </a>
+            }
+        }
+        else
+        {
+            <p>No photo available.</p>
+        }
+    </div>
+</article>

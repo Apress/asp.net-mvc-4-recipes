@@ -1,0 +1,10 @@
+G:\WorkingFolder\MVCBook\Chapter10\Ch10.MvcExamples\After\Ch10.Shared.Helpers\bin\Debug\Ch10.Shared.Helpers.dll
+G:\WorkingFolder\MVCBook\Chapter10\Ch10.MvcExamples\After\Ch10.Shared.Helpers\bin\Debug\Ch10.Shared.Helpers.pdb
+G:\WorkingFolder\MVCBook\Chapter10\Ch10.MvcExamples\After\Ch10.Shared.Helpers\obj\Debug\Ch10.Shared.Helpers.dll
+G:\WorkingFolder\MVCBook\Chapter10\Ch10.MvcExamples\After\Ch10.Shared.Helpers\obj\Debug\Ch10.Shared.Helpers.pdb
+G:\WorkingFolder\MVCBook\Chapter10\Ch10.MvcExamples\After\Ch10.Shared.Helpers\obj\Debug\Ch10.Shared.Helpers.csprojResolveAssemblyReference.cache
+C:\WorkingFolder\MVCBook\Chapter10\Ch10.MvcExamples\After\Ch10.Shared.Helpers\bin\Debug\Ch10.Shared.Helpers.dll
+C:\WorkingFolder\MVCBook\Chapter10\Ch10.MvcExamples\After\Ch10.Shared.Helpers\bin\Debug\Ch10.Shared.Helpers.pdb
+C:\WorkingFolder\MVCBook\Chapter10\Ch10.MvcExamples\After\Ch10.Shared.Helpers\obj\Debug\Ch10.Shared.Helpers.csprojResolveAssemblyReference.cache
+C:\WorkingFolder\MVCBook\Chapter10\Ch10.MvcExamples\After\Ch10.Shared.Helpers\obj\Debug\Ch10.Shared.Helpers.dll
+C:\WorkingFolder\MVCBook\Chapter10\Ch10.MvcExamples\After\Ch10.Shared.Helpers\obj\Debug\Ch10.Shared.Helpers.pdb

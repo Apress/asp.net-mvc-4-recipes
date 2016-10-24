@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WebAPIForLoadTest.Models" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WebAPIForLoadTest.Models" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="PlaylistModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreateDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ModifiedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="PlayListName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Songs" nillable="true" type="tns:ArrayOfSongModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PlaylistModel" nillable="true" type="tns:PlaylistModel" />
+  <xs:complexType name="ArrayOfSongModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SongModel" nillable="true" type="tns:SongModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSongModel" nillable="true" type="tns:ArrayOfSongModel" />
+  <xs:complexType name="SongModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AlbumName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PublishedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SongArtist" nillable="true" type="tns:ArtistModel" />
+      <xs:element minOccurs="0" name="SongOrder" type="xs:int" />
+      <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SongModel" nillable="true" type="tns:SongModel" />
+  <xs:complexType name="ArtistModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ArtistHomePageUrl" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ArtistName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ArtistThumbnailImageUrl" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArtistModel" nillable="true" type="tns:ArtistModel" />
+  <xs:complexType name="ArrayOfPlaylistModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PlaylistModel" nillable="true" type="tns:PlaylistModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPlaylistModel" nillable="true" type="tns:ArrayOfPlaylistModel" />
+</xs:schema>

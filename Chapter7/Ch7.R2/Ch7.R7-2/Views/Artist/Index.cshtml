@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Welcome @Profile.UserName</h2>
+<h3>Artist Information</h3>
+@Html.Action("ArtistInfo","Artist")
+<br />
+<h3>Your music</h3>
+@Html.Action("SongPlaylist")
+
+<br />
+<h3>News Feed</h3>
+@Html.Action("NewsFeed")
+
+<br />
+<h3>Song Collboration Spaces that you have started or have contributed to</h3>
+@Html.Action("SongCollaborationWorkspace")
+
+

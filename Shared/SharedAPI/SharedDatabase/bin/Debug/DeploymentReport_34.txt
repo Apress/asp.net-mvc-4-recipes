@@ -1,0 +1,22 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[Alert] (Table)
+       [dbo].[AlertSubscription] (Table)
+       [dbo].[AlertTag] (Table)
+       Default Constraint on [dbo].[Alert].[ClickCount] (Default Constraint)
+       Default Constraint on [dbo].[Alert].[AlertDate] (Default Constraint)
+       Default Constraint on [dbo].[Alert].[ItemDetailIdentifier] (Default Constraint)
+       [dbo].[FK_AlertSubscription_Artist] (Foreign Key)
+       [dbo].[FK_AlertTag_Alert] (Foreign Key)
+
+** Supporting actions

@@ -1,0 +1,50 @@
+﻿@model Ch8.R4.Models.IPScannerModel
+@{
+    ViewBag.Title = "IP Address Scanner";
+}
+
+<h2>IP Address Scanner</h2>
+Use this tool to show availible IP Addresses in our lab.
+@using (Html.BeginForm(new { ReturnUrl = ViewBag.ReturnUrl })) {
+     @Html.ValidationSummary(false, "The start address and end address are required and both must be valid IP Addresses.")
+<fieldset>
+    <legend>Enter an Ip Address Range to scan</legend>
+    <ol>
+       <li>
+        @Html.LabelFor(a=> a.RangeToScan.StartAddress)
+        @Html.TextBoxFor(a => a.RangeToScan.StartAddress)
+        </li>
+    <li>
+        @Html.LabelFor(a=> a.RangeToScan.EndAddress)
+@Html.TextBoxFor(a => a.RangeToScan.EndAddress)
+    </li>
+        </ol>
+    <input type="submit" value="Scan IP Range" />
+</fieldset>
+}
+@if ((Model!=null))
+{
+    if ((Model.IpList != null) && (Model.IpList.Count > 0)){
+        <div>
+             The following IP Addresses are availible
+         </div>
+<ul>
+@foreach (var item in Model.IpList)
+{
+    <li>
+        @item
+    </li>
+}
+</ul>
+    }
+else{
+         <div>
+             No Ip Addresses are availible in the range provided
+         </div>
+     }
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+

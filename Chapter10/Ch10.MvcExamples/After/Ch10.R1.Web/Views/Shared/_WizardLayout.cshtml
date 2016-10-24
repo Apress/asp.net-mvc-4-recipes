@@ -1,0 +1,46 @@
+﻿@model Ch10.Mvc.Helpers.Models.WizardModelBase
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section headContent{
+    <link  rel="stylesheet" href="/Content/Wizard.css" />
+    <script src="/Scripts/MVCWizard.js"></script>
+}
+@using(Html.BeginForm()){
+    @Html.HiddenFor(a => a.ShowWizardSteps);
+    @Html.HiddenFor(a => a.CurrentStepIndex);
+     @Html.ValidationSummary(true)
+ <div class="WizardOuter">
+     @if(Model.ShowWizardSteps){ 
+<nav class="float-left WizardSidebar btn_box_shadow">
+     <ul>
+    @foreach (var step in Model.WizardSteps) {
+        if (!step.HideOnSideNavigation)
+        { 
+         <li 
+             class="@Model.CurrentStep(step.StepIndex)">
+             @Html.WizardSideButton(step.Title, step.Action,step.Controller)
+
+         </li>
+        }
+    }
+    </ul>
+</nav>
+     }
+    <section class="WizardForm float-right">
+        @RenderBody()
+
+        <section class="WizardButtons">
+    @if (Model.ShowBackButton) { @Html.WizardBackButton(Model.LastWizardStep.Action, Model.LastWizardStep.Controller); }
+    @if (Model.ShowNextButton) { @Html.WizardNextButton(Model.NextWizardStep.Action, Model.NextWizardStep.Controller); }
+    @if (Model.AllowFinish) { @Html.WizardFinishButton(Model.FinishAction.Action, Model.FinishAction.Controller); }
+
+</section>
+    </section>
+</div>  
+
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,21 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[BandGenre]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Table rebuild
+       [dbo].[BandGenre] (Table)
+
+** Supporting actions
+     Drop
+       [dbo].[FK_BandGenre_Band] (Foreign Key)
+       [dbo].[FK_BandGenre_GenreLookUp] (Foreign Key)
+     Create
+       [dbo].[FK_BandGenre_Band] (Foreign Key)
+       [dbo].[FK_BandGenre_GenreLookUp] (Foreign Key)

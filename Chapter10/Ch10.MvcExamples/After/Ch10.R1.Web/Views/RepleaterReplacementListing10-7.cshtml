@@ -1,0 +1,42 @@
+﻿@model List<Ch7.SharedAPI.Artist>
+@{
+    ViewBag.Title = "Repleater Replacement Listing 10-7";
+}
+
+<h2>Repleater Replacement Listing 10-7</h2>
+
+<table width="95%" cellpadding="5" cellspacing="5">
+    <thead>
+        <tr>
+            <th>User
+            </th>
+            <th>Location
+            </th>
+            <th>Account Creation Date
+            </th>
+        </tr>
+    </thead>
+    @foreach(var item in Model){
+    <tr bgcolor="#AAAAAA" valign="top">
+        <td width="150px">
+            <img height="100px" width="100px"
+                src="@item.AvatarUrlSample"
+                alt="@item.UserName"/>
+            <br />
+            <a navigateurl="/@item.UserName"
+                text="@item.UserName"
+                id="ProfileHyperLink"></a>
+        </td>
+        <td width="150px">
+            @Html.ConcatProperty(item.City, item.Provence, item.Country)
+        </td>
+        <td>@item.CreateDate.ToShortDateString()
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3"
+            style="background-color: #DDDDDD; height: 1px;"></td>
+    </tr>
+    }
+</table>
+

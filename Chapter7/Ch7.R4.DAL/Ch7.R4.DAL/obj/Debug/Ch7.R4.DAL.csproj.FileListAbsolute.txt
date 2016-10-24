@@ -1,0 +1,8 @@
+G:\WorkingFolder\MVCBook\Chapter7\Ch7.R4.DAL\Ch7.R4.DAL\bin\Debug\Ch7.R4.DAL.dll.config
+G:\WorkingFolder\MVCBook\Chapter7\Ch7.R4.DAL\Ch7.R4.DAL\bin\Debug\Ch7.R4.DAL.dll
+G:\WorkingFolder\MVCBook\Chapter7\Ch7.R4.DAL\Ch7.R4.DAL\bin\Debug\Ch7.R4.DAL.pdb
+G:\WorkingFolder\MVCBook\Chapter7\Ch7.R4.DAL\Ch7.R4.DAL\bin\Debug\EntityFramework.dll
+G:\WorkingFolder\MVCBook\Chapter7\Ch7.R4.DAL\Ch7.R4.DAL\bin\Debug\EntityFramework.xml
+G:\WorkingFolder\MVCBook\Chapter7\Ch7.R4.DAL\Ch7.R4.DAL\obj\Debug\Ch7.R4.DAL.csprojResolveAssemblyReference.cache
+G:\WorkingFolder\MVCBook\Chapter7\Ch7.R4.DAL\Ch7.R4.DAL\obj\Debug\Ch7.R4.DAL.dll
+G:\WorkingFolder\MVCBook\Chapter7\Ch7.R4.DAL\Ch7.R4.DAL\obj\Debug\Ch7.R4.DAL.pdb

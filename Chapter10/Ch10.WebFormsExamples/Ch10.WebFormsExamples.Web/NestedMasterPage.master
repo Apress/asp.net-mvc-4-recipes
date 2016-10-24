@@ -1,0 +1,11 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="NestedMasterPage.master.cs" Inherits="Ch10.WebFormsExamples.Web.NestedMasterPage" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="FeaturedContent" runat="server">
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
+    <section>
+        Here is some content from the nexted master page
+    </section>
+    <asp:ContentPlaceHolder runat="server" ID="NestedContent" ></asp:ContentPlaceHolder>
+</asp:Content>

@@ -1,0 +1,13 @@
+﻿@model IEnumerable<Ch7.R7_4.ServiceReference1.PlaylistModel>
+@{
+    ViewBag.Title = "Listing7_6";
+}
+
+<h2>Listing7_8</h2>
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>@item.PlayListName</li>
+    }
+
+</ul>

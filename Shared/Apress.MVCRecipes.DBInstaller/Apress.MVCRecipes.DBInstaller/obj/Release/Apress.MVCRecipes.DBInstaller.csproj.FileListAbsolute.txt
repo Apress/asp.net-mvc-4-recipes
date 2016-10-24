@@ -1,0 +1,14 @@
+C:\WorkingFolder\MVCBook\Shared\Apress.MVCRecipes.DBInstaller\Apress.MVCRecipes.DBInstaller\bin\Release\Apress.MVCRecipes.DBInstaller.exe.config
+C:\WorkingFolder\MVCBook\Shared\Apress.MVCRecipes.DBInstaller\Apress.MVCRecipes.DBInstaller\bin\Release\DBBackup\SharedAPI.bak
+C:\WorkingFolder\MVCBook\Shared\Apress.MVCRecipes.DBInstaller\Apress.MVCRecipes.DBInstaller\bin\Release\Apress.MVCRecipes.DBInstaller.exe
+C:\WorkingFolder\MVCBook\Shared\Apress.MVCRecipes.DBInstaller\Apress.MVCRecipes.DBInstaller\bin\Release\Apress.MVCRecipes.DBInstaller.pdb
+C:\WorkingFolder\MVCBook\Shared\Apress.MVCRecipes.DBInstaller\Apress.MVCRecipes.DBInstaller\obj\Release\MainWindow.baml
+C:\WorkingFolder\MVCBook\Shared\Apress.MVCRecipes.DBInstaller\Apress.MVCRecipes.DBInstaller\obj\Release\MainWindow.g.cs
+C:\WorkingFolder\MVCBook\Shared\Apress.MVCRecipes.DBInstaller\Apress.MVCRecipes.DBInstaller\obj\Release\App.g.cs
+C:\WorkingFolder\MVCBook\Shared\Apress.MVCRecipes.DBInstaller\Apress.MVCRecipes.DBInstaller\obj\Release\Apress.MVCRecipes.DBInstaller_MarkupCompile.cache
+C:\WorkingFolder\MVCBook\Shared\Apress.MVCRecipes.DBInstaller\Apress.MVCRecipes.DBInstaller\obj\Release\Apress.MVCRecipes.DBInstaller.g.resources
+C:\WorkingFolder\MVCBook\Shared\Apress.MVCRecipes.DBInstaller\Apress.MVCRecipes.DBInstaller\obj\Release\Apress.MVCRecipes.DBInstaller.Properties.Resources.resources
+C:\WorkingFolder\MVCBook\Shared\Apress.MVCRecipes.DBInstaller\Apress.MVCRecipes.DBInstaller\obj\Release\Apress.MVCRecipes.DBInstaller.csproj.GenerateResource.Cache
+C:\WorkingFolder\MVCBook\Shared\Apress.MVCRecipes.DBInstaller\Apress.MVCRecipes.DBInstaller\obj\Release\Apress.MVCRecipes.DBInstaller.exe
+C:\WorkingFolder\MVCBook\Shared\Apress.MVCRecipes.DBInstaller\Apress.MVCRecipes.DBInstaller\obj\Release\Apress.MVCRecipes.DBInstaller.pdb
+C:\WorkingFolder\MVCBook\Shared\Apress.MVCRecipes.DBInstaller\Apress.MVCRecipes.DBInstaller\obj\Release\Apress.MVCRecipes.DBInstaller.csprojResolveAssemblyReference.cache

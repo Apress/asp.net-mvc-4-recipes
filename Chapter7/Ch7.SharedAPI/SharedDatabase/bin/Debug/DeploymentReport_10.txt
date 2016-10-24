@@ -1,0 +1,46 @@
+﻿** Warnings
+     The object reference [dbo].[PlayList].[PlayListId] differs only by case from the object definition
+       [dbo].[PlayList].[PlaylistId].
+     The object reference [dbo].[media] differs only by case from the object definition [dbo].[Media].
+     The object reference [dbo].[media].[ArtistId] differs only by case from the object definition [dbo].[Media].[ArtistId].
+     The object reference [dbo].[media].[IsDeleted] differs only by case from the object definition
+       [dbo].[Media].[IsDeleted].
+     The object reference [dbo].[PlaylistItem].[songId] differs only by case from the object definition
+       [dbo].[PlaylistItem].[SongId].
+     The object reference [dbo].[PlayListItem] differs only by case from the object definition [dbo].[PlaylistItem].
+     The object reference [dbo].[PlayListItem].[PlayListId] differs only by case from the object definition
+       [dbo].[PlaylistItem].[PlayListId].
+     The object reference [dbo].[ArtistCollaborationSpaces].[artistId] differs only by case from the object definition
+       [dbo].[ArtistCollaborationSpaces].[ArtistId].
+     The object reference [dbo].[ArtistBand].[artistid] differs only by case from the object definition
+       [dbo].[ArtistBand].[ArtistId].
+     The object reference [dbo].[CollaborationSpaceComment].[CollaborationSpaceId] differs only by case from the object
+       definition [dbo].[CollaborationSpaceComment].[CollaborationSpaceID].
+
+** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Drop
+       [dbo].[FK_PlayList_Band] (Foreign Key)
+     Create
+       [dbo].[CollaborationSpaceComment] (Table)
+       [dbo].[CollaborationSpaceFile] (Table)
+       Default Constraint on [dbo].[CollaborationSpaceFile].[LikeCount] (Default Constraint)
+       [dbo].[FK_PlayList_Band] (Foreign Key)
+       [dbo].[FK_CollaborationSpaceComment_CollaborationSpace] (Foreign Key)
+       [dbo].[FK_CollaborationSpaceComment_Artist] (Foreign Key)
+       [dbo].[FK_CollaborationSpaceComment_ToTable] (Foreign Key)
+       [dbo].[FK_CollaborationSpaceFile_CollaborationSpace] (Foreign Key)
+       [dbo].[FK_CollaborationSpaceFile_Media] (Foreign Key)
+     Alter
+       [dbo].[u_DeleteArtist] (Procedure)
+
+** Supporting actions

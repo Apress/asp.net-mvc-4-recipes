@@ -1,0 +1,24 @@
+﻿@model Ch10.Mvc.Web.Models.CustomValidationModel
+
+@{
+    ViewBag.Title = "Index";
+}
+@Html.ValidationSummary()
+@ViewBag.SuccessMessage
+@using(Html.BeginForm()){
+<h2>Custom Validation Example</h2>
+<fieldset>
+    <legend>Try and Submit</legend>
+   <div> @Html.CheckBoxFor(a => a.IMustBeChecked) @Html.LabelFor(a=>a.IMustBeChecked)</div>
+    <section class="RelatedFieldSection">
+        <p>Please check one or more of the boxes below.</p>
+        <div> @Html.CheckBoxFor(a => a.AtLeastOneShouldBeCheckedOne) @Html.LabelFor(a=>a.AtLeastOneShouldBeCheckedOne)</div>
+        <div> @Html.CheckBoxFor(a => a.AtLeastOneShouldBeCheckedTwo) @Html.LabelFor(a=>a.AtLeastOneShouldBeCheckedTwo)</div>
+        <div> @Html.CheckBoxFor(a => a.AtLeastOneShouldBeCheckedThree) @Html.LabelFor(a=>a.AtLeastOneShouldBeCheckedThree)</div>
+    </section>
+    <div><input type="submit" /></div>
+</fieldset>
+}
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

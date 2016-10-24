@@ -1,0 +1,12 @@
+G:\WorkingFolder\MVCBook\Chapter7\CH7.R7-5\CH7.R7-5\bin\Release\CH7.R7-5.exe.config
+G:\WorkingFolder\MVCBook\Chapter7\CH7.R7-5\CH7.R7-5\bin\Release\CH7.R7-5.exe
+G:\WorkingFolder\MVCBook\Chapter7\CH7.R7-5\CH7.R7-5\bin\Release\CH7.R7-5.pdb
+G:\WorkingFolder\MVCBook\Chapter7\CH7.R7-5\CH7.R7-5\obj\Release\CH7.R7-5.csprojResolveAssemblyReference.cache
+G:\WorkingFolder\MVCBook\Chapter7\CH7.R7-5\CH7.R7-5\obj\Release\CH7.R7-5.exe
+G:\WorkingFolder\MVCBook\Chapter7\CH7.R7-5\CH7.R7-5\obj\Release\CH7.R7-5.pdb
+G:\WorkingFolder\MVCBook\Chapter8\Ch8.R5\CH7.R7-5\bin\Release\CH7.R7-5.exe.config
+G:\WorkingFolder\MVCBook\Chapter8\Ch8.R5\CH7.R7-5\obj\Release\CH7.R7-5.exe
+G:\WorkingFolder\MVCBook\Chapter8\Ch8.R5\CH7.R7-5\obj\Release\CH7.R7-5.pdb
+G:\WorkingFolder\MVCBook\Chapter8\Ch8.R5\CH7.R7-5\obj\Release\CH7.R7-5.csprojResolveAssemblyReference.cache
+G:\WorkingFolder\MVCBook\Chapter8\Ch8.R5\CH7.R7-5\bin\Release\CH7.R7-5.exe
+G:\WorkingFolder\MVCBook\Chapter8\Ch8.R5\CH7.R7-5\bin\Release\CH7.R7-5.pdb

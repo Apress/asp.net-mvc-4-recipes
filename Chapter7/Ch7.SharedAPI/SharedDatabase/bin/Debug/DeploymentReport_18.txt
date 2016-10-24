@@ -1,0 +1,18 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The column [dbo].[CollaborationSpace].[CreatedBy] is being dropped, data loss could occur.
+
+** User actions
+     Alter
+       [dbo].[CollaborationSpace] (Table)
+
+** Supporting actions
+
+The column [dbo].[CollaborationSpace].[CreatedBy] is being dropped, data loss could occur.
+

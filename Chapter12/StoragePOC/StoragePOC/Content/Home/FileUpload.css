@@ -1,0 +1,8 @@
+﻿#uploadProgress { 
+    width:100%;
+    height:15px;
+}
+
+#ProgressPanel {
+  display:none;
+}

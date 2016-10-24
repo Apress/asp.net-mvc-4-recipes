@@ -1,0 +1,25 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[MessageRecipient]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The type for column ArtistId in table [dbo].[MessageRecipient] is currently  UNIQUEIDENTIFIER NOT NULL but is being
+         changed to  INT NOT NULL. There is no implicit or explicit conversion.
+
+** User actions
+     Rename
+       [dbo].[MessageRecipient].[ArtistId] (Column)
+     Table rebuild
+       [dbo].[MessageRecipient] (Table)
+
+** Supporting actions
+     Drop
+       [dbo].[FK_MessageRecipient_Message] (Foreign Key)
+     Create
+       [dbo].[FK_MessageRecipient_Message] (Foreign Key)
+
+The type for column ArtistId in table [dbo].[MessageRecipient] is currently  UNIQUEIDENTIFIER NOT NULL but is being changed to  INT NOT NULL. There is no implicit or explicit conversion.
+

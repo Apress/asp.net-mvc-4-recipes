@@ -1,0 +1,18 @@
+﻿@model Ch7.SharedAPI.Artist
+<a href="/@Model.UserName">
+    <div class="evenbox">
+        <div class="ImageDiv">
+            <img src="@Model.AvatarUrlSample" class="AristImage" alt="Click Image to view full profile" />
+        </div>
+        <div class="ContentDiv">
+            <ul>
+                <li class="ProfileLink">@Model.UserName</li>
+                <li>@Model.Provence</li>
+                <li>@Model.Country</li>
+                <li>Joined :
+                <time>@String.Format("{0:d}", Model.CreateDate)</time>
+                </li>
+            </ul>
+        </div>
+    </div>
+</a>

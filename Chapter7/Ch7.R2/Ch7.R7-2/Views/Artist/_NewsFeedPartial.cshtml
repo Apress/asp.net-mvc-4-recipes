@@ -1,0 +1,18 @@
+﻿@model Ch7.R7_2.Models.NewsFeedModel
+<div id="NewsPaneLeft">
+    <div id="NewsWrapper"> 
+        @foreach( var item in Model.NewsFeed){
+        <div class="NewsItem">
+            <a href="#">
+                <span class="NewsItemImage">
+                        <img src='@item.ActorAvatarUrl' alt='@item.ActorDisplayName'  />
+                    </span>
+                    <span class="NewsItemContent">
+                        <h3>@item.Headline</h3>
+                        @item.Summary
+                    </span>
+            </a>
+        </div>
+        }
+    </div>
+ </div>

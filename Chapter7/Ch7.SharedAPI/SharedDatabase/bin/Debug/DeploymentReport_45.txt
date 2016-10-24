@@ -1,0 +1,21 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[CollaborationSpaceGenre]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Table rebuild
+       [dbo].[CollaborationSpaceGenre] (Table)
+
+** Supporting actions
+     Drop
+       [dbo].[FK_CollaborationSpaceGenre_CollaborationSpace] (Foreign Key)
+       [dbo].[FK_CollaborationSpaceGenre_GenreLookUp] (Foreign Key)
+     Create
+       [dbo].[FK_CollaborationSpaceGenre_CollaborationSpace] (Foreign Key)
+       [dbo].[FK_CollaborationSpaceGenre_GenreLookUp] (Foreign Key)

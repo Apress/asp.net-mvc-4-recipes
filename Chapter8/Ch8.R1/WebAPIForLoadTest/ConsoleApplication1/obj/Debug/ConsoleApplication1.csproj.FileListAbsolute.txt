@@ -1,0 +1,2 @@
+G:\WorkingFolder\MVCBook\Chapter7\Ch7.R7-1\WebAPIForLoadTest\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+G:\WorkingFolder\MVCBook\Chapter8\Ch8.R1\WebAPIForLoadTest\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config

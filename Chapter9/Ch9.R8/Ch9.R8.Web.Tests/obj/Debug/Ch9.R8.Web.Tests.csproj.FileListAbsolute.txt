@@ -1,0 +1,74 @@
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\Ch9.R8.Web.Tests.dll.config
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\Ch9.R8.Web.Tests.dll
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\Ch9.R8.Web.Tests.pdb
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\Ch9.R8.Web.dll
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\System.Web.Helpers.dll
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\System.Web.Http.dll
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\System.Web.Mvc.dll
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\System.Web.Razor.dll
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\System.Web.WebPages.dll
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\EntityFramework.dll
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\System.Web.Optimization.dll
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\WebGrease.dll
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\Antlr3.Runtime.dll
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\Ch9.R8.Web.pdb
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\System.Web.Helpers.xml
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\System.Web.Http.xml
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\System.Web.Mvc.xml
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\System.Web.Razor.xml
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\System.Web.WebPages.xml
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\EntityFramework.xml
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\obj\Debug\Ch9.R8.Web.Tests.csprojResolveAssemblyReference.cache
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\obj\Debug\Ch9.R8.Web.Tests.dll
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\obj\Debug\Ch9.R8.Web.Tests.pdb
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\Moq.dll
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\Moq.pdb
+C:\Users\jciliberti\Documents\Visual Studio 2012\Projects\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\Moq.xml
+G:\WorkingFolder\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\Ch9.R8.Web.Tests.dll.config
+G:\WorkingFolder\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\Ch9.R8.Web.Tests.dll
+G:\WorkingFolder\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\Ch9.R8.Web.Tests.pdb
+G:\WorkingFolder\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\Ch9.R8.Web.dll
+G:\WorkingFolder\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+G:\WorkingFolder\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\Moq.dll
+G:\WorkingFolder\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\Newtonsoft.Json.dll
+G:\WorkingFolder\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\System.Net.Http.Formatting.dll
+G:\WorkingFolder\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\System.Web.Helpers.dll
+G:\WorkingFolder\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\System.Web.Http.dll
+G:\WorkingFolder\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\System.Web.Http.WebHost.dll
+G:\WorkingFolder\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\System.Web.Mvc.dll
+G:\WorkingFolder\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\System.Web.Razor.dll
+G:\WorkingFolder\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+G:\WorkingFolder\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\System.Web.WebPages.dll
+G:\WorkingFolder\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+G:\WorkingFolder\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\EntityFramework.dll
+G:\WorkingFolder\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\System.Web.Optimization.dll
+G:\WorkingFolder\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\WebGrease.dll
+G:\WorkingFolder\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\Antlr3.Runtime.dll
+G:\WorkingFolder\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\Ch9.R8.Web.pdb
+G:\WorkingFolder\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\Moq.pdb
+G:\WorkingFolder\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\Moq.xml
+G:\WorkingFolder\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\Newtonsoft.Json.xml
+G:\WorkingFolder\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\System.Net.Http.Formatting.xml
+G:\WorkingFolder\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\System.Web.Helpers.xml
+G:\WorkingFolder\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\System.Web.Http.xml
+G:\WorkingFolder\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\System.Web.Http.WebHost.xml
+G:\WorkingFolder\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\System.Web.Mvc.xml
+G:\WorkingFolder\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\System.Web.Razor.xml
+G:\WorkingFolder\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\System.Web.WebPages.xml
+G:\WorkingFolder\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+G:\WorkingFolder\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+G:\WorkingFolder\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\bin\Debug\EntityFramework.xml
+G:\WorkingFolder\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\obj\Debug\Ch9.R8.Web.Tests.csprojResolveAssemblyReference.cache
+G:\WorkingFolder\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\obj\Debug\Ch9.R8.Web.Tests.dll
+G:\WorkingFolder\MVCBook\Chapter9\Ch9.R8\Ch9.R8.Web.Tests\obj\Debug\Ch9.R8.Web.Tests.pdb

@@ -1,0 +1,123 @@
+﻿@model Ch10.Mvc.Web.Models.WizardModel
+
+@{
+    ViewBag.Title = "One Page Wizard";
+}
+@section headContent{
+    <link rel="stylesheet" href="/Content/Wizard.css" />
+}
+
+<div class="WizardOuter">
+    <nav class="float-left WizardSidebar btn_box_shadow">
+        <ul>
+            <li class="step" id="WizardStep_0">Title &amp; Description</li>
+            <li class="step" id="WizardStep_1">Collaboration Settings</li>
+            <li class="step" id="WizardStep_2">Open Positions</li>
+            <li class="step" id="WizardStep_3">Alert Settings</li>
+        </ul>
+    </nav>
+
+    <section class="WizardForm float-right">
+        @using (Html.BeginForm("Wizard", "OnePageWizard", FormMethod.Post, new { id = "WizardForm0" }))
+        {
+
+            <div id="WizardStep_Div_0" class="WizardStep">
+                <h2>Title And Description</h2>
+                <fieldset>
+                    <legend>Describe your project</legend>
+                    <div>
+                        @Html.LabelFor(a => a.NewWorkspace.Title)
+                        <br />
+                        @Html.TextBoxFor(a => a.NewWorkspace.Title)
+                    </div>
+                    <div>
+                        @Html.LabelFor(a => a.NewWorkspace.Description)
+                        <br />
+                        @Html.TextAreaFor(a => a.NewWorkspace.Description)
+                    </div>
+                </fieldset>
+
+            </div>
+    
+            <div id="WizardStep_Div_1" class="WizardStep">
+                <h2>Collaboration Settings</h2>
+                <fieldset>
+                    <legend>Describe the collaboration rules for your project</legend>
+
+                    <div>
+                        @Html.LabelFor(a => a.NewWorkspace.AllowContributorsToPublish)<br />
+                        @Html.CheckBoxFor(a => a.NewWorkspace.AllowContributorsToPublish)
+                    </div>
+                    <div>
+                        @Html.LabelFor(a => a.NewWorkspace.AllowPublicView)<br />
+                        @Html.CheckBoxFor(a => a.NewWorkspace.AllowPublicView)
+                    </div>
+                    <div>
+                        @Html.LabelFor(a => 
+                          a.NewWorkspace.RestrictContributorsToBand)<br />
+                        @Html.CheckBoxFor(a => 
+                          a.NewWorkspace.RestrictContributorsToBand)
+                    </div>
+                </fieldset>
+            </div>
+    
+            <div id="WizardStep_Div_2" class="WizardStep">
+                <fieldset>
+                    <legend>Describe the skills needed for your project</legend>
+                    <h2>Open Positions</h2>
+                    <div class="CheckBoxGroup">
+                        @Html.EditorFor(a => a.NeededSkills)
+                    </div>
+                    <div>
+                        @Html.LabelFor(a => a.OpenPositionDescription)
+                        <br />
+                        @Html.TextAreaFor(a => a.OpenPositionDescription)
+
+                    </div>
+                    <div>
+                        @Html.LabelFor(a => a.OpenPostionSkillLevel)
+                        <br />
+                        @Html.EditorFor(a => a.OpenPostionSkillLevel)
+                    </div>
+                </fieldset>
+            </div>
+            <div id="WizardStep_Div_3" class="WizardStep">
+                <fieldset>
+                    <legend>Describe the skills needed for your project</legend>
+                    <h2>Alert Options</h2>
+                    <div>
+                        @Html.LabelFor(a => a.RegisterForAlerts)
+                        <br />
+                        @Html.EditorFor(a => a.RegisterForAlerts)
+                    </div>
+                </fieldset>
+            </div>
+            <section class="WizardButtons">
+                <input type="button" value="Back" id="BackButton" />
+                <input type="button" value="Next" id="NextButton" />
+                <input type="submit" value="Finish" id="FinishButton" />
+            </section>
+
+        }
+
+    </section>
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/jqueryui")
+    
+    <script src="/Scripts/MVCWizard.js"></script>
+    <script>
+        $(
+    function () {
+        WizardInit(4);
+        $("#WizardStep_0").on('click', function (event) { ShowWizardStep(0); });
+        $("#WizardStep_1").on('click', function (event) { ShowWizardStep(1); });
+        $("#WizardStep_2").on('click', function (event) { ShowWizardStep(2); });
+        $("#WizardStep_3").on('click', function (event) { ShowWizardStep(3); });
+        $("#BackButton").on('click', function (event) { WizardBack(); });
+        $("#NextButton").on('click', function (event) { WizardNext(); });
+    }
+);
+    </script>
+}

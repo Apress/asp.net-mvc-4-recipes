@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch9.R4.Web", "Ch9.R4.Web\Ch9.R4.Web.csproj", "{B5FE2947-0B06-4E9D-A654-3CD4330E21EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch9.R4.Web.Tests", "Ch9.R4.Web.Tests\Ch9.R4.Web.Tests.csproj", "{8DAC6571-A892-4793-8E1C-67B6736DE004}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://myonlineband.tfspreview.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Ch9.R4.Web.Tests\\Ch9.R4.Web.Tests.csproj
+		SccProjectName1 = Ch9.R4.Web.Tests
+		SccLocalPath1 = Ch9.R4.Web.Tests
+		SccProjectUniqueName2 = Ch9.R4.Web\\Ch9.R4.Web.csproj
+		SccProjectName2 = Ch9.R4.Web
+		SccLocalPath2 = Ch9.R4.Web
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5FE2947-0B06-4E9D-A654-3CD4330E21EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5FE2947-0B06-4E9D-A654-3CD4330E21EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5FE2947-0B06-4E9D-A654-3CD4330E21EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5FE2947-0B06-4E9D-A654-3CD4330E21EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DAC6571-A892-4793-8E1C-67B6736DE004}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DAC6571-A892-4793-8E1C-67B6736DE004}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DAC6571-A892-4793-8E1C-67B6736DE004}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DAC6571-A892-4793-8E1C-67B6736DE004}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

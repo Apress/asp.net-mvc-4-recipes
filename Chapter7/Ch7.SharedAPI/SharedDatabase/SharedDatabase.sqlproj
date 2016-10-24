@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>SharedDatabase</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{62ea93f5-48fb-4faa-9720-58b335c2ff94}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql110DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>SharedDatabase</RootNamespace>
+    <AssemblyName>SharedDatabase</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <!-- VS10 without SP1 will not have VisualStudioVersion set, so do that here -->
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="StoredProcedures" />
+    <Folder Include="Tables" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="StoredProcedures\u_DeleteArtist.sql" />
+    <Build Include="Tables\Artist.sql" />
+    <Build Include="Tables\CollaborationSpaceComment.sql" />
+    <Build Include="Tables\CollaborationSpaceFile.sql" />
+    <Build Include="Tables\webpages_Membership.sql" />
+    <Build Include="Tables\webpages_OAuthMembership.sql" />
+    <Build Include="Tables\webpages_Roles.sql" />
+    <Build Include="Tables\webpages_UsersInRoles.sql" />
+    <Build Include="Tables\Message.sql" />
+    <Build Include="Tables\MessageRecipient.sql" />
+    <Build Include="Tables\MessageSpam.sql" />
+    <Build Include="Tables\Task.sql" />
+    <Build Include="Tables\ArtistProfile.sql" />
+    <Build Include="Tables\GenreLookUp.sql" />
+    <Build Include="Tables\BannedEmailAddress.sql" />
+    <Build Include="Tables\Alert.sql" />
+    <Build Include="Tables\AlertSubscription.sql" />
+    <Build Include="Tables\AlertTag.sql" />
+    <Build Include="Tables\ArtistSkill.sql" />
+    <Build Include="Tables\SongComment.sql" />
+    <Build Include="Tables\CollaborationSpaceGenre.sql" />
+    <Build Include="Tables\CollaborationSpaceMedia.sql" />
+    <Build Include="Tables\OpenPosition.sql" />
+    <Build Include="Tables\CollaborationSpaceAlerts.sql" />
+    <Build Include="Tables\CollaborationSpaceInvite.sql" />
+    <Build Include="Tables\ArtistFavorites.sql" />
+    <Build Include="Tables\ArtistBlock.sql" />
+    <Build Include="Tables\BandAudition.sql" />
+    <Build Include="Tables\BandGenre.sql" />
+    <Build Include="Tables\BandAuditionComment.sql" />
+    <Build Include="Tables\EmailVerification.sql" />
+    <Build Include="Tables\EmailOptOut.sql" />
+    <Build Include="StoredProcedures\GetUserAlerts.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="SharedDatabase.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SharedDatabase.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\ArtistBand.sql" />
+    <Build Include="Tables\ArtistCollaborationSpaces.sql" />
+    <Build Include="Tables\Band.sql" />
+    <Build Include="Tables\CollaborationSpace.sql" />
+    <Build Include="Tables\Media.sql" />
+    <Build Include="Tables\Playlist.sql" />
+    <Build Include="Tables\PlaylistItem.sql" />
+    <Build Include="Tables\Song.sql" />
+  </ItemGroup>
+</Project>

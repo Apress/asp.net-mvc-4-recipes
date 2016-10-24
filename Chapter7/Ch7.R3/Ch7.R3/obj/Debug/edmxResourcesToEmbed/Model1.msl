@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Ch7SharedDatabaseModelStoreContainer" CdmEntityContainer="Ch7SharedDatabaseEntities">
+    <EntitySetMapping Name="Artists">
+      <EntityTypeMapping TypeName="Ch7SharedDatabaseModel.Artist">
+        <MappingFragment StoreEntitySet="Artist">
+          <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+          <ScalarProperty Name="OldUserId" ColumnName="OldUserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Provence" ColumnName="Provence" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="WebSite" ColumnName="WebSite" />
+          <ScalarProperty Name="ProfilePrivacyLevel" ColumnName="ProfilePrivacyLevel" />
+          <ScalarProperty Name="ContactPrivacyLevel" ColumnName="ContactPrivacyLevel" />
+          <ScalarProperty Name="ProfileViews" ColumnName="ProfileViews" />
+          <ScalarProperty Name="ProfileLastViewDate" ColumnName="ProfileLastViewDate" />
+          <ScalarProperty Name="Rating" ColumnName="Rating" />
+          <ScalarProperty Name="AvatarURL" ColumnName="AvatarURL" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+          <ScalarProperty Name="FileUploadsInBytes" ColumnName="FileUploadsInBytes" />
+          <ScalarProperty Name="FileUploadQuotaInBytes" ColumnName="FileUploadQuotaInBytes" />
+          <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+          <ScalarProperty Name="ShowChatStatus" ColumnName="ShowChatStatus" />
+          <ScalarProperty Name="AllowChatSounds" ColumnName="AllowChatSounds" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArtistSkills">
+      <EntityTypeMapping TypeName="Ch7SharedDatabaseModel.ArtistSkill">
+        <MappingFragment StoreEntitySet="ArtistSkill">
+          <ScalarProperty Name="ArtistTalentID" ColumnName="ArtistTalentID" />
+          <ScalarProperty Name="ArtistId" ColumnName="ArtistId" />
+          <ScalarProperty Name="TalentName" ColumnName="TalentName" />
+          <ScalarProperty Name="SkillLevel" ColumnName="SkillLevel" />
+          <ScalarProperty Name="Details" ColumnName="Details" />
+          <ScalarProperty Name="Styles" ColumnName="Styles" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

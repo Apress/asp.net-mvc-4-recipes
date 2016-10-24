@@ -1,0 +1,68 @@
+﻿
+.grid {
+    background-color: #fff;
+    margin: 5px 0 10px 10px;
+    padding-left: 5px;
+    width: 95%;
+}
+    .grid td {
+        color: #1a1a1a;
+        vertical-align: top;
+    }
+
+    .grid td textarea {
+        width:98%;
+        border-width:2px;
+        height: 3em;
+        border-color:lightblue;
+    }
+
+        .grid td input[type="text"], .grid td input[type="number"] {
+            border: 2px solid lightblue;
+            width: 98%;
+            height: 2em;
+        }
+    
+
+    .grid th {
+        background-color: #333;
+        color: #fff;
+        font-size: large;
+        font-weight: bolder;
+        padding-bottom: 5px;
+        padding-left: 13px;
+        padding-top: 5px;
+        text-align: left;
+    }
+    .grid th a{color: #fff; text-decoration:none;}
+    
+.odd {
+    background-color: #ebeced;
+}
+
+.even {
+    background-color: #99acb9;
+}
+
+.Pager {
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+    padding: 1px;
+}
+
+    .Pager td {
+        display: inline;
+        font-size: large;
+        font-weight: bolder;
+        padding-left: 13px;
+        text-align: left;
+        color: #fff;
+    }
+
+        .Pager span {
+            color: #fff;
+            cursor: pointer;
+            padding:5px;
+        }

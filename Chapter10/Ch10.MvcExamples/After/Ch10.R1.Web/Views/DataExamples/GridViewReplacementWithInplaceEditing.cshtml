@@ -1,0 +1,64 @@
+﻿@model Ch10.Mvc.Web.Models.InlineEditingArtistSkillListModel
+
+@{
+    ViewBag.Title = "Grid View Replacement With In place Editing";
+    
+}
+
+<h2>Grid View Replacement With In place Editing </h2>
+Click the edit link to edit the row.
+ @using(Html.BeginForm()){
+     @Html.ValidationSummary()
+<table class="grid">
+    <tr>
+        <th>
+
+        </th>
+        <th>
+            Talent
+        </th>
+        <th>
+            Level
+        </th>
+        <th>
+            Details
+        </th>
+        <th>
+            Musical Styles
+        </th>
+    </tr>
+   
+@foreach (var item in Model.ArtistSkillList) {
+    <tr>
+        <td>
+            @if(Model.IsSelected(item)){
+               <a href="#" onclick="document.forms[0].submit()">Save</a>
+                @Html.HiddenFor(modelItem => item.ArtistId)
+                @Html.HiddenFor(modelItem => item.ArtistTalentID)
+            }
+            else
+            {
+            @Html.ActionLink("Edit", "GridViewReplacementWithInplaceEditing", new { Selected=item.ArtistTalentID })
+            }
+        </td>
+        <td>
+            @Html.DataGridTextBoxFor(Model.IsSelected(item),modelItem => item.TalentName)
+        </td>
+        <td>
+            @Html.DataGridEditorFor(Model.IsSelected(item),modelItem => item.SkillLevel)
+        </td>
+        <td>
+            @Html.DataGridTextAreaFor(Model.IsSelected(item),modelItem => item.Details)
+        </td>
+        <td>
+            @Html.DataGridEditorFor(Model.IsSelected(item),modelItem => item.Styles)
+        </td>
+    </tr>
+}
+
+</table>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

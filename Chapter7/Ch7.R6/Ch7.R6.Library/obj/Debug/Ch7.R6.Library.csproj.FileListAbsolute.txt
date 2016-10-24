@@ -1,0 +1,12 @@
+G:\WorkingFolder\MVCBook\Chapter7\Ch7.R6\Ch7.R6.Library\bin\Debug\Ch7.R6.Library.dll.config
+G:\WorkingFolder\MVCBook\Chapter7\Ch7.R6\Ch7.R6.Library\bin\Debug\Ch7.R6.Library.dll
+G:\WorkingFolder\MVCBook\Chapter7\Ch7.R6\Ch7.R6.Library\bin\Debug\Ch7.R6.Library.pdb
+G:\WorkingFolder\MVCBook\Chapter7\Ch7.R6\Ch7.R6.Library\bin\Debug\EntityFramework.dll
+G:\WorkingFolder\MVCBook\Chapter7\Ch7.R6\Ch7.R6.Library\bin\Debug\EntityFramework.xml
+G:\WorkingFolder\MVCBook\Chapter7\Ch7.R6\Ch7.R6.Library\obj\Debug\Ch7.R6.Library.csprojResolveAssemblyReference.cache
+G:\WorkingFolder\MVCBook\Chapter7\Ch7.R6\Ch7.R6.Library\obj\Debug\Ch7.R6.Library.dll
+G:\WorkingFolder\MVCBook\Chapter7\Ch7.R6\Ch7.R6.Library\obj\Debug\Ch7.R6.Library.pdb
+G:\WorkingFolder\MVCBook\Chapter7\Ch7.R6\Ch7.R6.Library\obj\Debug\Ch7.R6.Library.Migrations.ArtistCreate.resources
+G:\WorkingFolder\MVCBook\Chapter7\Ch7.R6\Ch7.R6.Library\obj\Debug\Ch7.R6.Library.csproj.GenerateResource.Cache
+G:\WorkingFolder\MVCBook\Chapter7\Ch7.R6\Ch7.R6.Library\obj\Debug\Ch7.R6.Library.Migrations.MaxLengthAndRequiredFields.resources
+G:\WorkingFolder\MVCBook\Chapter7\Ch7.R6\Ch7.R6.Library\obj\Debug\Ch7.R6.Library.Migrations.AddYears.resources
